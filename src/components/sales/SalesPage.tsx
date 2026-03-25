@@ -93,7 +93,7 @@ export function SalesPage() {
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
           </h2>
-          <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-10">
+          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-10">
             Modelos pensados para tornar lecionar mais divertido e inclusivo
           </p>
 
@@ -188,7 +188,7 @@ export function SalesPage() {
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
           </h2>
-          <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-7">
+          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
             Veja o que professoras que já utilizam estão dizendo
           </p>
 
@@ -226,7 +226,7 @@ export function SalesPage() {
               <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
                 Você merece <em className="italic text-lilac-deep">ainda mais</em>
               </h2>
-              <p className="section-sub text-sm text-muted-foreground leading-relaxed">
+              <p className="section-sub text-[15px] text-muted-foreground leading-relaxed">
                 6 bônus incríveis que transformarão sua forma de trabalhar
               </p>
             </div>
@@ -266,7 +266,7 @@ export function SalesPage() {
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Garanta agora com <em className="italic text-lilac-deep">preço especial</em>
             </h2>
-            <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed">
+            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed">
               Aproveite e tenha acesso a PEIs prontos para impressionar sua coordenação
             </p>
 
