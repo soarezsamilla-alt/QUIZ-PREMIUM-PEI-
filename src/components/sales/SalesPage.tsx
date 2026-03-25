@@ -105,9 +105,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-2">
+              <CarouselContent className="-ml-1">
                 {PlaceHolderImages.map((sample, index) => (
-                  <CarouselItem key={index} className="pl-2 basis-[60%] sm:basis-1/3">
+                  <CarouselItem key={index} className="pl-1 basis-[60%] sm:basis-1/3">
                     <div className="sample-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -156,14 +156,14 @@ export function SalesPage() {
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
               { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
             ].map((f, i) => (
-              <div key={i} className="feature-card flex items-start gap-5 p-6 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
+              <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
                 <div className={cn(
-                  "w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shrink-0 border shadow-sm",
+                  "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
                   f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
                 )}>{f.icon}</div>
                 <div className="flex-1 pt-1">
-                  <div className="text-base font-semibold text-foreground mb-1 leading-tight">{f.title}</div>
-                  <div className="text-sm text-muted-foreground leading-normal">{f.desc}</div>
+                  <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
+                  <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
                 </div>
               </div>
             ))}
@@ -200,9 +200,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-2">
+              <CarouselContent className="-ml-1">
                 {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-2 basis-[75%] sm:basis-1/2">
+                  <CarouselItem key={index} className="pl-1 basis-[75%] sm:basis-1/2">
                     <div className="testimonial-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -243,19 +243,34 @@ export function SalesPage() {
             </div>
             <div className="bonus-list flex flex-col gap-3">
               {[
-                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas." },
-                { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI." },
-                { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento." },
-                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional." },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional." },
-                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais." }
+                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: PlaceHolderImages[6].imageUrl },
+                { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: PlaceHolderImages[7].imageUrl },
+                { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: PlaceHolderImages[8].imageUrl },
+                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: PlaceHolderImages[9].imageUrl },
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: PlaceHolderImages[10].imageUrl },
+                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: PlaceHolderImages[11].imageUrl }
               ].map((b) => (
-                <div key={b.n} className="bonus-card flex items-center gap-4 p-4 px-4.5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
+                <div key={b.n} className="bonus-card flex items-center gap-4 p-3 pr-4 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
-                  <div className="w-7.5 h-7.5 rounded-full bg-gold-pale border-1.5 border-gold-light flex items-center justify-center text-xs font-bold text-gold-deep shrink-0">{b.n}</div>
+                  
+                  {/* Imagem do Bônus */}
+                  <div className="relative w-16 h-20 rounded-md overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
+                    <Image 
+                      src={b.img} 
+                      alt={b.name} 
+                      fill 
+                      className="object-cover"
+                      data-ai-hint="bonus material" 
+                    />
+                    {/* Número do bônus como badge */}
+                    <div className="absolute top-1 left-1 w-5 h-5 rounded-full bg-gold text-white text-[10px] font-black flex items-center justify-center shadow-md">
+                      {b.n}
+                    </div>
+                  </div>
+
                   <div className="flex-1">
                     <div className="text-sm font-semibold text-foreground leading-tight">{b.name}</div>
-                    <div className="text-[12px] text-muted-foreground leading-normal">{b.desc}</div>
+                    <div className="text-[12px] text-muted-foreground leading-normal line-clamp-2">{b.desc}</div>
                   </div>
                   <div className="text-right shrink-0 ml-2">
                     <div className="text-[11px] text-muted-foreground line-through">R$ 37,90</div>
