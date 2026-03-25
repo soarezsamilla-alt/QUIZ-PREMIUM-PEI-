@@ -41,7 +41,7 @@ export function SalesPage() {
           <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
         </h1>
 
-        <p className="hero-sub relative z-10 text-[15px] text-white/75 leading-relaxed max-w-[360px] mx-auto mb-7">
+        <p className="hero-sub relative z-10 text-[18px] text-white/75 leading-relaxed max-w-[400px] mx-auto mb-7">
           Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva.
         </p>
 
