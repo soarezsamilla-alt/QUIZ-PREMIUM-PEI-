@@ -13,10 +13,8 @@ export function QuizManager() {
   const [isFinished, setIsFinished] = useState(false);
 
   const handleOptionSelect = (index: number) => {
-    // Define a opção selecionada para mostrar o feedback visual
     setSelectedOption(index);
 
-    // Prepara a resposta atual
     const currentAnswer = {
       tag: QUIZ_STEPS[currentStep].tag,
       question: QUIZ_STEPS[currentStep].question,
@@ -26,7 +24,6 @@ export function QuizManager() {
     const newAnswers = [...answers, currentAnswer];
     setAnswers(newAnswers);
 
-    // Aguarda um pequeno delay para que o usuário veja a seleção e então avança
     setTimeout(() => {
       if (currentStep < QUIZ_STEPS.length - 1) {
         setCurrentStep(currentStep + 1);
@@ -73,7 +70,7 @@ export function QuizManager() {
         </div>
       </div>
 
-      <div className="quiz-card w-full max-w-[480px] bg-white rounded-[24px] shadow-lg-custom border border-border overflow-hidden">
+      <div className="quiz-card w-full max-w-[480px] bg-cream rounded-[24px] shadow-lg-custom border border-rose-light/30 overflow-hidden">
         <QuizStep 
           step={QUIZ_STEPS[currentStep]} 
           selectedOption={selectedOption as number} 
@@ -81,8 +78,6 @@ export function QuizManager() {
         />
         <div className="quiz-card-footer h-[5px] bg-gradient-to-r from-rose via-lilac-deep to-gold" />
       </div>
-
-      {/* Botão removido para transição automática conforme solicitado */}
     </section>
   );
 }
