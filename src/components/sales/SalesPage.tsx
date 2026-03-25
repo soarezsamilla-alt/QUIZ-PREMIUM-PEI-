@@ -13,7 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { PlaceHolderImages, TestimonialImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 
 export function SalesPage() {
@@ -192,23 +192,34 @@ export function SalesPage() {
             Veja o que professoras que já utilizam estão dizendo
           </p>
 
-          <div className="testimonials-wrap my-7">
-            {[
-              { initial: "B", name: "Beatriz Santos", role: "Professora de Educação Especial", text: "Oi minha linda! Aqui o está o seu material de PEI pronto. Muito obrigada! Acabei de abrir e está incrível! Vai me salvar demais — era isso que eu precisava. Deus abençoe!" },
-              { initial: "M", name: "Mariana Oliveira", role: "Orientadora Educacional", text: "Nossa, muito obrigada! O material é maravilhoso. Que bom que gostou! Deus te abençoe também." }
-            ].map((t, i) => (
-              <div key={i} className="testimonial-card bg-white border-1.5 border-border rounded-xl p-5.5 px-5 mb-3.5 shadow-sm-custom relative">
-                <span className="absolute -top-2 left-4.5 font-headline text-5xl text-rose-light leading-none">&quot;</span>
-                <p className="text-sm text-foreground/80 leading-relaxed mb-3.5 italic">{t.text}</p>
-                <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-full bg-gradient-to-br from-rose-light to-lilac-light flex items-center justify-center text-sm font-bold text-rose-deep shrink-0">{t.initial}</div>
-                  <div>
-                    <div className="text-[13px] font-semibold text-foreground">{t.name}</div>
-                    <div className="text-[12px] text-muted-foreground">{t.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
+          <div className="testimonials-carousel-container relative px-4 mb-8">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent>
+                {TestimonialImages.map((testimonial, index) => (
+                  <CarouselItem key={index} className="basis-[75%] sm:basis-1/2">
+                    <div className="testimonial-card-item p-1.5">
+                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
+                        <Image
+                          src={testimonial.imageUrl}
+                          alt={testimonial.description}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={testimonial.imageHint}
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-[-20px] sm:left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+              <CarouselNext className="right-[-20px] sm:right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+            </Carousel>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">

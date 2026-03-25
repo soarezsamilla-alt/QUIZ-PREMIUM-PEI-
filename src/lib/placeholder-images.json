@@ -72,5 +72,37 @@
       "imageUrl": "https://image2url.com/r2/default/images/1774472762072-0aa86bd3-1650-4de9-8737-2a2909c28a76.jfif",
       "imageHint": "planner page"
     }
+  ],
+  "testimonialImages": [
+    {
+      "id": "test-1",
+      "description": "Depoimento Professora 1",
+      "imageUrl": "https://picsum.photos/seed/test1/600/800",
+      "imageHint": "happy teacher"
+    },
+    {
+      "id": "test-2",
+      "description": "Depoimento Professora 2",
+      "imageUrl": "https://picsum.photos/seed/test2/600/800",
+      "imageHint": "inclusive classroom"
+    },
+    {
+      "id": "test-3",
+      "description": "Depoimento Professora 3",
+      "imageUrl": "https://picsum.photos/seed/test3/600/800",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "test-4",
+      "description": "Depoimento Professora 4",
+      "imageUrl": "https://picsum.photos/seed/test4/600/800",
+      "imageHint": "teacher smile"
+    },
+    {
+      "id": "test-5",
+      "description": "Depoimento Professora 5",
+      "imageUrl": "https://picsum.photos/seed/test5/600/800",
+      "imageHint": "student success"
+    }
   ]
 }
