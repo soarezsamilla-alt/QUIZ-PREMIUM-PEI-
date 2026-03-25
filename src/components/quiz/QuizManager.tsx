@@ -77,6 +77,7 @@ export function QuizManager() {
           selectedOption={selectedOption as number} 
           onSelect={handleOptionSelect} 
         />
+        {/* Efeito estático na borda inferior do card */}
         <div className="quiz-card-footer h-[5px] bg-gradient-to-r from-rose via-lilac-deep to-gold" />
       </div>
     </section>
