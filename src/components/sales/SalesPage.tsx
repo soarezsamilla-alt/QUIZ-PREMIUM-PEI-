@@ -107,9 +107,9 @@ export function SalesPage() {
             >
               <CarouselContent>
                 {PlaceHolderImages.map((sample, index) => (
-                  <CarouselItem key={index} className="basis-[70%] sm:basis-1/2">
+                  <CarouselItem key={index} className="basis-[60%] sm:basis-1/3">
                     <div className="sample-card-item p-1.5">
-                      <div className="relative aspect-[2/3] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
+                      <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
                         <Image
                           src={sample.imageUrl}
                           alt={sample.description}
