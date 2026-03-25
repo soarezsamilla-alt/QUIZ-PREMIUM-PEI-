@@ -86,7 +86,7 @@ export function SalesPage() {
           </Button>
         </div>
 
-        <div className="sales-content w-full max-w-[520px] px-5">
+        <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
           {/* AMOSTRAS */}
@@ -97,7 +97,7 @@ export function SalesPage() {
             Modelos pensados para tornar lecionar mais divertido e inclusivo
           </p>
 
-          <div className="samples-carousel-container relative px-8 mb-8">
+          <div className="samples-carousel-container relative px-4 mb-8">
             <Carousel
               opts={{
                 align: "start",
@@ -107,9 +107,9 @@ export function SalesPage() {
             >
               <CarouselContent>
                 {PlaceHolderImages.map((sample, index) => (
-                  <CarouselItem key={index} className="basis-1/2 sm:basis-1/3">
-                    <div className="sample-card-item p-1">
-                      <div className="relative aspect-[1/2] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
+                  <CarouselItem key={index} className="basis-[70%] sm:basis-1/2">
+                    <div className="sample-card-item p-1.5">
+                      <div className="relative aspect-[2/3] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
                         <Image
                           src={sample.imageUrl}
                           alt={sample.description}
@@ -117,8 +117,8 @@ export function SalesPage() {
                           className="object-cover"
                           data-ai-hint={sample.imageHint}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-3">
-                          <span className="text-[10px] text-white font-bold leading-tight">{sample.description}</span>
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                          <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
                         <div className="sample-watermark absolute top-4 left-4 -rotate-12 pointer-events-none">
                           <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 border border-white/20 p-1 px-2 rounded-sm backdrop-blur-sm">
@@ -130,8 +130,8 @@ export function SalesPage() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
-              <CarouselNext className="right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+              <CarouselPrevious className="left-[-20px] sm:left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+              <CarouselNext className="right-[-20px] sm:right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
             </Carousel>
           </div>
 
