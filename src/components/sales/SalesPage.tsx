@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -109,7 +110,7 @@ export function SalesPage() {
                 {PlaceHolderImages.map((sample, index) => (
                   <CarouselItem key={index} className="basis-[60%] sm:basis-1/3">
                     <div className="sample-card-item p-1.5">
-                      <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
+                      <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
                         <Image
                           src={sample.imageUrl}
                           alt={sample.description}
@@ -120,7 +121,7 @@ export function SalesPage() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
                           <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
-                        {/* Marca d'água centralizada e destacada */}
+                        {/* Marca d'água centralizada, rotacionada e menor */}
                         <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
                           <span className="text-[14px] font-black tracking-[0.2em] uppercase text-white/90 bg-black/30 border-2 border-white/40 p-2 px-4 rounded-lg backdrop-blur-[2px] shadow-lg">
                             AMOSTRA
