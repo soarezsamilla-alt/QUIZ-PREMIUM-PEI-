@@ -150,20 +150,20 @@ export function SalesPage() {
             Suporte completo para otimizar seu tempo com materiais 100% editáveis
           </p>
 
-          <div className="features-list flex flex-col gap-3.5 my-6">
+          <div className="features-list flex flex-col gap-5 my-6">
             {[
               { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
               { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
             ].map((f, i) => (
-              <div key={i} className="feature-card flex items-start gap-3.5 p-4.5 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
+              <div key={i} className="feature-card flex items-start gap-5 p-6 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
                 <div className={cn(
-                  "w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0 border",
+                  "w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shrink-0 border shadow-sm",
                   f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
                 )}>{f.icon}</div>
-                <div>
-                  <div className="text-sm font-semibold text-foreground mb-0.5">{f.title}</div>
-                  <div className="text-[13px] text-muted-foreground leading-normal">{f.desc}</div>
+                <div className="flex-1 pt-1">
+                  <div className="text-base font-semibold text-foreground mb-1 leading-tight">{f.title}</div>
+                  <div className="text-sm text-muted-foreground leading-normal">{f.desc}</div>
                 </div>
               </div>
             ))}
