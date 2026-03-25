@@ -1,16 +1,17 @@
-
 "use client";
 
 import React, { useState } from "react";
 import { QUIZ_STEPS } from "@/lib/quiz-data";
 import { QuizStep } from "./QuizStep";
 import { SalesPage } from "../sales/SalesPage";
+import { LoadingStep } from "./LoadingStep";
 import { cn } from "@/lib/utils";
 
 export function QuizManager() {
   const [currentStep, setCurrentStep] = useState(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [answers, setAnswers] = useState<any[]>([]);
+  const [showLoading, setShowLoading] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
 
   const handleOptionSelect = (index: number) => {
@@ -25,13 +26,13 @@ export function QuizManager() {
     const newAnswers = [...answers, currentAnswer];
     setAnswers(newAnswers);
 
-    // Transição automática para a próxima etapa ou finalização
+    // Transição automática para a próxima etapa ou para o loading
     setTimeout(() => {
       if (currentStep < QUIZ_STEPS.length - 1) {
         setCurrentStep(currentStep + 1);
         setSelectedOption(null);
       } else {
-        setIsFinished(true);
+        setShowLoading(true);
       }
     }, 400);
   };
@@ -40,6 +41,10 @@ export function QuizManager() {
 
   if (isFinished) {
     return <SalesPage />;
+  }
+
+  if (showLoading) {
+    return <LoadingStep onComplete={() => setIsFinished(true)} />;
   }
 
   return (
