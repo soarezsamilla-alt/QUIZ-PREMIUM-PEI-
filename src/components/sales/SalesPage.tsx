@@ -41,8 +41,8 @@ export function SalesPage() {
           <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
         </h1>
 
-        <p className="hero-sub relative z-10 text-[18px] text-white/75 leading-relaxed max-w-[400px] mx-auto mb-7">
-          Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva.
+        <p className="hero-sub relative z-10 text-[18px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
+          Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano. Além de ser editáveis você consegue adaptar para qualquer faixa etária e qualquer formato exigido pela sua escola.
         </p>
 
         <Button asChild className="relative z-10 h-auto p-4.5 px-9 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all">
