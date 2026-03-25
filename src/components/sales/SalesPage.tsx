@@ -18,24 +18,38 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 
 export function SalesPage() {
-  const [visitors, setVisitors] = useState(6);
+  const [visitors, setVisitors] = useState(8);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      // Gera um número aleatório entre 4 e 12 para manter o realismo
-      const newVisitors = Math.floor(Math.random() * (12 - 4 + 1)) + 4;
-      setVisitors(newVisitors);
-    }, 2000);
+      setVisitors((prev) => {
+        // Lógica para o número "subir" de forma orgânica
+        // 70% de chance de subir 1 ou 2, 30% de chance de oscilar 1 para baixo
+        const chance = Math.random();
+        let next;
+        
+        if (chance > 0.3) {
+          next = prev + Math.floor(Math.random() * 2) + 1;
+        } else {
+          next = prev - 1;
+        }
+
+        // Mantém entre 7 e 28 para parecer real e movimentado
+        if (next > 28) return prev - 2;
+        if (next < 7) return 8;
+        return next;
+      });
+    }, 5000); // Atualiza a cada 5 segundos
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section id="sales-section" className="flex flex-col items-center animate-slide-up">
-      {/* Barra de Prova Social Fixa */}
-      <div className="fixed top-4 left-1/2 -translate-x-1/2 z-[100] w-fit pointer-events-none">
-        <div className="social-proof-bar inline-flex items-center gap-2 bg-foreground/90 border border-white/10 backdrop-blur-md p-2 px-5 rounded-full text-[11px] text-white font-medium shadow-lg transition-all duration-500">
-          <span className="live-dot w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.6)]" />
+      {/* Barra de Prova Social Fixa no Topo */}
+      <div className="fixed top-0 left-0 right-0 z-[100] flex justify-center p-3 pointer-events-none">
+        <div className="social-proof-bar inline-flex items-center gap-2 bg-foreground/95 border border-white/20 backdrop-blur-lg p-2 px-5 rounded-full text-[11px] text-white font-bold shadow-[0_10px_30px_rgba(0,0,0,0.3)] transition-all duration-700">
+          <span className="live-dot w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.8)]" />
           <span>{visitors} professoras acessando agora</span>
         </div>
       </div>
@@ -47,7 +61,7 @@ export function SalesPage() {
           <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
         </div>
 
-        <div className="h-10" /> {/* Espaçador para a barra fixa não cobrir o conteúdo inicial */}
+        <div className="h-12" /> {/* Espaçador para a barra fixa */}
 
         <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
           ✨ Material Completo Liberado
