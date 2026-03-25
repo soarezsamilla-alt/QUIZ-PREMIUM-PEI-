@@ -1,10 +1,9 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
 import { Timer } from "./Timer";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -23,7 +22,6 @@ export function SalesPage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setVisitors((prev) => {
-        // Lógica para o número subir de forma orgânica a cada 5 segundos
         const chance = Math.random();
         let next;
         
@@ -44,11 +42,14 @@ export function SalesPage() {
 
   return (
     <>
-      {/* Barra de Prova Social Fixa no Topo Absoluto - Fora do container animado */}
-      <div className="fixed top-0 left-0 right-0 z-[999] flex justify-center p-3 pointer-events-none">
-        <div className="social-proof-bar inline-flex items-center gap-2 bg-foreground/95 border border-white/20 backdrop-blur-md p-2 px-5 rounded-full text-[11px] text-white font-bold shadow-[0_10px_30px_rgba(0,0,0,0.4)] pointer-events-auto">
-          <span className="live-dot w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shadow-[0_0_10px_rgba(74,222,128,0.8)]" />
-          <span>{visitors} professoras acessando agora</span>
+      {/* Barra de Prova Social Fixa no Topo - Estilo Full Width conforme referência */}
+      <div className="fixed top-0 left-0 right-0 z-[999] bg-white border-b border-slate-100 shadow-sm py-2.5 px-4 flex justify-center items-center gap-2.5 sm:gap-4">
+        <div className="flex items-center gap-2.5">
+          <span className="w-2 h-2 rounded-full bg-[#4ADE80] shrink-0" />
+          <Users size={18} className="text-slate-400 shrink-0" />
+          <p className="text-[13px] sm:text-sm text-slate-600 font-medium whitespace-nowrap">
+            <span className="text-[#2B5797] font-bold">{visitors} pessoas</span> estão vendo este material agora
+          </p>
         </div>
       </div>
 
@@ -60,7 +61,7 @@ export function SalesPage() {
             <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
           </div>
 
-          <div className="h-14" /> {/* Espaçador maior para a barra fixa */}
+          <div className="h-10" /> {/* Espaçador para a barra fixa */}
 
           <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
             ✨ Material Completo Liberado
