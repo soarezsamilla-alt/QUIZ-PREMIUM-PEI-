@@ -1,7 +1,7 @@
 
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Timer } from "./Timer";
 import { FaqSection } from "./FaqSection";
 import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
@@ -18,8 +18,28 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 
 export function SalesPage() {
+  const [visitors, setVisitors] = useState(6);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Gera um número aleatório entre 4 e 12 para manter o realismo
+      const newVisitors = Math.floor(Math.random() * (12 - 4 + 1)) + 4;
+      setVisitors(newVisitors);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="sales-section" className="flex flex-col items-center animate-slide-up">
+      {/* Barra de Prova Social Fixa */}
+      <div className="fixed top-4 left-1/2 -translate-x-1/2 z-[100] w-fit pointer-events-none">
+        <div className="social-proof-bar inline-flex items-center gap-2 bg-foreground/90 border border-white/10 backdrop-blur-md p-2 px-5 rounded-full text-[11px] text-white font-medium shadow-lg transition-all duration-500">
+          <span className="live-dot w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shadow-[0_0_8px_rgba(74,222,128,0.6)]" />
+          <span>{visitors} professoras acessando agora</span>
+        </div>
+      </div>
+
       {/* HERO */}
       <div className="sales-hero w-full bg-gradient-to-br from-foreground via-[#4A2D5A] to-[#3A2048] p-12 px-6 pb-14 text-center relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
@@ -27,10 +47,7 @@ export function SalesPage() {
           <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
         </div>
 
-        <div className="social-proof-bar relative z-10 inline-flex items-center gap-2 bg-white/10 border border-white/18 backdrop-blur-md p-2 px-4 rounded-full text-xs text-white/85 font-medium mb-7">
-          <span className="live-dot w-1.5 h-1.5 rounded-full bg-[#4ADE80] animate-pulse shadow-[0_0_0_5px_rgba(74,222,128,0)]" />
-          <span>6 professoras acessando agora</span>
-        </div>
+        <div className="h-10" /> {/* Espaçador para a barra fixa não cobrir o conteúdo inicial */}
 
         <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
           ✨ Material Completo Liberado
