@@ -24,6 +24,7 @@ export function QuizManager() {
     const newAnswers = [...answers, currentAnswer];
     setAnswers(newAnswers);
 
+    // Transição automática para a próxima etapa ou finalização
     setTimeout(() => {
       if (currentStep < QUIZ_STEPS.length - 1) {
         setCurrentStep(currentStep + 1);
@@ -70,7 +71,7 @@ export function QuizManager() {
         </div>
       </div>
 
-      <div className="quiz-card w-full max-w-[480px] bg-cream rounded-[24px] shadow-lg-custom border border-rose-light/30 overflow-hidden">
+      <div className="quiz-card w-full max-w-[480px] bg-lilac-pale rounded-[24px] shadow-lg-custom border border-lilac-light/50 overflow-hidden">
         <QuizStep 
           step={QUIZ_STEPS[currentStep]} 
           selectedOption={selectedOption as number} 
