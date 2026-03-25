@@ -105,10 +105,10 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-2">
                 {PlaceHolderImages.map((sample, index) => (
-                  <CarouselItem key={index} className="basis-[60%] sm:basis-1/3">
-                    <div className="sample-card-item p-1.5">
+                  <CarouselItem key={index} className="pl-2 basis-[60%] sm:basis-1/3">
+                    <div className="sample-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
                         <Image
                           src={sample.imageUrl}
@@ -200,10 +200,10 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent>
+              <CarouselContent className="-ml-2">
                 {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="basis-[75%] sm:basis-1/2">
-                    <div className="testimonial-card-item p-1.5">
+                  <CarouselItem key={index} className="pl-2 basis-[75%] sm:basis-1/2">
+                    <div className="testimonial-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
                         <Image
                           src={testimonial.imageUrl}
