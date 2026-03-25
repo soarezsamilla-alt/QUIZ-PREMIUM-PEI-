@@ -41,7 +41,7 @@ export function SalesPage() {
           <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
         </h1>
 
-        <p className="hero-sub relative z-10 text-[18px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
+        <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
           Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano. Além de ser editáveis você consegue adaptar para qualquer faixa etária e qualquer formato exigido pela sua escola.
         </p>
 
@@ -63,7 +63,7 @@ export function SalesPage() {
           Veja algumas <em className="italic text-lilac-deep">amostras</em>
         </h2>
         <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-10">
-          Modelos pensados para tornar o ensino mais divertido e inclusivo
+          Modelos pensados para tornar lecionar mais divertido e inclusivo
         </p>
 
         <div className="samples-carousel-container relative px-8 mb-8">
