@@ -42,13 +42,13 @@ export function SalesPage() {
 
   return (
     <>
-      {/* Barra de Prova Social Fixa no Topo - Estilo Original Restaurado */}
-      <div className="fixed top-0 left-0 right-0 z-[999] bg-rose-pale border-b border-rose-light shadow-sm py-2 px-4 flex justify-center items-center gap-2.5">
+      {/* Barra de Prova Social Fixa no Topo - Estilo com Cor Personalizada #2d1f36 */}
+      <div className="fixed top-0 left-0 right-0 z-[999] bg-[#2d1f36] border-b border-white/5 shadow-sm py-2 px-4 flex justify-center items-center gap-2.5">
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shrink-0" />
-          <Users size={16} className="text-rose-deep shrink-0" />
-          <p className="text-[12px] sm:text-[13px] text-rose-deep font-bold tracking-tight whitespace-nowrap">
-            <span className="text-rose font-black">{visitors} professoras</span> estão vendo este material agora
+          <Users size={16} className="text-white/80 shrink-0" />
+          <p className="text-[12px] sm:text-[13px] text-white font-bold tracking-tight whitespace-nowrap">
+            <span className="text-rose-light font-black">{visitors} professoras</span> estão vendo este material agora
           </p>
         </div>
       </div>
