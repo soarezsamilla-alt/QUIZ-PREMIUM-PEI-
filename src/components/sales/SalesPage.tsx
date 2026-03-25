@@ -147,7 +147,7 @@ export function SalesPage() {
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             O que você vai <em className="italic text-lilac-deep">receber hoje</em>
           </h2>
-          <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-7">
+          <p className="section-sub text-[14px] text-muted-foreground text-center leading-relaxed mb-7">
             Suporte completo para otimizar seu tempo com materiais 100% editáveis
           </p>
 
