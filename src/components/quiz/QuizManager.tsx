@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { QUIZ_STEPS } from "@/lib/quiz-data";
 import { QuizStep } from "./QuizStep";
 import { SalesPage } from "../sales/SalesPage";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function QuizManager() {
@@ -14,24 +12,29 @@ export function QuizManager() {
   const [answers, setAnswers] = useState<any[]>([]);
   const [isFinished, setIsFinished] = useState(false);
 
-  const handleNext = () => {
-    if (selectedOption === null) return;
+  const handleOptionSelect = (index: number) => {
+    // Define a opção selecionada para mostrar o feedback visual
+    setSelectedOption(index);
 
+    // Prepara a resposta atual
     const currentAnswer = {
       tag: QUIZ_STEPS[currentStep].tag,
       question: QUIZ_STEPS[currentStep].question,
-      selectedOptionText: QUIZ_STEPS[currentStep].options[selectedOption].text,
+      selectedOptionText: QUIZ_STEPS[currentStep].options[index].text,
     };
 
     const newAnswers = [...answers, currentAnswer];
     setAnswers(newAnswers);
 
-    if (currentStep < QUIZ_STEPS.length - 1) {
-      setCurrentStep(currentStep + 1);
-      setSelectedOption(null);
-    } else {
-      setIsFinished(true);
-    }
+    // Aguarda um pequeno delay para que o usuário veja a seleção e então avança
+    setTimeout(() => {
+      if (currentStep < QUIZ_STEPS.length - 1) {
+        setCurrentStep(currentStep + 1);
+        setSelectedOption(null);
+      } else {
+        setIsFinished(true);
+      }
+    }, 400);
   };
 
   const progressPct = Math.round(((currentStep + 1) / QUIZ_STEPS.length) * 100);
@@ -74,25 +77,12 @@ export function QuizManager() {
         <QuizStep 
           step={QUIZ_STEPS[currentStep]} 
           selectedOption={selectedOption as number} 
-          onSelect={setSelectedOption} 
+          onSelect={handleOptionSelect} 
         />
         <div className="quiz-card-footer h-[5px] bg-gradient-to-r from-rose via-lilac-deep to-gold" />
       </div>
 
-      <div className={cn(
-        "quiz-btn-wrap w-full max-w-[480px] mt-4 transition-all duration-300",
-        selectedOption !== null ? "opacity-100 translate-y-0 pointer-events-auto" : "opacity-0 translate-y-2 pointer-events-none"
-      )}>
-        <Button 
-          onClick={handleNext}
-          className="w-full p-4 h-auto bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold rounded-md shadow-[0_4px_20px_rgba(196,90,114,0.35)] hover:translate-y-[-2px] hover:shadow-[0_8px_28px_rgba(196,90,114,0.42)] transition-all"
-        >
-          <span>{currentStep === QUIZ_STEPS.length - 1 ? "Ver meu resultado!" : "Próxima pergunta"}</span>
-          <span className="w-5 h-5 rounded-full bg-white/25 flex items-center justify-center ml-2">
-            {currentStep === QUIZ_STEPS.length - 1 ? "✨" : <ArrowRight size={12} />}
-          </span>
-        </Button>
-      </div>
+      {/* Botão removido para transição automática conforme solicitado */}
     </section>
   );
 }
