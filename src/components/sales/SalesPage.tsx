@@ -42,13 +42,13 @@ export function SalesPage() {
 
   return (
     <>
-      {/* Barra de Prova Social Fixa no Topo - Estilo Full Width conforme referência */}
-      <div className="fixed top-0 left-0 right-0 z-[999] bg-white border-b border-slate-100 shadow-sm py-2.5 px-4 flex justify-center items-center gap-2.5 sm:gap-4">
+      {/* Barra de Prova Social Fixa no Topo - Estilo Original Restaurado */}
+      <div className="fixed top-0 left-0 right-0 z-[999] bg-rose-pale border-b border-rose-light shadow-sm py-2 px-4 flex justify-center items-center gap-2.5">
         <div className="flex items-center gap-2.5">
-          <span className="w-2 h-2 rounded-full bg-[#4ADE80] shrink-0" />
-          <Users size={18} className="text-slate-400 shrink-0" />
-          <p className="text-[13px] sm:text-sm text-slate-600 font-medium whitespace-nowrap">
-            <span className="text-[#2B5797] font-bold">{visitors} pessoas</span> estão vendo este material agora
+          <span className="w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shrink-0" />
+          <Users size={16} className="text-rose-deep shrink-0" />
+          <p className="text-[12px] sm:text-[13px] text-rose-deep font-bold tracking-tight whitespace-nowrap">
+            <span className="text-rose font-black">{visitors} professoras</span> estão vendo este material agora
           </p>
         </div>
       </div>
@@ -61,7 +61,7 @@ export function SalesPage() {
             <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
           </div>
 
-          <div className="h-10" /> {/* Espaçador para a barra fixa */}
+          <div className="h-8" /> {/* Espaçador para a barra fixa */}
 
           <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
             ✨ Material Completo Liberado
