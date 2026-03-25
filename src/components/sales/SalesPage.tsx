@@ -3,14 +3,11 @@
 import React from "react";
 import { Timer } from "./Timer";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, Star, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-interface SalesPageProps {
-  recommendation?: string;
-}
-
-export function SalesPage({ recommendation }: SalesPageProps) {
+export function SalesPage() {
   return (
     <section id="sales-section" className="flex flex-col items-center animate-slide-up">
       {/* HERO */}
@@ -26,7 +23,7 @@ export function SalesPage({ recommendation }: SalesPageProps) {
         </div>
 
         <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
-          ✨ Material preparado para você
+          ✨ Material Completo Liberado
         </div>
 
         <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-3.5 max-w-[400px] mx-auto">
@@ -50,19 +47,6 @@ export function SalesPage({ recommendation }: SalesPageProps) {
 
       <div className="sales-content w-full max-w-[520px] px-5">
         <div className="h-10" />
-
-        {/* AI RECOMMENDATION BOX */}
-        {recommendation && (
-          <div className="ai-rec-box bg-white border-2 border-lilac-light rounded-xl p-6 mb-10 shadow-lg-custom relative overflow-hidden">
-            <div className="absolute top-0 right-0 p-3 text-lilac opacity-20"><Star size={40} /></div>
-            <h3 className="text-lg font-bold text-lilac-deep mb-3 flex items-center gap-2">
-              <span>✨ Sua Recomendação Especial</span>
-            </h3>
-            <p className="text-sm text-foreground/80 leading-relaxed whitespace-pre-wrap">
-              {recommendation}
-            </p>
-          </div>
-        )}
 
         {/* AMOSTRAS */}
         <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
@@ -153,9 +137,6 @@ export function SalesPage({ recommendation }: SalesPageProps) {
           ].map((t, i) => (
             <div key={i} className="testimonial-card bg-white border-1.5 border-border rounded-xl p-5.5 px-5 mb-3.5 shadow-sm-custom relative">
               <span className="absolute -top-2 left-4.5 font-headline text-5xl text-rose-light leading-none">&quot;</span>
-              <div className="flex gap-0.5 mb-2.5">
-                {[1, 2, 3, 4, 5].map(s => <Star key={s} size={14} fill="#D4A843" className="text-gold" />)}
-              </div>
               <p className="text-sm text-foreground/80 leading-relaxed mb-3.5 italic">{t.text}</p>
               <div className="flex items-center gap-2.5">
                 <div className="w-9 h-9 rounded-full bg-gradient-to-br from-rose-light to-lilac-light flex items-center justify-center text-sm font-bold text-rose-deep shrink-0">{t.initial}</div>

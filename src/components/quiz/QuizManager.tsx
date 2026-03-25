@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { QUIZ_STEPS } from "@/lib/quiz-data";
 import { QuizStep } from "./QuizStep";
 import { SalesPage } from "../sales/SalesPage";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { personalizedPeiRecommendation } from "@/ai/flows/personalized-pei-recommendation";
+import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export function QuizManager() {
@@ -14,10 +13,8 @@ export function QuizManager() {
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [answers, setAnswers] = useState<any[]>([]);
   const [isFinished, setIsFinished] = useState(false);
-  const [isLoadingRec, setIsLoadingRec] = useState(false);
-  const [recommendation, setRecommendation] = useState<string>("");
 
-  const handleNext = async () => {
+  const handleNext = () => {
     if (selectedOption === null) return;
 
     const currentAnswer = {
@@ -33,34 +30,14 @@ export function QuizManager() {
       setCurrentStep(currentStep + 1);
       setSelectedOption(null);
     } else {
-      setIsLoadingRec(true);
       setIsFinished(true);
-      try {
-        const result = await personalizedPeiRecommendation({ answers: newAnswers });
-        setRecommendation(result.recommendation);
-      } catch (error) {
-        console.error("Error fetching recommendation:", error);
-      } finally {
-        setIsLoadingRec(false);
-      }
     }
   };
 
   const progressPct = Math.round(((currentStep + 1) / QUIZ_STEPS.length) * 100);
 
   if (isFinished) {
-    if (isLoadingRec) {
-      return (
-        <div className="min-h-[80vh] flex flex-col items-center justify-center p-6 text-center animate-slide-up">
-          <div className="w-16 h-16 bg-rose-pale rounded-full flex items-center justify-center mb-6 animate-pulse">
-            <Sparkles className="text-rose size-8" />
-          </div>
-          <h2 className="font-headline text-2xl font-bold mb-3">Preparando seu material...</h2>
-          <p className="text-muted-foreground max-w-sm">Estamos analisando suas respostas para recomendar as melhores estratégias inclusivas para o seu perfil.</p>
-        </div>
-      );
-    }
-    return <SalesPage recommendation={recommendation} />;
+    return <SalesPage />;
   }
 
   return (
