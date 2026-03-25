@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -6,6 +7,15 @@ import { FaqSection } from "./FaqSection";
 import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Image from "next/image";
 
 export function SalesPage() {
   return (
@@ -52,26 +62,46 @@ export function SalesPage() {
         <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
           Veja algumas <em className="italic text-lilac-deep">amostras</em>
         </h2>
-        <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-7">
+        <p className="section-sub text-sm text-muted-foreground text-center leading-relaxed mb-10">
           Modelos pensados para tornar o ensino mais divertido e inclusivo
         </p>
 
-        <div className="samples-grid grid grid-cols-2 gap-3 mb-3">
-          {[
-            { label: "Modelo PEI", title: "Planejamento TEA – Educação Infantil", tag: "Word editável", bg: "linear-gradient(135deg, #FDF0F3, #FEF9F5)" },
-            { label: "Modelo PEI", title: "Planejamento TDAH – 1º ao 5º ano", tag: "Word editável", bg: "linear-gradient(135deg, #F7F3FC, #FEF9F5)" },
-            { label: "Ficha", title: "Ficha Individual de Acompanhamento PEI", tag: "Pronta para imprimir", bg: "linear-gradient(135deg, #FDF8EC, #FEF9F5)" },
-            { label: "Plano", title: "Plano AEE 2026 – Sala de Recurso", tag: "BNCC alinhado", bg: "linear-gradient(135deg, #F0F7FF, #FEF9F5)" }
-          ].map((sample, i) => (
-            <div key={i} className="sample-card bg-white rounded-md border-1.5 border-border overflow-hidden shadow-sm-custom relative h-[110px]">
-              <div className="p-4 flex flex-col justify-between h-full" style={{ background: sample.bg }}>
-                <span className="text-[10px] font-bold tracking-widest uppercase text-muted-foreground">{sample.label}</span>
-                <span className="text-[13px] font-semibold text-foreground leading-tight">{sample.title}</span>
-                <span className="inline-block text-[10px] font-semibold p-0.5 px-2 rounded-full bg-rose-pale text-rose-deep border border-rose-light self-start">{sample.tag}</span>
-              </div>
-              <div className="sample-watermark absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[11px] font-bold tracking-widest uppercase text-rose-deep/35 border-1.5 border-rose-deep/25 p-1 px-2.5 rounded-[6px] whitespace-nowrap">Amostra</div>
-            </div>
-          ))}
+        <div className="samples-carousel-container relative px-8 mb-8">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent>
+              {PlaceHolderImages.map((sample, index) => (
+                <CarouselItem key={index} className="basis-1/2 sm:basis-1/3">
+                  <div className="sample-card-item p-1">
+                    <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light transition-all">
+                      <Image
+                        src={sample.imageUrl}
+                        alt={sample.description}
+                        fill
+                        className="object-cover"
+                        data-ai-hint={sample.imageHint}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-3">
+                        <span className="text-[10px] text-white font-bold leading-tight">{sample.description}</span>
+                      </div>
+                      <div className="sample-watermark absolute top-4 left-4 -rotate-12 pointer-events-none">
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 border border-white/20 p-1 px-2 rounded-sm backdrop-blur-sm">
+                          AMOSTRA
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+            <CarouselNext className="right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
+          </Carousel>
         </div>
 
         <div className="section-divider flex items-center gap-2.5 my-10 mb-7">

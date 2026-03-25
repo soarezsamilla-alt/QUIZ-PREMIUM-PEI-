@@ -1,3 +1,76 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "sample-1",
+      "description": "Modelo de PEI para Autismo",
+      "imageUrl": "https://picsum.photos/seed/sample1/400/560",
+      "imageHint": "educational document"
+    },
+    {
+      "id": "sample-2",
+      "description": "Plano de AEE 2026",
+      "imageUrl": "https://picsum.photos/seed/sample2/400/560",
+      "imageHint": "lesson plan"
+    },
+    {
+      "id": "sample-3",
+      "description": "Ficha Individual de Aluno",
+      "imageUrl": "https://picsum.photos/seed/sample3/400/560",
+      "imageHint": "student report"
+    },
+    {
+      "id": "sample-4",
+      "description": "Planejamento TDAH",
+      "imageUrl": "https://picsum.photos/seed/sample4/400/560",
+      "imageHint": "teacher notes"
+    },
+    {
+      "id": "sample-5",
+      "description": "Atividades Inclusivas Alfabetização",
+      "imageUrl": "https://picsum.photos/seed/sample5/400/560",
+      "imageHint": "school activity"
+    },
+    {
+      "id": "sample-6",
+      "description": "Relatório Semestral AEE",
+      "imageUrl": "https://picsum.photos/seed/sample6/400/560",
+      "imageHint": "grading sheet"
+    },
+    {
+      "id": "sample-7",
+      "description": "Modelo PDPI Completo",
+      "imageUrl": "https://picsum.photos/seed/sample7/400/560",
+      "imageHint": "inclusive classroom"
+    },
+    {
+      "id": "sample-8",
+      "description": "Plano de Ensino Adaptado",
+      "imageUrl": "https://picsum.photos/seed/sample8/400/560",
+      "imageHint": "special education"
+    },
+    {
+      "id": "sample-9",
+      "description": "Checklist de Desenvolvimento",
+      "imageUrl": "https://picsum.photos/seed/sample9/400/560",
+      "imageHint": "alphabet chart"
+    },
+    {
+      "id": "sample-10",
+      "description": "Atividades Lúdicas BNCC",
+      "imageUrl": "https://picsum.photos/seed/sample10/400/560",
+      "imageHint": "math worksheet"
+    },
+    {
+      "id": "sample-11",
+      "description": "Guia de Adaptação Curricular",
+      "imageUrl": "https://picsum.photos/seed/sample11/400/560",
+      "imageHint": "reading log"
+    },
+    {
+      "id": "sample-12",
+      "description": "Cronograma de Atendimento AEE",
+      "imageUrl": "https://picsum.photos/seed/sample12/400/560",
+      "imageHint": "planner page"
+    }
+  ]
 }
