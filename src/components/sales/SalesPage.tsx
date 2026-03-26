@@ -288,12 +288,14 @@ export function SalesPage() {
             <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5 overflow-visible">
               <Timer />
               
-              <div className="text-[13px] text-muted-foreground mb-1">De</div>
-              <div className="text-lg text-muted-foreground line-through font-medium mb-0.5">R$ 227,90</div>
-              <div className="font-headline text-[52px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
-                <span className="text-2xl font-semibold mt-2 mr-1">R$</span>
+              <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
+                <span className="text-[13px]">De</span>
+                <span className="text-lg line-through font-medium">R$ 227,90</span>
+              </div>
+              <div className="font-headline text-[68px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
+                <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
                 18
-                <span className="text-lg font-semibold mt-2.5 ml-1">,90</span>
+                <span className="text-2xl font-semibold mt-4 ml-1">,90</span>
               </div>
               <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
               
