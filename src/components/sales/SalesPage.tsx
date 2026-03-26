@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -12,7 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import AutoScroll from "embla-carousel-auto-scroll";
 import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Timer } from "./Timer";
@@ -75,7 +76,7 @@ export function SalesPage() {
             Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano. Além de ser editáveis você consegue adaptar para qualquer faixa etária e qualquer formato exigido pela sua escola.
           </p>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-9 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
+          <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
             <a href="#preco">
               <span>Quero meus modelos!</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5">
@@ -102,9 +103,10 @@ export function SalesPage() {
                 loop: true,
               }}
               plugins={[
-                Autoplay({
-                  delay: 2500,
+                AutoScroll({
+                  speed: 1,
                   stopOnInteraction: false,
+                  stopOnMouseEnter: false,
                 }),
               ]}
               className="w-full"
