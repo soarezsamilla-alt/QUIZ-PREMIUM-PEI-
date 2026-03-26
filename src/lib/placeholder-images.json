@@ -1,5 +1,5 @@
 {
-  "placeholderImages": [
+  "sampleImages": [
     {
       "id": "sample-1",
       "description": "Modelo de PEI para Autismo",
@@ -59,18 +59,44 @@
       "description": "Atividades Lúdicas BNCC",
       "imageUrl": "https://image2url.com/r2/default/images/1774472682237-edf9d3a4-6388-4187-afe6-61dfd1471e19.jfif",
       "imageHint": "math worksheet"
+    }
+  ],
+  "bonusImages": [
+    {
+      "id": "bonus-1",
+      "description": "Plano Educacional PEI",
+      "imageUrl": "https://image2url.com/r2/default/images/1774482562183-612c3719-ffea-4c2a-ad56-ab68f7f3d1b9.png",
+      "imageHint": "bonus material"
     },
     {
-      "id": "sample-11",
-      "description": "Guia de Adaptação Curricular",
+      "id": "bonus-2",
+      "description": "Plano PDI e PEI",
+      "imageUrl": "https://image2url.com/r2/default/images/1774482768991-253e4e19-6b37-4f79-be5a-e7b4b5e35fe5.png",
+      "imageHint": "bonus material"
+    },
+    {
+      "id": "bonus-3",
+      "description": "Plano PEI 4 e 5 Anos",
+      "imageUrl": "https://image2url.com/r2/default/images/1774482868573-c794f231-a01c-46e7-82ee-88b43dd56775.png",
+      "imageHint": "bonus material"
+    },
+    {
+      "id": "bonus-4",
+      "description": "Plano PDPI",
+      "imageUrl": "https://image2url.com/r2/default/images/1774482953377-0310efeb-756a-47a3-886e-e82ef7549524.png",
+      "imageHint": "bonus material"
+    },
+    {
+      "id": "bonus-5",
+      "description": "Planejamento AEE 2026",
       "imageUrl": "https://image2url.com/r2/default/images/1774483019545-b6967337-cee9-4c5b-935a-4d3fe41cc05b.png",
-      "imageHint": "reading log"
+      "imageHint": "bonus material"
     },
     {
-      "id": "sample-12",
-      "description": "Cronograma de Atendimento AEE",
+      "id": "bonus-6",
+      "description": "Ficha Individual PEI",
       "imageUrl": "https://image2url.com/r2/default/images/1774483090537-527ef1f5-89d4-49b1-8028-6b747d48c40a.png",
-      "imageHint": "planner page"
+      "imageHint": "bonus material"
     }
   ],
   "testimonialImages": [

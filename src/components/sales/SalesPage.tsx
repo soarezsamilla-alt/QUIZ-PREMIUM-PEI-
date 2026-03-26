@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -13,7 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { PlaceHolderImages, TestimonialImages } from "@/lib/placeholder-images";
+import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 
 export function SalesPage() {
@@ -42,7 +43,6 @@ export function SalesPage() {
 
   return (
     <>
-      {/* Barra de Prova Social Fixa no Topo - Estilo com Cor Personalizada #2d1f36 */}
       <div className="fixed top-0 left-0 right-0 z-[999] bg-[#2d1f36] border-b border-white/5 shadow-sm py-2 px-4 flex justify-center items-center gap-2.5">
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shrink-0" />
@@ -54,14 +54,13 @@ export function SalesPage() {
       </div>
 
       <section id="sales-section" className="flex flex-col items-center animate-slide-up">
-        {/* HERO */}
         <div className="sales-hero w-full bg-gradient-to-br from-foreground via-[#4A2D5A] to-[#3A2048] p-12 px-6 pb-14 text-center relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-[30%] left-[20%] w-[70%] h-[60%] rounded-full bg-rose/18 blur-[80px]" />
             <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
           </div>
 
-          <div className="h-8" /> {/* Espaçador para a barra fixa */}
+          <div className="h-8" />
 
           <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-4.5">
             ✨ Material Completo Liberado
@@ -89,7 +88,6 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          {/* AMOSTRAS */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
           </h2>
@@ -105,9 +103,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-1">
-                {PlaceHolderImages.map((sample, index) => (
-                  <CarouselItem key={index} className="pl-1 basis-[60%] sm:basis-1/3">
+              <CarouselContent className="-ml-2">
+                {SampleImages.map((sample, index) => (
+                  <CarouselItem key={index} className="pl-2 basis-[60%] sm:basis-1/3">
                     <div className="sample-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -120,7 +118,6 @@ export function SalesPage() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
                           <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
-                        {/* Marca d'água centralizada, rotacionada e menor */}
                         <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
                           <span className="text-[14px] font-black tracking-[0.2em] uppercase text-white/90 bg-black/30 border-2 border-white/40 p-2 px-4 rounded-lg backdrop-blur-[2px] shadow-lg">
                             AMOSTRA
@@ -142,7 +139,6 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* O QUE VOCÊ RECEBE */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             O que você vai <em className="italic text-lilac-deep">receber hoje</em>
           </h2>
@@ -169,7 +165,6 @@ export function SalesPage() {
             ))}
           </div>
 
-          {/* BNCC */}
           <div className="bncc-wrap flex items-center gap-3.5 p-4.5 px-5 bg-gradient-to-br from-lilac-pale to-rose-pale border-1.5 border-lilac-light rounded-md my-6">
             <div className="w-[52px] h-[52px] rounded-full bg-gradient-to-br from-lilac-deep to-rose-deep flex items-center justify-center text-white text-[10px] font-extrabold text-center tracking-wider leading-tight shrink-0">BNCC<br />COMP.</div>
             <div>
@@ -184,7 +179,6 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* DEPOIMENTOS */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
           </h2>
@@ -200,9 +194,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-1">
+              <CarouselContent className="-ml-2">
                 {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-1 basis-[75%] sm:basis-1/2">
+                  <CarouselItem key={index} className="pl-2 basis-[75%] sm:basis-1/2">
                     <div className="testimonial-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -228,7 +222,6 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* BÔNUS */}
           <div className="bonus-section my-7">
             <div className="text-center mb-5">
               <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)]">
@@ -243,17 +236,16 @@ export function SalesPage() {
             </div>
             <div className="bonus-list flex flex-col gap-3">
               {[
-                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: PlaceHolderImages[6].imageUrl },
-                { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: PlaceHolderImages[7].imageUrl },
-                { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: PlaceHolderImages[8].imageUrl },
-                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: PlaceHolderImages[9].imageUrl },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: PlaceHolderImages[10].imageUrl },
-                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: PlaceHolderImages[11].imageUrl }
+                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
+                { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
+                { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
+                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
+                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
                 <div key={b.n} className="bonus-card flex items-center gap-4 p-3 pr-4 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
                   
-                  {/* Imagem do Bônus */}
                   <div className="relative w-16 h-20 rounded-md overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
                     <Image 
                       src={b.img} 
@@ -262,7 +254,6 @@ export function SalesPage() {
                       className="object-cover"
                       data-ai-hint="bonus material" 
                     />
-                    {/* Número do bônus como badge */}
                     <div className="absolute top-1 left-1 w-5 h-5 rounded-full bg-gold text-white text-[10px] font-black flex items-center justify-center shadow-md">
                       {b.n}
                     </div>
@@ -287,7 +278,6 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* TIMER + PREÇO */}
           <div id="preco" className="scroll-mt-6">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Garanta agora com <em className="italic text-lilac-deep">preço especial</em>
@@ -360,13 +350,11 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* FAQ */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Dúvidas <em className="italic text-lilac-deep">frequentes</em>
           </h2>
           <FaqSection />
 
-          {/* SEGURANÇA */}
           <div className="security-box bg-gradient-to-br from-lilac-pale to-gold-pale border-1.5 border-lilac-light rounded-md p-5 my-6 text-center">
             <div className="text-[15px] font-bold text-foreground mb-2">🔐 Compra 100% segura</div>
             <p className="text-[13px] text-foreground/80 leading-relaxed mb-3.5">
