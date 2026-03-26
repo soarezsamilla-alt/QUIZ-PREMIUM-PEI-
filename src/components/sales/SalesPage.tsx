@@ -127,7 +127,7 @@ export function SalesPage() {
                           <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
                         <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                          <span className="text-[14px] font-black tracking-[0.2em] uppercase text-white/90 bg-black/30 border-2 border-white/40 p-2 px-4 rounded-lg backdrop-blur-[2px] shadow-lg">
+                          <span className="text-[11px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-[1.5px] border-white/40 p-1.5 px-3 rounded-md shadow-lg backdrop-blur-[1px]">
                             AMOSTRA
                           </span>
                         </div>
@@ -177,55 +177,6 @@ export function SalesPage() {
               <div className="text-[13px] font-bold text-foreground mb-0.5">Compatível com a BNCC</div>
               <div className="text-[12px] text-muted-foreground leading-relaxed">Atividades e planejamentos baseados nas diretrizes nacionais, prontos para uso imediato em sala de aula.</div>
             </div>
-          </div>
-
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
-          </div>
-
-          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-            Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
-          </h2>
-          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-            Veja o que professoras que já utilizam estão dizendo
-          </p>
-
-          <div className="testimonials-carousel-container relative px-4 mb-8">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-1.5">
-                {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
-                    <div className="testimonial-card-item p-1">
-                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
-                        <Image
-                          src={testimonial.imageUrl}
-                          alt={testimonial.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={testimonial.imageHint}
-                        />
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-[-20px] sm:left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
-              <CarouselNext className="right-[-20px] sm:right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
-            </Carousel>
-          </div>
-
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
           <div className="bonus-section my-7">
@@ -284,6 +235,49 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
+          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+            Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
+          </h2>
+          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+            Veja o que professoras que já utilizam estão dizendo
+          </p>
+
+          <div className="testimonials-carousel-container relative px-4 mb-8">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-1.5">
+                {TestimonialImages.map((testimonial, index) => (
+                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
+                    <div className="testimonial-card-item p-1">
+                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
+                        <Image
+                          src={testimonial.imageUrl}
+                          alt={testimonial.description}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={testimonial.imageHint}
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+              <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+            </Carousel>
+          </div>
+
+          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <span className="text-base opacity-60">✦</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
+          </div>
+
           <div id="preco" className="scroll-mt-6">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Garanta agora com <em className="italic text-lilac-deep">preço especial</em>
@@ -296,7 +290,7 @@ export function SalesPage() {
               <Timer />
               
               <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
-                <span className="text-[16px] font-medium line-through decoration-rose-deep/70 decoration-[1.5px]">De R$ 227,90</span>
+                <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 227,90</span>
               </div>
               <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
                 <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
