@@ -40,7 +40,15 @@ export function Timer() {
 
   return (
     <div className="w-[calc(100%+3rem)] bg-[#2d1f36] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-8 -mx-6 mb-7 border-b border-black/10 shadow-sm">
-      {/* Temporalizador (Números) na frente */}
+      {/* Nome (Texto) antes */}
+      <div className="flex items-center gap-1.5 shrink-0">
+        <Clock size={14} strokeWidth={3} className="animate-pulse text-white/90" />
+        <span className="text-[10px] font-black uppercase tracking-tight leading-none text-left opacity-95">
+          A oferta expira em
+        </span>
+      </div>
+
+      {/* Temporalizador (Números) depois */}
       <div className="flex items-center gap-1 shrink-0">
         <div className="bg-white text-[#2d1f36] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
           {format(timeLeft.hours)}
@@ -53,14 +61,6 @@ export function Timer() {
         <div className="bg-white text-[#2d1f36] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
           {format(timeLeft.seconds)}
         </div>
-      </div>
-
-      {/* Nome (Texto) depois */}
-      <div className="flex items-center gap-1.5 overflow-hidden">
-        <Clock size={14} strokeWidth={3} className="animate-pulse text-white/90 shrink-0" />
-        <span className="text-[10px] font-black uppercase tracking-tight leading-none text-left opacity-95">
-          A oferta expira em
-        </span>
       </div>
     </div>
   );
