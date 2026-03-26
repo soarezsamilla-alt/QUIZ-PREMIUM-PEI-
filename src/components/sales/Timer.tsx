@@ -39,32 +39,28 @@ export function Timer() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="w-full bg-[#CC0000] text-white py-4 px-4 rounded-t-xl flex flex-col items-center gap-2 -mt-8 -mx-6 mb-8 w-[calc(100%+3rem)]">
-      <div className="flex items-center gap-2 text-[13px] font-black uppercase tracking-wider">
-        <Clock size={16} strokeWidth={3} className="animate-pulse" />
-        <span>A oferta expira em:</span>
+    <div className="w-[calc(100%+3rem)] bg-[#CC0000] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-8 -mx-6 mb-7 border-b border-black/10 shadow-sm">
+      {/* Temporalizador (Números) na frente */}
+      <div className="flex items-center gap-1 shrink-0">
+        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+          {format(timeLeft.hours)}
+        </div>
+        <span className="font-bold text-white/50 text-sm">:</span>
+        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+          {format(timeLeft.minutes)}
+        </div>
+        <span className="font-bold text-white/50 text-sm">:</span>
+        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+          {format(timeLeft.seconds)}
+        </div>
       </div>
-      <div className="flex items-center gap-3">
-        <div className="flex flex-col items-center gap-1">
-          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
-            {format(timeLeft.hours)}
-          </div>
-          <span className="text-[9px] font-bold uppercase opacity-80">horas</span>
-        </div>
-        <span className="text-xl font-black mb-5 text-white/50">:</span>
-        <div className="flex flex-col items-center gap-1">
-          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
-            {format(timeLeft.minutes)}
-          </div>
-          <span className="text-[9px] font-bold uppercase opacity-80">min</span>
-        </div>
-        <span className="text-xl font-black mb-5 text-white/50">:</span>
-        <div className="flex flex-col items-center gap-1">
-          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
-            {format(timeLeft.seconds)}
-          </div>
-          <span className="text-[9px] font-bold uppercase opacity-80">seg</span>
-        </div>
+
+      {/* Nome (Texto) depois */}
+      <div className="flex items-center gap-1.5 overflow-hidden">
+        <Clock size={14} strokeWidth={3} className="animate-pulse text-white/90 shrink-0" />
+        <span className="text-[10px] font-black uppercase tracking-tight leading-none text-left opacity-95">
+          A oferta expira em
+        </span>
       </div>
     </div>
   );
