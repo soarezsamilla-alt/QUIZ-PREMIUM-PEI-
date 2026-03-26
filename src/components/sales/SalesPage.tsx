@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -246,7 +245,7 @@ export function SalesPage() {
                 <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
                   
-                  <div className="relative w-28 h-36 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
+                  <div className="relative w-24 h-32 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
                     <Image 
                       src={b.img} 
                       alt={b.name} 
