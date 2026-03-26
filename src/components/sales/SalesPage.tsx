@@ -294,7 +294,7 @@ export function SalesPage() {
               <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
                 <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
                 18
-                <span className="text-2xl font-semibold mt-4 ml-1">,90</span>
+                <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
               </div>
               <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
               
