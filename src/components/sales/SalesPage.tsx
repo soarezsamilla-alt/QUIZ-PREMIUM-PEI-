@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Timer } from "./Timer";
@@ -100,6 +101,12 @@ export function SalesPage() {
                 align: "start",
                 loop: true,
               }}
+              plugins={[
+                Autoplay({
+                  delay: 2500,
+                  stopOnInteraction: false,
+                }),
+              ]}
               className="w-full"
             >
               <CarouselContent className="-ml-1.5">
@@ -333,7 +340,7 @@ export function SalesPage() {
                 ))}
               </div>
 
-              <Button className="w-full h-auto p-5 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
+              <Button className="w-full h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
                 🔓 Liberar meu acesso agora
               </Button>
               <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
