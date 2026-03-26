@@ -355,12 +355,14 @@ export function SalesPage() {
             </div>
 
             <div className="mt-14 mb-10 text-center animate-slide-up">
-              <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
+              <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-5">
                 Como vou <em className="italic text-lilac-deep">receber meu material?</em>
               </h2>
-              <p className="section-sub text-[15px] text-muted-foreground leading-relaxed max-w-[440px] mx-auto">
-                Clicando no botão, você será redirecionado para a página de pagamento, e após confirmação receberá acesso imediato no seu E-mail ou WhatsApp.
-              </p>
+              <div className="bg-white border-2 border-dashed border-lilac-light rounded-2xl p-6 shadow-sm-custom max-w-[500px] mx-auto">
+                <p className="text-[15px] text-foreground leading-relaxed">
+                  Clicando no botão, você será redirecionado para a página de pagamento, e após confirmação receberá acesso imediato no seu <strong className="text-rose-deep font-bold">E-mail ou WhatsApp</strong>.
+                </p>
+              </div>
             </div>
           </div>
 
