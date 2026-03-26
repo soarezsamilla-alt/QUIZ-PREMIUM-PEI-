@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -127,7 +126,7 @@ export function SalesPage() {
                           <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
                         <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                          <span className="text-[11px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-[1.5px] border-white/40 p-1.5 px-3 rounded-md shadow-lg backdrop-blur-[1px]">
+                          <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-[1.5px] border-white/40 p-1 px-2 rounded-md shadow-lg backdrop-blur-[1px]">
                             AMOSTRA
                           </span>
                         </div>
@@ -141,7 +140,7 @@ export function SalesPage() {
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
@@ -220,7 +219,7 @@ export function SalesPage() {
                     <div className="text-base font-bold text-foreground leading-tight mb-1.5">{b.name}</div>
                     <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
                     <div className="mt-2.5 flex items-center gap-2">
-                      <div className="text-[16px] text-muted-foreground line-through">R$ 37,90</div>
+                      <div className="text-[16px] text-muted-foreground line-through font-bold decoration-rose-deep/70 decoration-[1.5px]">R$ 37,90</div>
                       <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
                     </div>
                   </div>
@@ -231,7 +230,7 @@ export function SalesPage() {
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
@@ -274,7 +273,7 @@ export function SalesPage() {
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
@@ -393,7 +392,7 @@ export function SalesPage() {
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-base opacity-60">✦</span>
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
