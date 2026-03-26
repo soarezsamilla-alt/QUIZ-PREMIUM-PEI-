@@ -333,7 +333,7 @@ export function SalesPage() {
                 ))}
               </div>
 
-              <Button className="w-full h-auto p-5 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide">
+              <Button className="w-full h-auto p-5 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
                 🔓 Liberar meu acesso agora
               </Button>
               <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
