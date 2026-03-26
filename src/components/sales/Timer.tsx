@@ -39,18 +39,18 @@ export function Timer() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="w-[calc(100%+3rem)] bg-[#CC0000] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-8 -mx-6 mb-7 border-b border-black/10 shadow-sm">
+    <div className="w-[calc(100%+3rem)] bg-[#2d1f36] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-8 -mx-6 mb-7 border-b border-black/10 shadow-sm">
       {/* Temporalizador (Números) na frente */}
       <div className="flex items-center gap-1 shrink-0">
-        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+        <div className="bg-white text-[#2d1f36] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
           {format(timeLeft.hours)}
         </div>
         <span className="font-bold text-white/50 text-sm">:</span>
-        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+        <div className="bg-white text-[#2d1f36] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
           {format(timeLeft.minutes)}
         </div>
         <span className="font-bold text-white/50 text-sm">:</span>
-        <div className="bg-white text-[#CC0000] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
+        <div className="bg-white text-[#2d1f36] rounded-md w-8 h-8 flex items-center justify-center font-black text-base shadow-sm tabular-nums">
           {format(timeLeft.seconds)}
         </div>
       </div>
