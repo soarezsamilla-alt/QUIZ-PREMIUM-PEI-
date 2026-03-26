@@ -295,7 +295,17 @@ export function SalesPage() {
                 18
                 <span className="text-lg font-semibold mt-2.5 ml-1">,90</span>
               </div>
-              <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-5">Pagamento único</div>
+              <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
+              
+              <div className="relative w-full h-8 mb-6">
+                <Image 
+                  src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
+                  alt="Formas de pagamento"
+                  fill
+                  className="object-contain"
+                  data-ai-hint="payment methods"
+                />
+              </div>
 
               <div className="price-items text-left mb-6 flex flex-col gap-2">
                 {[
