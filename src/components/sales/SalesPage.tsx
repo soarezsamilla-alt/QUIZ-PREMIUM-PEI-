@@ -230,7 +230,7 @@ export function SalesPage() {
 
           <div className="bonus-section my-7">
             <div className="text-center mb-5">
-              <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)]">
+              <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
                 🎁 Bônus exclusivos
               </div>
               <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
