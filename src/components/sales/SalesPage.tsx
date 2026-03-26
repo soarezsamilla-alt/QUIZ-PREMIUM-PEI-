@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Users } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Users, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -376,6 +376,31 @@ export function SalesPage() {
             Dúvidas <em className="italic text-lilac-deep">frequentes</em>
           </h2>
           <FaqSection />
+
+          <div className="guarantee-section my-12 animate-slide-up">
+            <div className="bg-white border-2 border-gold-light rounded-3xl p-8 shadow-lg-custom relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
+              <div className="flex flex-col sm:flex-row items-center gap-8 relative z-10">
+                <div className="shrink-0">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-gold to-gold-deep flex items-center justify-center text-white shadow-xl border-4 border-white">
+                    <div className="text-center">
+                      <div className="text-2xl sm:text-3xl font-black leading-none">7</div>
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Dias</div>
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Garantia</div>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center sm:text-left">
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-foreground mb-3 flex items-center justify-center sm:justify-start gap-2">
+                    Garantia de 7 dias <Award className="text-gold" size={24} />
+                  </h3>
+                  <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
+                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div className="security-box bg-gradient-to-br from-lilac-pale to-gold-pale border-1.5 border-lilac-light rounded-md p-5 my-6 text-center">
             <div className="text-[15px] font-bold text-foreground mb-2">🔐 Compra 100% segura</div>
