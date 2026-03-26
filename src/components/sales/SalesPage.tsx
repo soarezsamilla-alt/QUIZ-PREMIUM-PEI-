@@ -296,7 +296,7 @@ export function SalesPage() {
               <Timer />
               
               <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
-                <span className="text-[13px] font-medium">De R$ 227,90</span>
+                <span className="text-[13px] font-medium line-through decoration-rose-deep/70 decoration-[1.5px]">De R$ 227,90</span>
               </div>
               <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
                 <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
