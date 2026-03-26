@@ -362,6 +362,13 @@ export function SalesPage() {
           </div>
 
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+            Como vou <em className="italic text-lilac-deep">receber meu material?</em>
+          </h2>
+          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+            Clicando no botão, você será redirecionado para a página de pagamento, e após confirmação receberá acesso imediato no seu E-mail ou WhatsApp.
+          </p>
+
+          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Dúvidas <em className="italic text-lilac-deep">frequentes</em>
           </h2>
           <FaqSection />
