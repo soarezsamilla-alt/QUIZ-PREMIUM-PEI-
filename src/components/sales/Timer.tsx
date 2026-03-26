@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import { Clock } from "lucide-react";
 
 export function Timer() {
   const [timeLeft, setTimeLeft] = useState({
@@ -10,7 +11,6 @@ export function Timer() {
   });
 
   useEffect(() => {
-    // Evita erros de hidratação garantindo que o tempo inicial seja consistente
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         let { hours, minutes, seconds } = prev;
@@ -39,30 +39,31 @@ export function Timer() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="timer-container bg-rose-pale border border-rose-light/50 rounded-2xl p-4 mb-6 animate-pulse">
-      <div className="text-[11px] font-black uppercase tracking-[0.15em] text-rose-deep mb-2">
-        ⏳ Oferta expira em:
+    <div className="w-full bg-[#CC0000] text-white py-4 px-4 rounded-t-xl flex flex-col items-center gap-2 -mt-8 -mx-6 mb-8 w-[calc(100%+3rem)]">
+      <div className="flex items-center gap-2 text-[13px] font-black uppercase tracking-wider">
+        <Clock size={16} strokeWidth={3} className="animate-pulse" />
+        <span>A oferta expira em:</span>
       </div>
-      <div className="flex justify-center items-center gap-3">
-        <div className="flex flex-col items-center">
-          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+      <div className="flex items-center gap-3">
+        <div className="flex flex-col items-center gap-1">
+          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
             {format(timeLeft.hours)}
-          </span>
-          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">horas</span>
+          </div>
+          <span className="text-[9px] font-bold uppercase opacity-80">horas</span>
         </div>
-        <span className="text-xl font-black text-rose-deep/30 mb-4">:</span>
-        <div className="flex flex-col items-center">
-          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+        <span className="text-xl font-black mb-5 text-white/50">:</span>
+        <div className="flex flex-col items-center gap-1">
+          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
             {format(timeLeft.minutes)}
-          </span>
-          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">min</span>
+          </div>
+          <span className="text-[9px] font-bold uppercase opacity-80">min</span>
         </div>
-        <span className="text-xl font-black text-rose-deep/30 mb-4">:</span>
-        <div className="flex flex-col items-center">
-          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+        <span className="text-xl font-black mb-5 text-white/50">:</span>
+        <div className="flex flex-col items-center gap-1">
+          <div className="bg-white text-[#CC0000] rounded-lg w-12 h-12 flex items-center justify-center font-black text-2xl shadow-inner tabular-nums">
             {format(timeLeft.seconds)}
-          </span>
-          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">seg</span>
+          </div>
+          <span className="text-[9px] font-bold uppercase opacity-80">seg</span>
         </div>
       </div>
     </div>

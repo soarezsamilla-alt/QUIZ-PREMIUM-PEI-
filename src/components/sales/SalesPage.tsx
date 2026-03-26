@@ -285,12 +285,12 @@ export function SalesPage() {
               Aproveite e tenha acesso a PEIs prontos para impressionar sua coordenação
             </p>
 
-            <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5">
+            <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5 overflow-visible">
               <Timer />
               
               <div className="text-[13px] text-muted-foreground mb-1">De</div>
               <div className="text-lg text-muted-foreground line-through font-medium mb-0.5">R$ 227,90</div>
-              <div className="font-headline text-[52px] font-bold text-foreground leading-none mb-1 flex justify-center items-start">
+              <div className="font-headline text-[52px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
                 <span className="text-2xl font-semibold mt-2 mr-1">R$</span>
                 18
                 <span className="text-lg font-semibold mt-2.5 ml-1">,90</span>
