@@ -136,8 +136,6 @@ export function SalesPage() {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-[-20px] sm:left-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
-              <CarouselNext className="right-[-20px] sm:right-[-35px] border-lilac-light text-lilac-deep bg-lilac-pale hover:bg-lilac-light" />
             </Carousel>
           </div>
 
