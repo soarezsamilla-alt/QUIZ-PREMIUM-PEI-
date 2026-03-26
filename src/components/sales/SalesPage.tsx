@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Timer } from "./Timer";
 import { FaqSection } from "./FaqSection";
 import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -284,8 +283,6 @@ export function SalesPage() {
             <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed">
               Aproveite e tenha acesso a PEIs prontos para impressionar sua coordenação
             </p>
-
-            <Timer />
 
             <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5">
               <div className="text-[13px] text-muted-foreground mb-1">De</div>
