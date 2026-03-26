@@ -103,9 +103,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-2">
+              <CarouselContent className="-ml-1.5">
                 {SampleImages.map((sample, index) => (
-                  <CarouselItem key={index} className="pl-2 basis-[60%] sm:basis-1/3">
+                  <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                     <div className="sample-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -194,9 +194,9 @@ export function SalesPage() {
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-2">
+              <CarouselContent className="-ml-1.5">
                 {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-2 basis-[75%] sm:basis-1/2">
+                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
                     <div className="testimonial-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
                         <Image
@@ -243,10 +243,10 @@ export function SalesPage() {
                 { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
-                <div key={b.n} className="bonus-card flex items-center gap-4 p-3 pr-4 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
+                <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
                   
-                  <div className="relative w-16 h-20 rounded-md overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
+                  <div className="relative w-28 h-36 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
                     <Image 
                       src={b.img} 
                       alt={b.name} 
@@ -254,18 +254,18 @@ export function SalesPage() {
                       className="object-cover"
                       data-ai-hint="bonus material" 
                     />
-                    <div className="absolute top-1 left-1 w-5 h-5 rounded-full bg-gold text-white text-[10px] font-black flex items-center justify-center shadow-md">
+                    <div className="absolute top-1.5 left-1.5 w-6 h-6 rounded-full bg-gold text-white text-[11px] font-black flex items-center justify-center shadow-md border border-white/20">
                       {b.n}
                     </div>
                   </div>
 
                   <div className="flex-1">
-                    <div className="text-sm font-semibold text-foreground leading-tight">{b.name}</div>
-                    <div className="text-[12px] text-muted-foreground leading-normal line-clamp-2">{b.desc}</div>
-                  </div>
-                  <div className="text-right shrink-0 ml-2">
-                    <div className="text-[11px] text-muted-foreground line-through">R$ 37,90</div>
-                    <div className="text-[13px] font-bold text-rose-deep">GRÁTIS</div>
+                    <div className="text-base font-bold text-foreground leading-tight mb-1.5">{b.name}</div>
+                    <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
+                    <div className="mt-2.5 flex items-center gap-2">
+                      <div className="text-[12px] text-muted-foreground line-through">R$ 37,90</div>
+                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
+                    </div>
                   </div>
                 </div>
               ))}
