@@ -42,8 +42,8 @@ export function Timer() {
     <div className="w-[calc(100%+3rem)] bg-[#2d1f36] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-8 -mx-6 mb-7 border-b border-black/10 shadow-sm">
       {/* Nome (Texto) antes */}
       <div className="flex items-center gap-1.5 shrink-0">
-        <Clock size={14} strokeWidth={3} className="animate-pulse text-white/90" />
-        <span className="text-[10px] font-black uppercase tracking-tight leading-none text-left opacity-95">
+        <Clock size={14} strokeWidth={3} className="animate-pulse text-[#FF0000]" />
+        <span className="text-[10px] font-black uppercase tracking-tight leading-none text-left text-[#FF0000]">
           A oferta expira em
         </span>
       </div>
