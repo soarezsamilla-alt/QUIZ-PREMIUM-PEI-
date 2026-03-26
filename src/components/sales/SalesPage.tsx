@@ -14,6 +14,7 @@ import {
 } from "@/components/ui/carousel";
 import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
+import { Timer } from "./Timer";
 
 export function SalesPage() {
   const [visitors, setVisitors] = useState(8);
@@ -285,6 +286,8 @@ export function SalesPage() {
             </p>
 
             <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5">
+              <Timer />
+              
               <div className="text-[13px] text-muted-foreground mb-1">De</div>
               <div className="text-lg text-muted-foreground line-through font-medium mb-0.5">R$ 227,90</div>
               <div className="font-headline text-[52px] font-bold text-foreground leading-none mb-1 flex justify-center items-start">

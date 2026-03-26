@@ -5,11 +5,12 @@ import React, { useState, useEffect } from "react";
 export function Timer() {
   const [timeLeft, setTimeLeft] = useState({
     hours: 23,
-    minutes: 57,
-    seconds: 44,
+    minutes: 59,
+    seconds: 59,
   });
 
   useEffect(() => {
+    // Evita erros de hidratação garantindo que o tempo inicial seja consistente
     const timer = setInterval(() => {
       setTimeLeft((prev) => {
         let { hours, minutes, seconds } = prev;
@@ -38,37 +39,31 @@ export function Timer() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="timer-strip bg-gradient-to-br from-foreground to-[#4A2D5A] rounded-md p-4 px-5 flex items-center justify-between gap-3 my-7 shadow-md-custom">
-      <div className="flex flex-col gap-1">
-        <div className="timer-label text-[11px] font-bold tracking-[0.1em] uppercase text-white/60">
-          ⏱ Oferta expira em
-        </div>
-        <div className="timer-digits flex gap-1.5 items-center">
-          <div className="timer-unit text-center">
-            <span className="timer-num font-headline text-[22px] font-bold text-white bg-white/10 px-2.5 py-1 rounded-[6px] block min-w-[40px]">
-              {format(timeLeft.hours)}
-            </span>
-            <div className="timer-text text-[10px] text-white/50 mt-1">horas</div>
-          </div>
-          <span className="timer-sep text-lg text-rose-light font-bold mb-5">:</span>
-          <div className="timer-unit text-center">
-            <span className="timer-num font-headline text-[22px] font-bold text-white bg-white/10 px-2.5 py-1 rounded-[6px] block min-w-[40px]">
-              {format(timeLeft.minutes)}
-            </span>
-            <div className="timer-text text-[10px] text-white/50 mt-1">min</div>
-          </div>
-          <span className="timer-sep text-lg text-rose-light font-bold mb-5">:</span>
-          <div className="timer-unit text-center">
-            <span className="timer-num font-headline text-[22px] font-bold text-white bg-white/10 px-2.5 py-1 rounded-[6px] block min-w-[40px]">
-              {format(timeLeft.seconds)}
-            </span>
-            <div className="timer-text text-[10px] text-white/50 mt-1">seg</div>
-          </div>
-        </div>
+    <div className="timer-container bg-rose-pale border border-rose-light/50 rounded-2xl p-4 mb-6 animate-pulse">
+      <div className="text-[11px] font-black uppercase tracking-[0.15em] text-rose-deep mb-2">
+        ⏳ Oferta expira em:
       </div>
-      <div className="text-right">
-        <div className="text-[11px] text-white/50 mb-1">Economize</div>
-        <div className="text-xl font-bold text-gold-light">R$ 209,00</div>
+      <div className="flex justify-center items-center gap-3">
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+            {format(timeLeft.hours)}
+          </span>
+          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">horas</span>
+        </div>
+        <span className="text-xl font-black text-rose-deep/30 mb-4">:</span>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+            {format(timeLeft.minutes)}
+          </span>
+          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">min</span>
+        </div>
+        <span className="text-xl font-black text-rose-deep/30 mb-4">:</span>
+        <div className="flex flex-col items-center">
+          <span className="text-2xl font-black text-rose-deep tabular-nums leading-none">
+            {format(timeLeft.seconds)}
+          </span>
+          <span className="text-[9px] font-bold uppercase text-rose-deep/60 mt-1">seg</span>
+        </div>
       </div>
     </div>
   );
