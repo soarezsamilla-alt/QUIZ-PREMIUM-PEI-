@@ -89,6 +89,20 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
+          {/* Social Proof Badge element added below hero */}
+          <div className="social-proof-badge flex items-center justify-center gap-2.5 mb-5 animate-slide-up">
+            <div className="flex -space-x-2">
+              <div className="w-6 h-6 rounded-full bg-[#FF70A6] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">M</div>
+              <div className="w-6 h-6 rounded-full bg-[#42A5F5] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">A</div>
+              <div className="w-6 h-6 rounded-full bg-[#FFD670] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">P</div>
+              <div className="w-6 h-6 rounded-full bg-[#4ADE80] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">C</div>
+              <div className="w-6 h-6 rounded-full bg-[#B89FD4] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">L</div>
+            </div>
+            <p className="text-[13px] text-muted-foreground font-medium">
+              <span className="text-foreground font-bold tracking-tight">+9.500 professoras</span> já aprovaram
+            </p>
+          </div>
+
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
           </h2>
