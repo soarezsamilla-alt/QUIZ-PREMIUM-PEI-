@@ -13,8 +13,11 @@ interface QuizStepProps {
 export function QuizStep({ step, selectedOption, onSelect }: QuizStepProps) {
   return (
     <div className="quiz-card-inner p-9 pb-8 animate-slide-up">
-      <div className="quiz-tag inline-flex items-center gap-2 text-[11px] font-semibold tracking-widest uppercase text-rose-deep bg-rose-pale border border-rose-light px-3 py-1 rounded-full mb-4">
-        <span className="w-1.5 h-1.5 rounded-full bg-rose"></span>
+      <div className="quiz-tag inline-flex items-center gap-2.5 text-[11px] font-semibold tracking-widest uppercase text-rose-deep bg-rose-pale border border-rose-light px-3 py-1 rounded-full mb-4 shadow-[0_0_15px_rgba(232,131,154,0.2)]">
+        <div className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-rose"></span>
+        </div>
         {step.tag}
       </div>
       <h2 className="quiz-question font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
