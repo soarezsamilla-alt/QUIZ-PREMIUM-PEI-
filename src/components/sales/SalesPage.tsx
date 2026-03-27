@@ -126,7 +126,7 @@ export function SalesPage() {
                           <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                         </div>
                         <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                          <span className="text-[9px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-[1.5px] border-white/40 p-1 px-2 rounded-md shadow-lg backdrop-blur-[1px]">
+                          <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
                             AMOSTRA
                           </span>
                         </div>
@@ -289,11 +289,11 @@ export function SalesPage() {
               <Timer />
               
               <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
-                <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 227,90</span>
+                <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
               </div>
               <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
                 <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                18
+                19
                 <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
               </div>
               <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
