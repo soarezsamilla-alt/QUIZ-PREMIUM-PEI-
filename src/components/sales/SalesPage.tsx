@@ -16,6 +16,7 @@ import AutoScroll from "embla-carousel-auto-scroll";
 import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Timer } from "./Timer";
+import { PurchaseNotification } from "./PurchaseNotification";
 
 export function SalesPage() {
   const [visitors, setVisitors] = useState(8);
@@ -219,7 +220,7 @@ export function SalesPage() {
                     <div className="text-base font-bold text-foreground leading-tight mb-1.5">{b.name}</div>
                     <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
                     <div className="mt-2.5 flex items-center gap-2">
-                      <div className="text-[16px] text-muted-foreground line-through font-bold decoration-rose-deep/70 decoration-[1.5px]">R$ 37,90</div>
+                      <div className="text-[16px] font-bold text-muted-foreground line-through decoration-rose-deep decoration-[2px]">R$ 37,90</div>
                       <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
                     </div>
                   </div>
@@ -427,6 +428,9 @@ export function SalesPage() {
           <div className="h-10" />
         </div>
       </section>
+      
+      {/* Sistema de notificações de vendas em tempo real */}
+      <PurchaseNotification />
     </>
   );
 }
