@@ -296,7 +296,7 @@ export function SalesPage() {
                 <div className="w-6 h-6 rounded-full bg-[#B89FD4] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">L</div>
               </div>
               <p className="text-[13px] text-muted-foreground font-medium">
-                <span className="text-foreground font-bold tracking-tight">+9.500 professoras</span> já aprovaram
+                <span className="text-foreground font-bold tracking-tight">+1.500 professoras</span> já aprovaram
               </p>
             </div>
 
