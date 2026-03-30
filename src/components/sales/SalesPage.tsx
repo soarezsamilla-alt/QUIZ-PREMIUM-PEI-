@@ -286,35 +286,6 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          <div className="teacher-section my-10 animate-slide-up">
-            <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-4 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
-              <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
-              <div className="flex flex-col items-center text-center relative z-10">
-                <div className="relative w-16 h-16 mb-3">
-                  <div className="absolute inset-0 bg-gradient-to-br from-rose to-lilac-deep rounded-full animate-pulse opacity-20 scale-110" />
-                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
-                    <Image 
-                      src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
-                      alt="Professora Luciana"
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <h3 className="font-headline text-lg font-bold text-foreground mb-1">
-                  Uma Professora que te Entende
-                </h3>
-                <p className="text-[13px] text-rose-deep font-semibold italic mb-2 max-w-[340px]">
-                  "Eu sei como é virar noites planejando. Criei estes modelos para que você tenha mais tempo para o que realmente importa: seus alunos."
-                </p>
-                <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
-                <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
-                </p>
-              </div>
-            </div>
-          </div>
-
           <div id="preco" className="scroll-mt-6">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Garanta agora com <em className="italic text-lilac-deep">preço especial</em>
@@ -405,39 +376,68 @@ export function SalesPage() {
                 <CheckCircle2 size={13} /> 100% atualizado
               </div>
             </div>
+          </div>
 
-            <div className="mt-14 mb-10 text-center animate-slide-up">
-              <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-5">
-                Como vou <em className="italic text-lilac-deep">receber meu material?</em>
-              </h2>
-              <div className="bg-white border-2 border-dashed border-lilac-light rounded-2xl p-6 shadow-sm-custom max-w-[500px] mx-auto">
-                <p className="text-[15px] text-foreground leading-relaxed">
-                  Clicando no botão, você será redirecionado para a página de pagamento, e após confirmação receberá acesso imediato no seu <strong className="text-rose-deep font-bold">E-mail ou WhatsApp</strong>.
+          <div className="teacher-section my-10 animate-slide-up">
+            <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-4 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
+              <div className="flex flex-col items-center text-center relative z-10">
+                <div className="relative w-16 h-16 mb-3">
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose to-lilac-deep rounded-full animate-pulse opacity-20 scale-110" />
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
+                    <Image 
+                      src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
+                      alt="Professora Luciana"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <h3 className="font-headline text-lg font-bold text-foreground mb-1">
+                  Uma Professora que te Entende
+                </h3>
+                <p className="text-[13px] text-rose-deep font-semibold italic mb-2 max-w-[340px]">
+                  "Eu sei como é virar noites planejando. Criei estes modelos para que você tenha mais tempo para o que realmente importa: seus alunos."
+                </p>
+                <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
+                <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
+                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="guarantee-section my-12 animate-slide-up">
-              <div className="bg-white border-2 border-gold-light rounded-3xl p-8 shadow-lg-custom relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
-                <div className="flex flex-col sm:flex-row items-center gap-8 relative z-10">
-                  <div className="shrink-0">
-                    <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-gold to-gold-deep flex items-center justify-center text-white shadow-xl border-4 border-white">
-                      <div className="text-center">
-                        <div className="text-2xl sm:text-3xl font-black leading-none">7</div>
-                        <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Dias</div>
-                        <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Garantia</div>
-                      </div>
+          <div className="mt-14 mb-10 text-center animate-slide-up">
+            <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-5">
+              Como vou <em className="italic text-lilac-deep">receber meu material?</em>
+            </h2>
+            <div className="bg-white border-2 border-dashed border-lilac-light rounded-2xl p-6 shadow-sm-custom max-w-[500px] mx-auto">
+              <p className="text-[15px] text-foreground leading-relaxed">
+                Clicando no botão, você será redirecionado para a página de pagamento, e após confirmação receberá acesso imediato no seu <strong className="text-rose-deep font-bold">E-mail ou WhatsApp</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div className="guarantee-section my-12 animate-slide-up">
+            <div className="bg-white border-2 border-gold-light rounded-3xl p-8 shadow-lg-custom relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
+              <div className="flex flex-col sm:flex-row items-center gap-8 relative z-10">
+                <div className="shrink-0">
+                  <div className="w-24 h-24 sm:w-32 sm:h-32 rounded-full bg-gradient-to-br from-gold to-gold-deep flex items-center justify-center text-white shadow-xl border-4 border-white">
+                    <div className="text-center">
+                      <div className="text-2xl sm:text-3xl font-black leading-none">7</div>
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Dias</div>
+                      <div className="text-[10px] sm:text-xs font-bold uppercase tracking-tighter">Garantia</div>
                     </div>
                   </div>
-                  <div className="text-center sm:text-left">
-                    <h3 className="font-headline text-xl sm:text-2xl font-bold text-foreground mb-3 flex items-center justify-center sm:justify-start gap-2">
-                      Garantia de 7 dias <Award className="text-gold" size={24} />
-                    </h3>
-                    <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                      Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
-                    </p>
-                  </div>
+                </div>
+                <div className="text-center sm:text-left">
+                  <h3 className="font-headline text-xl sm:text-2xl font-bold text-foreground mb-3 flex items-center justify-center sm:justify-start gap-2">
+                    Garantia de 7 dias <Award className="text-gold" size={24} />
+                  </h3>
+                  <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
+                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
+                  </p>
                 </div>
               </div>
             </div>
