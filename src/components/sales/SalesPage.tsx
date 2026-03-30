@@ -157,7 +157,7 @@ export function SalesPage() {
           <div className="features-list flex flex-col gap-5 my-6">
             {[
               { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
-              { icon: "🧩", title: "160 Atividades Lúdicas", desc: "Atividades dinâmicas alinhadas à BNCC para tornar o aprendizado mais inclusivo e divertido.", color: "gold" },
+              { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades dinâmicas alinhadas à BNCC para tornar o aprendizado mais inclusivo e divertido.", color: "gold" },
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
               { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos already formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
             ].map((f, i) => (
@@ -224,7 +224,7 @@ export function SalesPage() {
                     <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
                     <div className="mt-2.5 flex items-center gap-2">
                       <div className="text-[16px] font-bold text-muted-foreground line-through decoration-rose-deep decoration-[2px]">R$ 37,90</div>
-                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
+                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁS</div>
                     </div>
                   </div>
                 </div>
@@ -335,7 +335,7 @@ export function SalesPage() {
               <div className="price-items text-left mb-6 flex flex-col gap-2">
                 {[
                   { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
-                  { bold: "160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
+                  { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
                   { text: "Combo Ed. Especial com materiais extras" },
                   { text: "Acesso aos modelos fundamentais" },
                   { bold: "Todos os 6 Bônus", text: "incluídos" },
@@ -438,7 +438,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você tem 7 dias para testar todo the material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
+                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
                   </p>
                 </div>
               </div>
