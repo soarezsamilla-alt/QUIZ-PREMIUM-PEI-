@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
+import Autoplay from "embla-carousel-autoplay";
 import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Timer } from "./Timer";
@@ -249,8 +250,8 @@ export function SalesPage() {
                 loop: true,
               }}
               plugins={[
-                AutoScroll({
-                  speed: 1,
+                Autoplay({
+                  delay: 2000,
                   stopOnInteraction: false,
                   stopOnMouseEnter: false,
                 }),
