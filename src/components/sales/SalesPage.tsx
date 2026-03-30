@@ -34,7 +34,7 @@ export function SalesPage() {
           next = prev - 1;
         }
 
-        if (next > 28) return prev - 2;
+        if (next > 16) return prev - 2; // Máximo de 16 conforme solicitado
         if (next < 7) return 8;
         return next;
       });
@@ -436,7 +436,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
+                    Fique tranquila! Você tem 7 dias para testar todo the material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
                   </p>
                 </div>
               </div>
