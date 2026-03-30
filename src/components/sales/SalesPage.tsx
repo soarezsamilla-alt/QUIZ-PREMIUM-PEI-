@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -156,8 +157,9 @@ export function SalesPage() {
           <div className="features-list flex flex-col gap-5 my-6">
             {[
               { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
+              { icon: "🧩", title: "160 Atividades Lúdicas", desc: "Atividades dinâmicas alinhadas à BNCC para tornar o aprendizado mais inclusivo e divertido.", color: "gold" },
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
-              { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
+              { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos already formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
             ].map((f, i) => (
               <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
                 <div className={cn(
