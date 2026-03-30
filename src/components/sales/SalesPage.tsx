@@ -248,6 +248,13 @@ export function SalesPage() {
                 align: "start",
                 loop: true,
               }}
+              plugins={[
+                AutoScroll({
+                  speed: 1,
+                  stopOnInteraction: false,
+                  stopOnMouseEnter: false,
+                }),
+              ]}
               className="w-full"
             >
               <CarouselContent className="-ml-1.5">
@@ -276,6 +283,35 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
             <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
+          </div>
+
+          <div className="teacher-section my-10 animate-slide-up">
+            <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-4 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
+              <div className="flex flex-col items-center text-center relative z-10">
+                <div className="relative w-16 h-16 mb-3">
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose to-lilac-deep rounded-full animate-pulse opacity-20 scale-110" />
+                  <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
+                    <Image 
+                      src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
+                      alt="Professora Luciana"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                </div>
+                <h3 className="font-headline text-lg font-bold text-foreground mb-1">
+                  Uma Professora que te Entende
+                </h3>
+                <p className="text-[13px] text-rose-deep font-semibold italic mb-2 max-w-[340px]">
+                  "Eu sei como é virar noites planejando. Criei estes modelos para que você tenha mais tempo para o que realmente importa: seus alunos."
+                </p>
+                <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
+                <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
+                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
+                </p>
+              </div>
+            </div>
           </div>
 
           <div id="preco" className="scroll-mt-6">
@@ -366,35 +402,6 @@ export function SalesPage() {
               </div>
               <div className="flex items-center gap-1.5 text-[11px] font-semibold text-muted-foreground bg-white border border-border p-1.5 px-3 rounded-full shadow-sm-custom">
                 <CheckCircle2 size={13} /> 100% atualizado
-              </div>
-            </div>
-
-            <div className="teacher-section my-10 animate-slide-up">
-              <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-5 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
-                <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
-                <div className="flex flex-col items-center text-center relative z-10">
-                  <div className="relative w-20 h-20 mb-4">
-                    <div className="absolute inset-0 bg-gradient-to-br from-rose to-lilac-deep rounded-full animate-pulse opacity-20 scale-110" />
-                    <div className="relative w-20 h-20 rounded-full overflow-hidden border-3 border-white shadow-md">
-                      <Image 
-                        src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
-                        alt="Professora Luciana"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="font-headline text-xl font-bold text-foreground mb-1.5">
-                    Uma Professora que te Entende
-                  </h3>
-                  <p className="text-[14px] text-rose-deep font-semibold italic mb-3 max-w-[380px]">
-                    "Eu sei como é virar noites planejando. Criei estes modelos para que você tenha mais tempo para o que realmente importa: seus alunos."
-                  </p>
-                  <div className="w-10 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-4" />
-                  <p className="text-[13px] sm:text-[14px] text-muted-foreground leading-relaxed text-left sm:text-center max-w-[480px]">
-                    Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
-                  </p>
-                </div>
               </div>
             </div>
 
