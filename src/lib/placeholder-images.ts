@@ -1,4 +1,3 @@
-
 import data from './placeholder-images.json';
 
 export type ImagePlaceholder = {
@@ -9,5 +8,6 @@ export type ImagePlaceholder = {
 };
 
 export const SampleImages: ImagePlaceholder[] = data.sampleImages;
+export const SampleImagesRow2: ImagePlaceholder[] = data.sampleImagesRow2;
 export const BonusImages: ImagePlaceholder[] = data.bonusImages;
 export const TestimonialImages: ImagePlaceholder[] = data.testimonialImages;

@@ -61,6 +61,80 @@
       "imageHint": "math worksheet"
     }
   ],
+  "sampleImagesRow2": [
+    {
+      "id": "sample2-1",
+      "description": "Amostra de Material 01",
+      "imageUrl": "https://image2url.com/r2/default/images/1775404928676-bd178dd1-9546-469c-8cd5-c63d2eafa184.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-2",
+      "description": "Amostra de Material 02",
+      "imageUrl": "https://image2url.com/r2/default/images/1775404953722-c9bc9c09-a6d1-4220-93dc-5bb14e1c53da.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-3",
+      "description": "Amostra de Material 03",
+      "imageUrl": "https://image2url.com/r2/default/images/1775404973700-e9dc24c3-b5aa-4a80-97c7-e805fa4332d2.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-4",
+      "description": "Amostra de Material 04",
+      "imageUrl": "https://image2url.com/r2/default/images/1775404990021-701c7d46-dbfd-4bbb-9259-5bc59b5c035b.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-5",
+      "description": "Amostra de Material 05",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405004574-bd161cc6-d074-4d36-b52e-482562de98da.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-6",
+      "description": "Amostra de Material 06",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405017966-fc3955ac-5f39-415a-8277-8245ce3f34e9.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-7",
+      "description": "Amostra de Material 07",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405030305-542d9755-364c-404e-b50e-cfa40c49a050.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-8",
+      "description": "Amostra de Material 08",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405043814-36d2fd4d-f27e-4800-880d-f7b49dd01dee.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-9",
+      "description": "Amostra de Material 09",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405064003-6ec085b0-2ecf-4975-9043-c740f4701297.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-10",
+      "description": "Amostra de Material 10",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405085519-f09e7fa0-d134-4127-9f74-8e402144c699.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-11",
+      "description": "Amostra de Material 11",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405258176-271aa2e9-7e9a-40e4-ab28-3e511d2f53e8.png",
+      "imageHint": "educational material"
+    },
+    {
+      "id": "sample2-12",
+      "description": "Amostra de Material 12",
+      "imageUrl": "https://image2url.com/r2/default/images/1775405271531-e42d9a04-8fa1-4e8b-a84d-fef9955a5bc2.png",
+      "imageHint": "educational material"
+    }
+  ],
   "bonusImages": [
     {
       "id": "bonus-1",

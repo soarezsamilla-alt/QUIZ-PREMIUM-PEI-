@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -15,7 +14,7 @@ import {
 } from "@/components/ui/carousel";
 import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay";
-import { SampleImages, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
+import { SampleImages, SampleImagesRow2, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Timer } from "./Timer";
 import { PurchaseNotification } from "./PurchaseNotification";
@@ -158,7 +157,7 @@ export function SalesPage() {
                 className="w-full"
               >
                 <CarouselContent className="-ml-1.5">
-                  {SampleImages.map((sample, index) => (
+                  {SampleImagesRow2.map((sample, index) => (
                     <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                       <div className="sample-card-item p-1">
                         <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
@@ -269,7 +268,7 @@ export function SalesPage() {
                     <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
                     <div className="mt-2.5 flex items-center gap-2">
                       <div className="text-[16px] font-bold text-muted-foreground line-through decoration-rose-deep decoration-[2px]">R$ 37,90</div>
-                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁS</div>
+                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
                     </div>
                   </div>
                 </div>
