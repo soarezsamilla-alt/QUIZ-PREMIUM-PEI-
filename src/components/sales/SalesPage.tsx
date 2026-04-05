@@ -109,6 +109,7 @@ export function SalesPage() {
                     speed: 1,
                     stopOnInteraction: false,
                     stopOnMouseEnter: false,
+                    stopOnFocusIn: false,
                   }),
                 ]}
                 className="w-full"
@@ -152,6 +153,7 @@ export function SalesPage() {
                     speed: -1,
                     stopOnInteraction: false,
                     stopOnMouseEnter: false,
+                    stopOnFocusIn: false,
                   }),
                 ]}
                 className="w-full"
