@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -115,7 +116,7 @@ export function SalesPage() {
                 ]}
                 className="w-full"
               >
-                <CarouselContent className="-ml-1.5">
+                <CarouselContent className="-ml-1.5 will-change-transform">
                   {SampleImages.map((sample, index) => (
                     <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                       <div className="sample-card-item p-1">
@@ -152,15 +153,16 @@ export function SalesPage() {
                 }}
                 plugins={[
                   AutoScroll({
-                    speed: -1,
+                    speed: 1, // Rolagem positiva para o lado direito como solicitado anteriormente, mas configurada como suave agora
                     stopOnInteraction: false,
                     stopOnMouseEnter: false,
                     stopOnFocusIn: false,
+                    direction: 'backward' // Algumas versões do plugin usam speed negativo ou direction para inverter
                   }),
                 ]}
                 className="w-full"
               >
-                <CarouselContent className="-ml-1.5">
+                <CarouselContent className="-ml-1.5 will-change-transform">
                   {SampleImagesRow2.map((sample, index) => (
                     <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                       <div className="sample-card-item p-1">
