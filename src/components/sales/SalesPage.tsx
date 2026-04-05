@@ -103,6 +103,7 @@ export function SalesPage() {
                 opts={{
                   align: "start",
                   loop: true,
+                  watchDrag: false,
                 }}
                 plugins={[
                   AutoScroll({
@@ -147,6 +148,7 @@ export function SalesPage() {
                 opts={{
                   align: "start",
                   loop: true,
+                  watchDrag: false,
                 }}
                 plugins={[
                   AutoScroll({
