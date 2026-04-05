@@ -98,47 +98,92 @@ export function SalesPage() {
             Modelos pensados para tornar lecionar mais divertido e inclusivo
           </p>
 
-          <div className="samples-carousel-container relative px-4 mb-8">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              plugins={[
-                AutoScroll({
-                  speed: 1,
-                  stopOnInteraction: false,
-                  stopOnMouseEnter: false,
-                }),
-              ]}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-1.5">
-                {SampleImages.map((sample, index) => (
-                  <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
-                    <div className="sample-card-item p-1">
-                      <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
-                        <Image
-                          src={sample.imageUrl}
-                          alt={sample.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={sample.imageHint}
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
-                          <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
-                        </div>
-                        <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                          <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
-                            AMOSTRA
-                          </span>
+          <div className="samples-carousels-wrapper flex flex-col gap-4 mb-8 px-4">
+            <div className="samples-carousel-container relative">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  AutoScroll({
+                    speed: 1,
+                    stopOnInteraction: false,
+                    stopOnMouseEnter: false,
+                  }),
+                ]}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-1.5">
+                  {SampleImages.map((sample, index) => (
+                    <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
+                      <div className="sample-card-item p-1">
+                        <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
+                          <Image
+                            src={sample.imageUrl}
+                            alt={sample.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={sample.imageHint}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
+                          </div>
+                          <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
+                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
+                              AMOSTRA
+                            </span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-            </Carousel>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
+            </div>
+
+            <div className="samples-carousel-container relative">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  AutoScroll({
+                    speed: -1,
+                    stopOnInteraction: false,
+                    stopOnMouseEnter: false,
+                  }),
+                ]}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-1.5">
+                  {SampleImages.map((sample, index) => (
+                    <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
+                      <div className="sample-card-item p-1">
+                        <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
+                          <Image
+                            src={sample.imageUrl}
+                            alt={sample.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={sample.imageHint}
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end p-4">
+                            <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
+                          </div>
+                          <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
+                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
+                              AMOSTRA
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+              </Carousel>
+            </div>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
