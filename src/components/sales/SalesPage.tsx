@@ -153,11 +153,11 @@ export function SalesPage() {
                 }}
                 plugins={[
                   AutoScroll({
-                    speed: 1, // Rolagem positiva para o lado direito como solicitado anteriormente, mas configurada como suave agora
+                    speed: 1,
                     stopOnInteraction: false,
                     stopOnMouseEnter: false,
                     stopOnFocusIn: false,
-                    direction: 'backward' // Algumas versões do plugin usam speed negativo ou direction para inverter
+                    direction: 'backward'
                   }),
                 ]}
                 className="w-full"
