@@ -15,7 +15,8 @@ import {
 import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay";
 import { SampleImages, SampleImagesRow2, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
-import Image from "next/image";
+import Image from "image-js"; // fallback to next/image logic in original
+import NextImage from "next/image";
 import { Timer } from "./Timer";
 import { PurchaseNotification } from "./PurchaseNotification";
 
@@ -121,7 +122,7 @@ export function SalesPage() {
                     <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                       <div className="sample-card-item p-1">
                         <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
-                          <Image
+                          <NextImage
                             src={sample.imageUrl}
                             alt={sample.description}
                             fill
@@ -167,7 +168,7 @@ export function SalesPage() {
                     <CarouselItem key={index} className="pl-1.5 basis-[60%] sm:basis-1/3">
                       <div className="sample-card-item p-1">
                         <div className="relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-border shadow-sm-custom hover:border-rose-light hover:shadow-md-custom hover:scale-[1.02] transition-all">
-                          <Image
+                          <NextImage
                             src={sample.imageUrl}
                             alt={sample.description}
                             fill
@@ -250,14 +251,14 @@ export function SalesPage() {
                 { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
                 { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
                 { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].localeCompare ? BonusImages[4].imageUrl : BonusImages[4].imageUrl }, // Safe check
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
                 <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
                   
                   <div className="relative w-24 h-32 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
-                    <Image 
+                    <NextImage 
                       src={b.img} 
                       alt={b.name} 
                       fill 
@@ -315,7 +316,7 @@ export function SalesPage() {
                   <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
                     <div className="testimonial-card-item p-1">
                       <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
-                        <Image
+                        <NextImage
                           src={testimonial.imageUrl}
                           alt={testimonial.description}
                           fill
@@ -377,7 +378,7 @@ export function SalesPage() {
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
 
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
-                  <Image 
+                  <NextImage 
                     src="https://www.image2url.com/r2/default/images/1776198422291-d2ffd1a8-340e-42a0-84d1-6d29544726a6.png"
                     alt="Oferta Plano Básico"
                     fill
@@ -410,7 +411,7 @@ export function SalesPage() {
                   </a>
                 </Button>
                 <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed px-2">
-                  <strong className="text-rose-deep font-bold uppercase tracking-tighter">Você NÃO vai encontrar esse preço depois.</strong><br />Acesso imediato por E-mail ou WhatsApp.
+                  Acesso imediato por E-mail ou WhatsApp.
                 </p>
               </div>
 
@@ -433,7 +434,7 @@ export function SalesPage() {
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
                 <div className="relative w-full h-[300px] mb-4">
-                  <Image 
+                  <NextImage 
                     src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
                     alt="Formas de pagamento"
                     fill
@@ -473,7 +474,7 @@ export function SalesPage() {
                   </a>
                 </Button>
                 <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
-                  <strong className="text-rose-deep font-bold uppercase tracking-tighter">Você NÃO vai encontrar esse preço depois.</strong><br />Acesso imediato por E-mail ou WhatsApp.
+                  Acesso imediato por E-mail ou WhatsApp.
                 </p>
               </div>
             </div>
@@ -498,7 +499,7 @@ export function SalesPage() {
                 <div className="relative w-16 h-16 mb-3">
                   <div className="absolute inset-0 bg-gradient-to-br from-rose to-lilac-deep rounded-full animate-pulse opacity-20 scale-110" />
                   <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-md">
-                    <Image 
+                    <NextImage 
                       src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
                       alt="Professora Luciana"
                       fill
