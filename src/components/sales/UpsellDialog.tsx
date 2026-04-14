@@ -97,7 +97,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
           </div>
 
           <div className="flex flex-col gap-4">
-            <Button asChild className="w-full h-auto py-5 bg-gradient-to-br from-rose to-rose-deep text-white font-black text-base rounded-full shadow-xl hover:scale-[1.02] transition-all btn-mobile-effect">
+            <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose to-rose-deep text-white font-black text-base rounded-full shadow-xl hover:scale-[1.02] transition-all btn-mobile-effect">
               <a href="https://pay.wiapy.com/w9nRplH8zg">
                 QUERO O PLANO PRO COM DESCONTO
                 <ArrowRight size={18} className="ml-2" />
