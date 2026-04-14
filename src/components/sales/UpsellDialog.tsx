@@ -5,8 +5,6 @@ import React, { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
-  DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Check, Clock, Sparkles, Zap, ArrowRight } from "lucide-react";
@@ -47,7 +45,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
 
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-[90vw] sm:max-w-[400px] rounded-[24px] p-0 overflow-hidden border-none shadow-2xl">
+      <DialogContent className="max-w-[90vw] sm:max-w-[400px] rounded-[24px] p-0 overflow-hidden border-none shadow-2xl focus:outline-none">
         <div className="bg-gradient-to-br from-[#2d1f36] to-[#4A2D5A] p-6 text-center relative">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose via-gold to-lilac" />
           
@@ -58,20 +56,25 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
           <h2 className="text-2xl font-black text-white leading-tight mb-2">
             ESPERE, PROFESSORA! 🛑
           </h2>
-          <p className="text-white/80 text-sm leading-relaxed mb-4">
+          <p className="text-white/80 text-sm leading-relaxed mb-6">
             Não leve apenas o básico. Por apenas mais <span className="text-gold font-bold">R$ 10,00</span>, você garante o <span className="text-rose-light font-bold">PLANO PRO</span> completo agora!
           </p>
 
-          <div className="bg-white/10 backdrop-blur-md rounded-2xl p-3 flex items-center justify-center gap-3 border border-white/10 mb-2">
-            <Clock size={18} className="text-rose animate-pulse" />
-            <span className="text-xl font-mono font-black text-white tracking-wider">
-              {formatTime(timeLeft)}
-            </span>
+          <div className="flex flex-col items-center gap-2 mb-2">
+            <div className="flex items-center gap-1.5 text-white/90 text-[10px] font-black uppercase tracking-widest">
+              <Clock size={12} className="text-rose animate-pulse" />
+              <span>Esta oferta expira em:</span>
+            </div>
+            <div className="bg-white/10 backdrop-blur-md rounded-2xl p-2.5 px-6 flex items-center justify-center gap-3 border border-white/20 shadow-inner">
+              <span className="text-2xl font-mono font-black text-white tracking-widest tabular-nums">
+                {formatTime(timeLeft)}
+              </span>
+            </div>
           </div>
         </div>
 
         <div className="bg-white p-6 pt-8 relative">
-          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gold text-white font-black text-[11px] uppercase tracking-tighter px-4 py-2 rounded-full shadow-lg border-2 border-white">
+          <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-gold text-white font-black text-[11px] uppercase tracking-tighter px-4 py-2 rounded-full shadow-lg border-2 border-white whitespace-nowrap">
             MELHOR ESCOLHA ⭐⭐⭐⭐⭐
           </div>
 
@@ -97,8 +100,8 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
           </div>
 
           <div className="flex flex-col gap-4">
-            <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose to-rose-deep text-white font-black text-base rounded-full shadow-xl hover:scale-[1.02] transition-all btn-mobile-effect">
-              <a href="https://pay.wiapy.com/w9nRplH8zg">
+            <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose to-rose-deep text-white font-black text-base rounded-full shadow-xl hover:scale-[1.02] transition-all btn-mobile-effect border-none">
+              <a href="https://pay.wiapy.com/w9nRplH8zg" className="flex items-center justify-center">
                 QUERO O PLANO PRO COM DESCONTO
                 <ArrowRight size={18} className="ml-2" />
               </a>
