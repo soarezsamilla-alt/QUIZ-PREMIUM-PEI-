@@ -362,21 +362,21 @@ export function SalesPage() {
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
               {/* Plano Básico - R$ 10,00 */}
-              <div className="price-box bg-white rounded-xl border-2 border-border p-2 px-3 text-center shadow-sm-custom overflow-visible">
-                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-2">
+              <div className="price-box bg-white rounded-xl border-2 border-border p-1 px-2 text-center shadow-sm-custom overflow-visible">
+                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-1">
                   Plano Básico
                 </div>
                 
-                <div className="flex items-center justify-center gap-1.5 mb-0.5 text-muted-foreground">
+                <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
                   <span className="text-[14px] font-bold line-through">De R$ 47,90</span>
                 </div>
-                <div className="font-headline text-[64px] font-bold text-foreground leading-none mb-2 flex justify-center items-start">
+                <div className="font-headline text-[64px] font-bold text-foreground leading-none mb-0.5 flex justify-center items-start">
                   <span className="text-2xl font-semibold mt-2 mr-1">R$</span>
                   10
                   <span className="text-3xl font-semibold mt-3 ml-1">,00</span>
                 </div>
 
-                <div className="relative w-full h-[500px] mb-3">
+                <div className="relative w-full h-[500px] mb-0.5">
                   <Image 
                     src="https://www.image2url.com/r2/default/images/1776194074149-48dfca4e-6636-4e22-bf6a-a0c94594afed.png"
                     alt="Oferta Plano Básico"
@@ -386,7 +386,7 @@ export function SalesPage() {
                   />
                 </div>
                 
-                <div className="price-items text-left mb-3 flex flex-col gap-1">
+                <div className="price-items text-left mb-2 flex flex-col gap-0.5">
                   {[
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "Combo Ed. Especial", text: "com materiais extras" },
