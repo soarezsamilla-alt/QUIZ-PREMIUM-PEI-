@@ -369,11 +369,12 @@ export function SalesPage() {
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground scale-90">
                   <span className="text-[12px] font-bold line-through">De R$ 47,90</span>
                 </div>
-                <div className="font-headline text-[54px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
-                  <span className="text-xl font-semibold mt-2 mr-0.5">R$</span>
+                <div className="font-headline text-[74px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
+                  <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
                   10
-                  <span className="text-2xl font-semibold mt-3 ml-0.5">,00</span>
+                  <span className="text-4xl font-semibold mt-4 ml-1">,00</span>
                 </div>
+                <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
 
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <Image 
@@ -510,7 +511,7 @@ export function SalesPage() {
                 </p>
                 <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
                 <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiênca em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
+                  Com mais de 10 anos de experiênca em education inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
                 </p>
               </div>
             </div>
