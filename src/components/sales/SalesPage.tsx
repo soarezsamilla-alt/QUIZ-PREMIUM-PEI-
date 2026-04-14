@@ -374,6 +374,16 @@ export function SalesPage() {
                   10
                   <span className="text-3xl font-semibold mt-3 ml-1">,00</span>
                 </div>
+
+                <div className="relative w-full h-48 mb-6">
+                  <Image 
+                    src="https://www.image2url.com/r2/default/images/1776194074149-48dfca4e-6636-4e22-bf6a-a0c94594afed.png"
+                    alt="Oferta Plano Básico"
+                    fill
+                    className="object-contain"
+                    data-ai-hint="basic plan"
+                  />
+                </div>
                 
                 <div className="price-items text-left mb-6 flex flex-col gap-2.5">
                   {[
