@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -387,6 +388,7 @@ export function SalesPage() {
                 
                 <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
                   {[
+                    { bold: "Apenas materiais", text: "básicos de planejamento" },
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "Combo Ed. Especial", text: "com materiais extras" },
                     { bold: "PEI Autismo", text: "Ed. Infantil" }
