@@ -361,22 +361,22 @@ export function SalesPage() {
             </div>
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
-              {/* Plano Básico - R$ 10,00 */}
-              <div className="price-box bg-white rounded-xl border-2 border-border p-1 px-2 text-center shadow-sm-custom overflow-visible">
-                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-1">
+              {/* Plano Básico - R$ 10,00 - OTIMIZADO PARA MENOR ALTURA */}
+              <div className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden">
+                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
                   Plano Básico
                 </div>
                 
-                <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
-                  <span className="text-[14px] font-bold line-through">De R$ 47,90</span>
+                <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground scale-90">
+                  <span className="text-[12px] font-bold line-through">De R$ 47,90</span>
                 </div>
-                <div className="font-headline text-[64px] font-bold text-foreground leading-none mb-0.5 flex justify-center items-start">
-                  <span className="text-2xl font-semibold mt-2 mr-1">R$</span>
+                <div className="font-headline text-[54px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
+                  <span className="text-xl font-semibold mt-2 mr-0.5">R$</span>
                   10
-                  <span className="text-3xl font-semibold mt-3 ml-1">,00</span>
+                  <span className="text-2xl font-semibold mt-3 ml-0.5">,00</span>
                 </div>
 
-                <div className="relative w-full h-[500px] mb-0.5">
+                <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <Image 
                     src="https://www.image2url.com/r2/default/images/1776198422291-d2ffd1a8-340e-42a0-84d1-6d29544726a6.png"
                     alt="Oferta Plano Básico"
@@ -386,15 +386,15 @@ export function SalesPage() {
                   />
                 </div>
                 
-                <div className="price-items text-left mb-2 flex flex-col gap-0.5">
+                <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
                   {[
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "Combo Ed. Especial", text: "com materiais extras" },
                     { bold: "PEI Autismo", text: "Ed. Infantil" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-2.5 text-[13px] text-foreground/80 leading-relaxed">
-                      <div className="w-[18px] h-[18px] rounded-full bg-border flex items-center justify-center shrink-0 mt-0.5">
-                        <Check size={10} className="text-muted-foreground" strokeWidth={4} />
+                    <div key={i} className="flex items-start gap-2 text-[12px] text-foreground/80 leading-tight">
+                      <div className="w-[14px] h-[14px] rounded-full bg-border flex items-center justify-center shrink-0 mt-0.5">
+                        <Check size={8} className="text-muted-foreground" strokeWidth={4} />
                       </div>
                       <span>
                         {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
@@ -404,7 +404,7 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-auto py-3 font-bold text-sm rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
+                <Button asChild variant="outline" className="w-full h-auto py-2.5 font-bold text-xs rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
                     Selecionar Plano Básico
                   </a>
@@ -546,7 +546,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem burocracia. O risco é todo nosso.
+                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem buroacia. O risco é todo nosso.
                   </p>
                 </div>
               </div>
