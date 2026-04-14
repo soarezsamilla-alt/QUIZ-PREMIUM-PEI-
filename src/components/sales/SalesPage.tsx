@@ -19,9 +19,13 @@ import { SampleImages, SampleImagesRow2, TestimonialImages, BonusImages } from "
 import NextImage from "next/image";
 import { Timer } from "./Timer";
 import { PurchaseNotification } from "./PurchaseNotification";
+import { UpsellDialog } from "./UpsellDialog";
 
 export function SalesPage() {
   const [visitors, setVisitors] = useState(8);
+  const [isUpsellOpen, setIsUpsellOpen] = useState(false);
+
+  const BASIC_URL = "https://pay.wiapy.com/qCy3ZzlkT1";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -71,7 +75,7 @@ export function SalesPage() {
 
           <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-3.5 max-w-[400px] mx-auto">
             Tudo pronto, Professora!<br />
-            <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
+            <em className="italic text-gold-light">Seus PEIs nunca mais serão um problema.</em>
           </h1>
 
           <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
@@ -360,7 +364,7 @@ export function SalesPage() {
             </div>
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
-              {/* Plano Básico - R$ 9,90 - OTIMIZADO PARA MENOR ALTURA */}
+              {/* Plano Básico */}
               <div className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
                   Plano Básico
@@ -405,10 +409,11 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild variant="outline" className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide btn-mobile-effect">
-                  <a href="https://pay.wiapy.com/qCy3ZzlkT1">
-                    LIBERAR PLANO BÁSICO
-                  </a>
+                <Button 
+                  onClick={() => setIsUpsellOpen(true)}
+                  className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide btn-mobile-effect"
+                >
+                  LIBERAR PLANO BÁSICO
                 </Button>
                 <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed px-2">
                   Acesso imediato por E-mail ou WhatsApp.
@@ -597,6 +602,11 @@ export function SalesPage() {
       </section>
       
       <PurchaseNotification />
+      <UpsellDialog 
+        isOpen={isUpsellOpen} 
+        onOpenChange={setIsUpsellOpen} 
+        basicUrl={BASIC_URL}
+      />
     </>
   );
 }
