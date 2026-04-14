@@ -359,62 +359,109 @@ export function SalesPage() {
               </p>
             </div>
 
-            <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom my-5 overflow-visible">
-              <Timer />
-              
-              <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
-                <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
-              </div>
-              <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
-                <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                19
-                <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
-              </div>
-              <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
-              
-              <div className="relative w-full h-48 mb-6">
-                <Image 
-                  src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
-                  alt="Formas de pagamento"
-                  fill
-                  className="object-contain"
-                  data-ai-hint="payment methods"
-                />
-              </div>
-
-              <div className="price-items text-left mb-6 flex flex-col gap-2">
-                {[
-                  { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
-                  { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
-                  { text: "Combo Ed. Especial com materiais extras" },
-                  { text: "Acesso aos modelos fundamentais" },
-                  { bold: "Todos os 6 Bônus", text: "incluídos" },
-                  { text: "PEI Autismo Ed. Infantil" },
-                  { text: "Relatórios AEE completos" },
-                  { bold: "Acesso a futuras atualizações", text: "" },
-                  { text: "Suporte prioritário via WhatsApp", highlight: true },
-                  { text: "WhatsApp Clube da Inclusão", highlight: true }
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start gap-2.5 text-[13px] text-foreground/80 leading-relaxed">
-                    <div className="w-[18px] h-[18px] rounded-full bg-gradient-to-br from-rose to-lilac-deep flex items-center justify-center shrink-0 mt-0.5">
-                      <Check size={10} color="white" strokeWidth={4} />
+            <div className="plans-wrapper flex flex-col gap-6 my-8">
+              {/* Plano Básico - R$ 10,00 */}
+              <div className="price-box bg-white rounded-xl border-2 border-border p-8 px-6 text-center shadow-sm-custom overflow-visible">
+                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-4">
+                  Plano Básico
+                </div>
+                
+                <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
+                  <span className="text-[14px] font-bold line-through">De R$ 47,90</span>
+                </div>
+                <div className="font-headline text-[64px] font-bold text-foreground leading-none mb-4 flex justify-center items-start">
+                  <span className="text-2xl font-semibold mt-2 mr-1">R$</span>
+                  10
+                  <span className="text-3xl font-semibold mt-3 ml-1">,00</span>
+                </div>
+                
+                <div className="price-items text-left mb-6 flex flex-col gap-2.5">
+                  {[
+                    { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
+                    { bold: "Combo Ed. Especial", text: "com materiais extras" },
+                    { bold: "PEI Autismo", text: "Ed. Infantil" }
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2.5 text-[13px] text-foreground/80 leading-relaxed">
+                      <div className="w-[18px] h-[18px] rounded-full bg-border flex items-center justify-center shrink-0 mt-0.5">
+                        <Check size={10} className="text-muted-foreground" strokeWidth={4} />
+                      </div>
+                      <span>
+                        {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
+                        <span>{item.text}</span>
+                      </span>
                     </div>
-                    <span>
-                      {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
-                      <span className={item.highlight ? "text-lilac-deep font-semibold" : ""}>{item.text}</span>
-                    </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
+
+                <Button asChild variant="outline" className="w-full h-auto py-4 font-bold text-sm rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
+                  <a href="https://pay.wiapy.com/VBXdX_ymda">
+                    Selecionar Plano Básico
+                  </a>
+                </Button>
               </div>
 
-              <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
-                <a href="https://pay.wiapy.com/VBXdX_ymda">
-                  🔓 Liberar meu acesso agora
-                </a>
-              </Button>
-              <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
-                <strong className="text-rose-deep font-bold uppercase tracking-tighter">Você NÃO vai encontrar esse preço depois.</strong><br />Acesso imediato por E-mail ou WhatsApp.
-              </p>
+              {/* Plano VIP/Completo - R$ 19,90 (Original com Timer) */}
+              <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom overflow-visible relative">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose to-rose-deep text-white text-[11px] font-black px-4 py-1 rounded-full shadow-md z-10 uppercase tracking-widest whitespace-nowrap">
+                  Mais Escolhido • VIP
+                </div>
+                
+                <Timer />
+                
+                <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
+                  <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
+                </div>
+                <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-1 flex justify-center items-start">
+                  <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
+                  19
+                  <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
+                </div>
+                <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
+                
+                <div className="relative w-full h-48 mb-6">
+                  <Image 
+                    src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
+                    alt="Formas de pagamento"
+                    fill
+                    className="object-contain"
+                    data-ai-hint="payment methods"
+                  />
+                </div>
+
+                <div className="price-items text-left mb-6 flex flex-col gap-2">
+                  {[
+                    { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
+                    { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
+                    { text: "Combo Ed. Especial com materiais extras" },
+                    { text: "Acesso aos modelos fundamentais" },
+                    { bold: "Todos os 6 Bônus", text: "incluídos" },
+                    { text: "PEI Autismo Ed. Infantil" },
+                    { text: "Relatórios AEE completos" },
+                    { bold: "Acesso a futuras atualizações", text: "" },
+                    { text: "Suporte prioritário via WhatsApp", highlight: true },
+                    { text: "WhatsApp Clube da Inclusão", highlight: true }
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-start gap-2.5 text-[13px] text-foreground/80 leading-relaxed">
+                      <div className="w-[18px] h-[18px] rounded-full bg-gradient-to-br from-rose to-lilac-deep flex items-center justify-center shrink-0 mt-0.5">
+                        <Check size={10} color="white" strokeWidth={4} />
+                      </div>
+                      <span>
+                        {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
+                        <span className={item.highlight ? "text-lilac-deep font-semibold" : ""}>{item.text}</span>
+                      </span>
+                    </div>
+                  ))}
+                </div>
+
+                <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
+                  <a href="https://pay.wiapy.com/VBXdX_ymda">
+                    🔓 Liberar meu acesso agora
+                  </a>
+                </Button>
+                <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
+                  <strong className="text-rose-deep font-bold uppercase tracking-tighter">Você NÃO vai encontrar esse preço depois.</strong><br />Acesso imediato por E-mail ou WhatsApp.
+                </p>
+              </div>
             </div>
 
             <div className="trust-row flex justify-center gap-4 my-5 flex-wrap">
