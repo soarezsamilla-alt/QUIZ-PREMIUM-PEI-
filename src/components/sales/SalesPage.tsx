@@ -360,7 +360,7 @@ export function SalesPage() {
             </div>
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
-              {/* Plano Básico - R$ 10,00 - OTIMIZADO PARA MENOR ALTURA */}
+              {/* Plano Básico - R$ 9,90 - OTIMIZADO PARA MENOR ALTURA */}
               <div className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
                   Plano Básico
@@ -371,8 +371,8 @@ export function SalesPage() {
                 </div>
                 <div className="font-headline text-[74px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  10
-                  <span className="text-4xl font-semibold mt-4 ml-1">,00</span>
+                  9
+                  <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
 
@@ -414,7 +414,7 @@ export function SalesPage() {
                 </p>
               </div>
 
-              {/* Plano VIP/Completo - R$ 19,90 (Original com Timer) */}
+              {/* Plano VIP/Completo - R$ 24,90 (Original com Timer) */}
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-4 px-3 text-center shadow-lg-custom overflow-visible relative">
                 <Timer />
 
@@ -427,7 +427,7 @@ export function SalesPage() {
                 </div>
                 <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  19
+                  24
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
