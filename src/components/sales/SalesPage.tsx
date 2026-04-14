@@ -70,6 +70,7 @@ export function SalesPage() {
 
           <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-3.5 max-w-[400px] mx-auto">
             Tudo pronto, Professora!<br />
+            <br />
             <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
           </h1>
 
@@ -411,10 +412,6 @@ export function SalesPage() {
 
               {/* Plano VIP/Completo - R$ 19,90 (Original com Timer) */}
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-5 px-4 text-center shadow-lg-custom overflow-visible relative">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose to-rose-deep text-white text-[11px] font-black px-4 py-1 rounded-full shadow-md z-10 uppercase tracking-widest whitespace-nowrap">
-                  Mais Escolhido • Plano Pro
-                </div>
-                
                 <Timer />
 
                 <div className="inline-block bg-rose-pale text-rose-deep text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-4">
