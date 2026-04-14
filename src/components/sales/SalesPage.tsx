@@ -367,7 +367,7 @@ export function SalesPage() {
                 </div>
                 
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
-                  <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 47,90</span>
+                  <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 97,90</span>
                 </div>
                 <div className="font-headline text-[74px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
