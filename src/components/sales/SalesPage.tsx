@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -361,7 +360,7 @@ export function SalesPage() {
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
               {/* Plano Básico - R$ 10,00 */}
-              <div className="price-box bg-white rounded-xl border-2 border-border p-8 px-6 text-center shadow-sm-custom overflow-visible">
+              <div className="price-box bg-white rounded-xl border-2 border-border p-5 px-4 text-center shadow-sm-custom overflow-visible">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-4">
                   Plano Básico
                 </div>
@@ -411,12 +410,16 @@ export function SalesPage() {
               </div>
 
               {/* Plano VIP/Completo - R$ 19,90 (Original com Timer) */}
-              <div className="price-box bg-white rounded-xl border-2 border-rose-light p-8 px-6 text-center shadow-lg-custom overflow-visible relative">
+              <div className="price-box bg-white rounded-xl border-2 border-rose-light p-5 px-4 text-center shadow-lg-custom overflow-visible relative">
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gradient-to-r from-rose to-rose-deep text-white text-[11px] font-black px-4 py-1 rounded-full shadow-md z-10 uppercase tracking-widest whitespace-nowrap">
-                  Mais Escolhido • VIP
+                  Mais Escolhido • Plano Pro
                 </div>
                 
                 <Timer />
+
+                <div className="inline-block bg-rose-pale text-rose-deep text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-4">
+                  Plano Pro
+                </div>
                 
                 <div className="flex items-center justify-center gap-1.5 mb-1 text-muted-foreground">
                   <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
