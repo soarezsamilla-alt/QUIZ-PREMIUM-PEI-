@@ -378,7 +378,7 @@ export function SalesPage() {
 
                 <div className="relative w-full h-[500px] mb-0.5">
                   <Image 
-                    src="https://www.image2url.com/r2/default/images/1776194074149-48dfca4e-6636-4e22-bf6a-a0c94594afed.png"
+                    src="https://www.image2url.com/r2/default/images/1776198422291-d2ffd1a8-340e-42a0-84d1-6d29544726a6.png"
                     alt="Oferta Plano Básico"
                     fill
                     className="object-contain"
