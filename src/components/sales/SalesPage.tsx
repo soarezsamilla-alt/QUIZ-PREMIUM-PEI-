@@ -409,6 +409,9 @@ export function SalesPage() {
                     Selecionar Plano Básico
                   </a>
                 </Button>
+                <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed px-2">
+                  <strong className="text-rose-deep font-bold uppercase tracking-tighter">Você NÃO vai encontrar esse preço depois.</strong><br />Acesso imediato por E-mail ou WhatsApp.
+                </p>
               </div>
 
               {/* Plano VIP/Completo - R$ 19,90 (Original com Timer) */}
