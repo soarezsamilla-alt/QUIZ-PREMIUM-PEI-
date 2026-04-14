@@ -70,7 +70,6 @@ export function SalesPage() {
 
           <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-3.5 max-w-[400px] mx-auto">
             Tudo pronto, Professora!<br />
-            <br />
             <em className="italic text-gold-light">Seus PEIs nunca mais<br />serão um problema.</em>
           </h1>
 
