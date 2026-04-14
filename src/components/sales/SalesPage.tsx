@@ -510,7 +510,7 @@ export function SalesPage() {
                 </p>
                 <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
                 <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
+                  Com mais de 10 anos de experiênca em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
                 </p>
               </div>
             </div>
