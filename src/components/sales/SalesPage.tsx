@@ -404,7 +404,7 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
+                <Button asChild variant="outline" className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
                     Selecionar Plano Básico
                   </a>
@@ -467,7 +467,7 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
+                <Button asChild className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
                     🔓 Liberar meu acesso agora
                   </a>
