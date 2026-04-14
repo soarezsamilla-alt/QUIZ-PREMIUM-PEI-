@@ -15,7 +15,6 @@ import {
 import AutoScroll from "embla-carousel-auto-scroll";
 import Autoplay from "embla-carousel-autoplay";
 import { SampleImages, SampleImagesRow2, TestimonialImages, BonusImages } from "@/lib/placeholder-images";
-import Image from "image-js"; // fallback to next/image logic in original
 import NextImage from "next/image";
 import { Timer } from "./Timer";
 import { PurchaseNotification } from "./PurchaseNotification";
@@ -251,7 +250,7 @@ export function SalesPage() {
                 { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
                 { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
                 { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].localeCompare ? BonusImages[4].imageUrl : BonusImages[4].imageUrl }, // Safe check
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[5].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
                 <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
@@ -405,7 +404,7 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild variant="outline" className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
+                <Button asChild variant="outline" className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide btn-mobile-effect">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
                     Selecionar Plano Básico
                   </a>
