@@ -404,7 +404,7 @@ export function SalesPage() {
                   ))}
                 </div>
 
-                <Button asChild variant="outline" className="w-full h-auto py-2.5 font-bold text-xs rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
+                <Button asChild variant="outline" className="w-full h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
                     Selecionar Plano Básico
                   </a>
