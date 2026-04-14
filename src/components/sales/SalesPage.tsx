@@ -375,7 +375,7 @@ export function SalesPage() {
                   <span className="text-3xl font-semibold mt-3 ml-1">,00</span>
                 </div>
 
-                <div className="relative w-full h-96 mb-6">
+                <div className="relative w-full h-[500px] mb-6">
                   <Image 
                     src="https://www.image2url.com/r2/default/images/1776194074149-48dfca4e-6636-4e22-bf6a-a0c94594afed.png"
                     alt="Oferta Plano Básico"
@@ -428,7 +428,7 @@ export function SalesPage() {
                 </div>
                 <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-3">Pagamento único</div>
                 
-                <div className="relative w-full h-96 mb-6">
+                <div className="relative w-full h-[500px] mb-6">
                   <Image 
                     src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
                     alt="Formas de pagamento"
