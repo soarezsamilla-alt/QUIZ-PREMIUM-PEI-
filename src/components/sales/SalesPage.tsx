@@ -64,7 +64,7 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-8">
+          <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-10">
             ✨ Material Completo Liberado
           </div>
 
@@ -472,7 +472,10 @@ export function SalesPage() {
                     🔓 LIBERAR PLANO PRO AGORA
                   </a>
                 </Button>
-                <p className="text-[11px] text-muted-foreground mt-3.5 leading-relaxed">
+                <p className="text-[12px] text-rose-deep font-bold uppercase tracking-tight mt-3">
+                  Você NÃO vai encontrar esse preço depois.
+                </p>
+                <p className="text-[11px] text-muted-foreground mt-1 leading-relaxed">
                   Acesso imediato por E-mail ou WhatsApp.
                 </p>
               </div>
