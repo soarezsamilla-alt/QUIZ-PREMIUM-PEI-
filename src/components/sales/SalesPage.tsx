@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -427,7 +426,7 @@ export function SalesPage() {
                   19
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
-                <div className="text-[12px] font-bold tracking-[0.1em] uppercase text-muted-foreground mb-2">Pagamento único</div>
+                <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
                 <div className="relative w-full h-[300px] mb-4">
                   <Image 

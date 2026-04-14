@@ -39,7 +39,7 @@ export function Timer() {
   const format = (num: number) => String(num).padStart(2, "0");
 
   return (
-    <div className="w-[calc(100%+1.5rem)] bg-[#2d1f36] text-white py-2.5 px-4 rounded-t-xl flex items-center justify-center gap-3 -mt-4 -mx-3 mb-7 border-b border-black/10 shadow-sm">
+    <div className="w-[calc(100%+1.5rem)] bg-[#2d1f36] text-white py-2.5 px-4 rounded-t-[16px] flex items-center justify-center gap-3 -mt-4 -mx-3 mb-7 border-b border-black/10 shadow-sm overflow-hidden">
       {/* Nome (Texto) antes */}
       <div className="flex items-center gap-1.5 shrink-0">
         <Clock size={14} strokeWidth={3} className="animate-pulse text-[#FF0000]" />
