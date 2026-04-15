@@ -410,9 +410,8 @@ export function SalesPage() {
                 </div>
 
                 <Button 
-                  variant="outline"
                   onClick={() => setIsUpsellOpen(true)}
-                  className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-rose-light/40 text-rose-deep/60 hover:bg-rose-pale/30 hover:text-rose-deep/80 hover:border-rose-light/60 uppercase tracking-wide btn-mobile-effect bg-transparent shadow-none"
+                  className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose/85 to-lilac/85 text-white font-bold text-base rounded-full shadow-sm hover:opacity-90 transition-all uppercase tracking-wide btn-mobile-effect border-none"
                 >
                   LIBERAR PLANO BÁSICO
                 </Button>
@@ -423,7 +422,9 @@ export function SalesPage() {
 
               {/* Plano VIP/Completo - R$ 24,90 (Original com Timer) */}
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-4 px-3 text-center shadow-lg-custom overflow-visible relative">
-                <Timer />
+                <div className="relative">
+                  <Timer />
+                </div>
 
                 <div className="inline-block bg-rose-pale text-rose-deep text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-2">
                   Plano Pro
@@ -453,7 +454,7 @@ export function SalesPage() {
                   {[
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
-                    { text: "Combo Ed. Especial com materiais extras" },
+                    { text: "Combo Ed. Especial with materiais extras" },
                     { text: "Acesso aos modelos fundamentais" },
                     { bold: "Todos os 6 Bônus", text: "incluídos" },
                     { text: "PEI Autismo Ed. Infantil" },
