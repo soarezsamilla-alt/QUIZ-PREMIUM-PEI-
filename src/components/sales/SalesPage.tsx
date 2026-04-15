@@ -411,7 +411,7 @@ export function SalesPage() {
 
                 <Button 
                   onClick={() => setIsUpsellOpen(true)}
-                  className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose/85 to-lilac/85 text-white font-bold text-base rounded-full shadow-sm hover:opacity-90 transition-all uppercase tracking-wide btn-mobile-effect border-none"
+                  className="w-[85%] mx-auto h-auto py-4 bg-[#e3daf2] text-foreground font-bold text-base rounded-full shadow-sm hover:opacity-90 transition-all uppercase tracking-wide btn-mobile-effect border-none"
                 >
                   LIBERAR PLANO BÁSICO
                 </Button>
