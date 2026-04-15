@@ -410,8 +410,9 @@ export function SalesPage() {
                 </div>
 
                 <Button 
+                  variant="outline"
                   onClick={() => setIsUpsellOpen(true)}
-                  className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground hover:bg-foreground hover:text-white uppercase tracking-wide btn-mobile-effect"
+                  className="w-[85%] mx-auto h-auto py-4 font-bold text-base rounded-full transition-all border-2 border-foreground/20 text-foreground/50 hover:bg-foreground/5 hover:text-foreground/70 uppercase tracking-wide btn-mobile-effect bg-transparent shadow-none"
                 >
                   LIBERAR PLANO BÁSICO
                 </Button>
