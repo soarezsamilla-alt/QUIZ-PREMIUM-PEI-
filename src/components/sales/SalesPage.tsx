@@ -83,7 +83,7 @@ export function SalesPage() {
           </p>
 
           <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
-            <a href="#preco">
+            <a href="#plano-basico">
               <span>Quero meus modelos!</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5">
                 <ArrowRight size={16} />
@@ -365,7 +365,7 @@ export function SalesPage() {
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
               {/* Plano Básico */}
-              <div className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden">
+              <div id="plano-basico" className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden scroll-mt-24">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
                   Plano Básico
                 </div>
