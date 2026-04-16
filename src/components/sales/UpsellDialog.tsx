@@ -37,6 +37,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
 
   const benefits = [
     "+200 Modelos PEI Editáveis",
+    "+350 Atividades Pedagógicas Infantis",
     "+160 Atividades Lúdicas (BNCC)",
     "Todos os 6 Bônus Exclusivos",
     "Suporte VIP no WhatsApp",
