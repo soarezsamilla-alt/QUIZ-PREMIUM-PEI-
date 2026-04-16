@@ -251,10 +251,10 @@ export function SalesPage() {
             <div className="bonus-list flex flex-col gap-3">
               {[
                 { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
-                { n: 2, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
+                { n: 2, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
                 { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
-                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[5].imageUrl },
+                { n: 4, name: "Plano PDI e PEI", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
                 <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
