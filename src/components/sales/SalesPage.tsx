@@ -253,7 +253,7 @@ export function SalesPage() {
                 { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
                 { n: 2, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
                 { n: 3, name: "Plano PEI 4 e 5 Anos", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
-                { n: 4, name: "Atividades Diagnósticas de Volta às Aulas", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
+                { n: 4, name: "Atividades Diagnósticas", desc: "Guia focado na inclusão de alunos PDI e PEI.", img: BonusImages[1].imageUrl },
                 { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
