@@ -454,6 +454,7 @@ export function SalesPage() {
                   {[
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
+                    { bold: "+350 atividades pedagógicas Infantis", text: "com materiais extras", highlight: true },
                     { text: "Combo Ed. Especial with materiais extras" },
                     { text: "Acesso aos modelos fundamentais" },
                     { bold: "Todos os 6 Bônus", text: "incluídos" },
