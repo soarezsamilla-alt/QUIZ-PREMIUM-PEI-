@@ -212,6 +212,7 @@ export function SalesPage() {
               { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
               { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
               { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades dinâmicas alinhadas à BNCC para tornar o aprendizado mais inclusivo e divertido.", color: "gold" },
+              { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
               { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos already formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
             ].map((f, i) => (
@@ -252,7 +253,7 @@ export function SalesPage() {
               {[
                 { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
                 { n: 2, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
-                { n: 3, name: "Plano PEI 1º ao 9º Ano", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
+                { n: 3, name: "Plano PEI 1º ao 9º Ano", desc: "Guia para Education Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
                 { n: 4, name: "Atividades Diagnósticas", desc: "Atividades para avaliar alunos, com exercícios de português e matemática.", img: BonusImages[1].imageUrl },
                 { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
