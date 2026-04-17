@@ -1,13 +1,13 @@
 "use client";
 
-import { QuizManager } from "@/components/quiz/QuizManager";
+import { SalesPage } from "@/components/sales/SalesPage";
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
       <div className="bg-texture" />
       <div className="page relative z-10">
-        <QuizManager />
+        <SalesPage />
       </div>
     </main>
   );
