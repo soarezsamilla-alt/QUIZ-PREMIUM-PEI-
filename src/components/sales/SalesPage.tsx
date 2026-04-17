@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -79,7 +78,7 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-4">
+          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-2">
             <NextImage 
               src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
               alt="Visualização do Material PEI"
@@ -504,6 +503,10 @@ export function SalesPage() {
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-2 border border-green-100">
+                  💰 Você economiza: R$ 88,00 (90% OFF)
+                </div>
+
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <NextImage 
                     src="https://www.image2url.com/r2/default/images/1776208264702-2a7910e1-8e41-4ce7-ad7a-e51537ba6247.png"
@@ -512,10 +515,6 @@ export function SalesPage() {
                     className="object-contain"
                     data-ai-hint="basic plan"
                   />
-                </div>
-
-                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 88,00 (90% OFF)
                 </div>
                 
                 <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
@@ -567,6 +566,10 @@ export function SalesPage() {
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
+                  💰 Você economiza: R$ 172,10 (87% OFF)
+                </div>
+
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
                   <NextImage 
                     src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
@@ -575,10 +578,6 @@ export function SalesPage() {
                     className="object-contain"
                     data-ai-hint="payment methods"
                   />
-                </div>
-
-                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 173,00 (87% OFF)
                 </div>
 
                 <div className="price-items text-left mb-4 flex flex-col gap-2">
