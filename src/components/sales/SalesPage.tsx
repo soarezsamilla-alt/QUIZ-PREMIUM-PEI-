@@ -112,7 +112,6 @@ export function SalesPage() {
             </p>
           </div>
 
-          {/* Seção Como Funciona */}
           <div className="how-it-works-section mb-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -250,7 +249,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Seção Antes x Depois */}
           <div className="before-after-section my-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -261,7 +259,6 @@ export function SalesPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              {/* Card Antes */}
               <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-6 shadow-sm">
                 <h3 className="text-[#EF4444] text-xl font-black mb-6 flex items-center gap-2 justify-center">
                   <span>❌</span> ANTES (Sem nossos PEIs)
@@ -282,7 +279,6 @@ export function SalesPage() {
                 </div>
               </div>
 
-              {/* Card Depois */}
               <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-6 shadow-sm">
                 <h3 className="text-[#22C55E] text-xl font-black mb-6 flex items-center gap-2 justify-center">
                   <span>✅</span> DEPOIS (Com nossos PEIs)
@@ -483,7 +479,6 @@ export function SalesPage() {
             </div>
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
-              {/* Plano Básico */}
               <div id="plano-basico" className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden scroll-mt-24">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
                   Plano Básico
@@ -498,6 +493,10 @@ export function SalesPage() {
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
+                
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
+                  💰 Você economiza: R$ 88,00 (90% OFF)
+                </div>
 
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <NextImage 
@@ -539,7 +538,6 @@ export function SalesPage() {
                 </p>
               </div>
 
-              {/* Plano VIP/Completo - R$ 24,90 */}
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-4 px-3 text-center shadow-lg-custom overflow-visible relative">
                 <div className="relative">
                   <Timer />
@@ -558,6 +556,10 @@ export function SalesPage() {
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
+
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
+                  💰 Você economiza: R$ 173,00 (87% OFF)
+                </div>
                 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
                   <NextImage 
