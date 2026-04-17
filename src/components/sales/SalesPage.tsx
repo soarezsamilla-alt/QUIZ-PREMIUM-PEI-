@@ -79,7 +79,7 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[280px] mx-auto">
+          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect w-[90%] sm:max-w-[420px] mx-auto">
             <a href="#plano-pro-image">
               <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5 shrink-0">
@@ -474,7 +474,7 @@ export function SalesPage() {
                 <div className="w-6 h-6 rounded-full bg-[#B89FD4] border-2 border-white flex items-center justify-center text-[10px] font-black text-white shadow-sm ring-1 ring-black/5">L</div>
               </div>
               <p className="text-[13px] text-muted-foreground font-medium">
-                <span className="text-foreground font-bold tracking-tight">+1.500 professoras</span> já aprovaram
+                <span className="text-foreground font-bold tracking-tight">+1.847 professoras</span> já aprovaram
               </p>
             </div>
 
@@ -494,10 +494,6 @@ export function SalesPage() {
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
-                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 88,00 (90% OFF)
-                </div>
-
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <NextImage 
                     src="https://www.image2url.com/r2/default/images/1776208264702-2a7910e1-8e41-4ce7-ad7a-e51537ba6247.png"
@@ -506,6 +502,10 @@ export function SalesPage() {
                     className="object-contain"
                     data-ai-hint="basic plan"
                   />
+                </div>
+
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
+                  💰 Você economiza: R$ 88,00 (90% OFF)
                 </div>
                 
                 <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
@@ -556,10 +556,6 @@ export function SalesPage() {
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
-
-                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 173,00 (87% OFF)
-                </div>
                 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
                   <NextImage 
@@ -569,6 +565,10 @@ export function SalesPage() {
                     className="object-contain"
                     data-ai-hint="payment methods"
                   />
+                </div>
+
+                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
+                  💰 Você economiza: R$ 173,00 (87% OFF)
                 </div>
 
                 <div className="price-items text-left mb-4 flex flex-col gap-2">
