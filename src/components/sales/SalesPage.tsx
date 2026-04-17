@@ -112,6 +112,7 @@ export function SalesPage() {
             </p>
           </div>
 
+          {/* Seção Como Funciona */}
           <div className="how-it-works-section mb-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
