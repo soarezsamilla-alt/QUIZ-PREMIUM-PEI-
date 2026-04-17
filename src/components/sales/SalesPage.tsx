@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award, Star } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award, Star, Settings, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -79,10 +79,10 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[360px] mx-auto">
+          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[300px] mx-auto">
             <a href="#plano-pro-image">
               <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
-              <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5">
+              <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5 shrink-0">
                 <ArrowRight size={16} />
               </span>
             </a>
@@ -92,7 +92,6 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          {/* Social Proof Card Requested - Reduced padding and width */}
           <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[24px] p-6 mb-10 text-center shadow-sm max-w-[420px] mx-auto animate-slide-up">
             <h3 className="text-[#2E7D32] text-2xl sm:text-3xl font-black mb-1">
               +1.847 professoras
@@ -200,7 +199,7 @@ export function SalesPage() {
                             <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                           </div>
                           <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
+                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90_114,0.4)] backdrop-blur-[1px]">
                               AMOSTRA
                             </span>
                           </div>
@@ -210,6 +209,43 @@ export function SalesPage() {
                   ))}
                 </CarouselContent>
               </Carousel>
+            </div>
+          </div>
+
+          <div className="how-it-works-section my-16 animate-slide-up">
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Settings className="text-lilac-deep w-7 h-7" />
+                <h2 className="font-headline text-[28px] font-bold text-foreground">Como Funciona (É Simples!)</h2>
+              </div>
+              <p className="text-muted-foreground text-[15px]">3 passos simples para ter seus PEIs prontos HOJE</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">1</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Clique no botão abaixo</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Escolha o plano ideal para você e finalize o pagamento 100% seguro</p>
+              </div>
+              
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">2</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Receba IMEDIATAMENTE</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera, sem burocracia</p>
+              </div>
+
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">3</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Baixe e use HOJE</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Edite em 15 minutos (não 6 horas!) e entregue com confiança</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="bg-sky-50 text-sky-600 px-6 py-2.5 rounded-xl flex items-center gap-2.5 font-bold shadow-sm border border-sky-100">
+                <Clock size={18} className="animate-pulse" />
+                <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
+              </div>
             </div>
           </div>
 
