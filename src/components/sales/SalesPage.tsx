@@ -73,13 +73,13 @@ export function SalesPage() {
             <span className="text-gold-light">Tenha +200 modelos prontos HOJE.</span>
           </h1>
 
-          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[540px] mx-auto mb-7">
+          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[540px] mx-auto mb-2">
             Planejados por especialistas em educação inclusiva<br />
             Do 1º ao 9º ano • 100% editáveis no Word<br />
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <div className="relative z-10 w-full max-w-[380px] h-[260px] mx-auto mb-8">
+          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-4">
             <NextImage 
               src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
               alt="Visualização do Material PEI"
