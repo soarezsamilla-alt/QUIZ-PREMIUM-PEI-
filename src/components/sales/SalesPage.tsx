@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -38,7 +39,7 @@ export function SalesPage() {
           next = prev - 1;
         }
 
-        if (next > 16) return prev - 2; // Máximo de 16 conforme solicitado
+        if (next > 16) return prev - 2;
         if (next < 7) return 8;
         return next;
       });
@@ -52,7 +53,6 @@ export function SalesPage() {
       <div className="fixed top-0 left-0 right-0 z-[999] bg-[#2d1f36] border-b border-white/5 shadow-sm py-2 px-4 flex justify-center items-center gap-2.5">
         <div className="flex items-center gap-2.5">
           <span className="w-2 h-2 rounded-full bg-[#4ADE80] animate-pulse shrink-0" />
-          <Users size={16} className="text-white/80 shrink-0" />
           <p className="text-[12px] sm:text-[13px] text-white font-bold tracking-tight whitespace-nowrap">
             <span className="text-rose-light font-black">{visitors} professoras</span> estão vendo este material agora
           </p>
@@ -72,13 +72,13 @@ export function SalesPage() {
             ✨ Material Completo Liberado
           </div>
 
-          <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-3.5 max-w-[400px] mx-auto">
-            Tudo pronto, Professora!<br />
-            <em className="italic text-gold-light">Seus PEIs nunca mais serão um problema.</em>
+          <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[540px] mx-auto">
+            PARE de perder 6 horas criando PEIs do zero.<br />
+            <span className="text-gold-light">Tenha +200 modelos prontos HOJE.</span>
           </h1>
 
           <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
-            Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano. Além de ser editáveis você consegue adaptar para qualquer faixa etária e qualquer formato exigido pela sua escola.
+            Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano.
           </p>
 
           <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
@@ -252,9 +252,9 @@ export function SalesPage() {
             <div className="bonus-list flex flex-col gap-3">
               {[
                 { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
-                { n: 2, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
+                { n: 2, name: "Atividades Diagnósticas", desc: "Atividades para avaliar alunos, com exercícios de português e matemática.", img: BonusImages[1].imageUrl },
                 { n: 3, name: "Plano PEI 1º ao 9º Ano", desc: "Guia para Education Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
-                { n: 4, name: "Atividades Diagnósticas", desc: "Atividades para avaliar alunos, com exercícios de português e matemática.", img: BonusImages[1].imageUrl },
+                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
                 { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
                 { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
               ].map((b) => (
@@ -421,7 +421,7 @@ export function SalesPage() {
                 </p>
               </div>
 
-              {/* Plano VIP/Completo - R$ 24,90 (Original com Timer) */}
+              {/* Plano VIP/Completo - R$ 24,90 */}
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-4 px-3 text-center shadow-lg-custom overflow-visible relative">
                 <div className="relative">
                   <Timer />
@@ -527,7 +527,7 @@ export function SalesPage() {
                 </p>
                 <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
                 <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiênca em education inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal. Foi por isso que ela desenvolveu este material: um atalho prático, aprovado e, acima de tudo, lúdico para transformar suas aulas.
+                  Com mais de 10 anos de experiênca em education inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal.
                 </p>
               </div>
             </div>
@@ -562,7 +562,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente, sem perguntas e sem buroacia. O risco é todo nosso.
+                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente.
                   </p>
                 </div>
               </div>
@@ -583,7 +583,7 @@ export function SalesPage() {
           <div className="security-box bg-gradient-to-br from-lilac-pale to-gold-pale border-1.5 border-lilac-light rounded-md p-5 my-6 text-center">
             <div className="text-[15px] font-bold text-foreground mb-2">🔐 Compra 100% segura</div>
             <p className="text-[13px] text-foreground/80 leading-relaxed mb-3.5">
-              Seus dados estão protegidos com <strong className="text-lilac-deep font-semibold">criptografia de ponta a ponta</strong>. Utilizamos as plataformas de pagamento mais confiáveis do mercado.
+              Seus dados estão protegidos com <strong className="text-lilac-deep font-semibold">criptografia de ponta a ponta</strong>.
             </p>
             <div className="flex justify-center gap-5">
               <div className="flex flex-col items-center gap-1 text-[10px] font-bold uppercase tracking-wider text-muted-foreground">
