@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Users, Award } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -67,10 +67,6 @@ export function SalesPage() {
           </div>
 
           <div className="h-8" />
-
-          <div className="hero-badge relative z-10 inline-block text-[11px] font-bold tracking-[0.12em] uppercase text-gold bg-gold/15 border border-gold/40 p-1.5 px-3.5 rounded-full mb-10">
-            ✨ Material Completo Liberado
-          </div>
 
           <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[540px] mx-auto">
             PARE de perder 6 horas criando PEIs do zero.<br />
