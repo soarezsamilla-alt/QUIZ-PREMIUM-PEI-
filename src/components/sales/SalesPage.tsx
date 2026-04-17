@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -91,6 +91,27 @@ export function SalesPage() {
 
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
+
+          {/* Social Proof Card Requested */}
+          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[24px] p-8 mb-12 text-center shadow-sm max-w-[520px] mx-auto animate-slide-up">
+            <h3 className="text-[#2E7D32] text-3xl sm:text-4xl font-black mb-1">
+              +1.847 professoras
+            </h3>
+            <p className="text-[#2E7D32] text-[15px] sm:text-lg font-bold mb-5">
+              já economizaram 80% do tempo com PEIs
+            </p>
+            <div className="flex items-center justify-center gap-1.5 mb-2.5">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <svg key={i} className="w-6 h-6 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              ))}
+              <span className="text-[#D4A843] text-2xl font-black ml-2 tabular-nums">4.9/5.0</span>
+            </div>
+            <p className="text-muted-foreground text-[12px] font-bold uppercase tracking-wider opacity-60">
+              (847 avaliações verificadas)
+            </p>
+          </div>
 
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
