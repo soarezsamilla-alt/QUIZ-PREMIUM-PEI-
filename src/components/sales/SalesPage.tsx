@@ -60,7 +60,7 @@ export function SalesPage() {
       </div>
 
       <section id="sales-section" className="flex flex-col items-center animate-slide-up">
-        <div className="sales-hero w-full bg-gradient-to-br from-foreground via-[#4A2D5A] to-[#3A2048] p-12 px-6 pb-14 text-center relative overflow-hidden">
+        <div className="sales-hero w-full bg-gradient-to-br from-foreground via-[#4A2D5A] to-[#3A2048] p-12 px-6 pb-14 text-center relative overflow-hidden flex flex-col items-center">
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-[30%] left-[20%] w-[70%] h-[60%] rounded-full bg-rose/18 blur-[80px]" />
             <div className="absolute bottom-[70%] right-[80%] w-[60%] h-[50%] rounded-full bg-lilac/18 blur-[80px]" />
@@ -79,7 +79,7 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
+          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[360px] mx-auto">
             <a href="#plano-pro-image">
               <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5">
@@ -92,23 +92,23 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          {/* Social Proof Card Requested */}
-          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[24px] p-8 mb-12 text-center shadow-sm max-w-[520px] mx-auto animate-slide-up">
-            <h3 className="text-[#2E7D32] text-3xl sm:text-4xl font-black mb-1">
+          {/* Social Proof Card Requested - Reduced padding and width */}
+          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[24px] p-6 mb-10 text-center shadow-sm max-w-[420px] mx-auto animate-slide-up">
+            <h3 className="text-[#2E7D32] text-2xl sm:text-3xl font-black mb-1">
               +1.847 professoras
             </h3>
-            <p className="text-[#2E7D32] text-[15px] sm:text-lg font-bold mb-5">
+            <p className="text-[#2E7D32] text-[14px] sm:text-base font-bold mb-4">
               já economizaram 80% do tempo com PEIs
             </p>
-            <div className="flex items-center justify-center gap-1.5 mb-2.5">
+            <div className="flex items-center justify-center gap-1.5 mb-2">
               {[1, 2, 3, 4, 5].map((i) => (
-                <svg key={i} className="w-6 h-6 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
+                <svg key={i} className="w-5 h-5 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
                   <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
               ))}
-              <span className="text-[#D4A843] text-2xl font-black ml-2 tabular-nums">4.9/5.0</span>
+              <span className="text-[#D4A843] text-xl font-black ml-1.5 tabular-nums">4.9/5.0</span>
             </div>
-            <p className="text-muted-foreground text-[12px] font-bold uppercase tracking-wider opacity-60">
+            <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-wider opacity-60">
               (847 avaliações verificadas)
             </p>
           </div>
