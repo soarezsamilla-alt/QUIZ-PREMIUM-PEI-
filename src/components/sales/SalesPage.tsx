@@ -77,8 +77,10 @@ export function SalesPage() {
             <span className="text-gold-light">Tenha +200 modelos prontos HOJE.</span>
           </h1>
 
-          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[480px] mx-auto mb-7">
-            Pare de entregar PEI pela metade. Receba <strong className="text-rose-light font-semibold">+200 modelos prontos e editáveis,</strong> planejados por especialistas em educação inclusiva. Servem do 1º ao 9º ano.
+          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[540px] mx-auto mb-7">
+            Planejados por especialistas em educação inclusiva<br />
+            Do 1º ao 9º ano • 100% editáveis no Word<br />
+            Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
           <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
