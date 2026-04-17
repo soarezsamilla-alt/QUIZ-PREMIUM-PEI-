@@ -81,7 +81,7 @@ export function SalesPage() {
 
           <Button asChild className="relative z-10 h-auto py-4 px-12 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect">
             <a href="#plano-pro-image">
-              <span>Quero meus modelos!</span>
+              <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5">
                 <ArrowRight size={16} />
               </span>
