@@ -310,7 +310,7 @@ export function SalesPage() {
             </div>
 
             <div className="bg-[#FFFBEB] border-2 border-[#F59E0B] rounded-[18px] p-5 text-center shadow-sm">
-              <p className="text-[#B45309] font-black text-lg sm:text-xl flex items-center justify-center gap-3">
+              <p className="text-[#B45309] font-black text-base sm:text-lg flex items-center justify-center gap-3">
                 <span className="animate-pulse">⚡</span>
                 O que levaria 6 horas, você faz em 15 minutos
               </p>
