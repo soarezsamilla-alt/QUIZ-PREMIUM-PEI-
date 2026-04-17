@@ -96,6 +96,12 @@ export function SalesPage() {
               </span>
             </a>
           </Button>
+
+          <div className="relative z-10 text-[11px] sm:text-[12px] text-white/60 mt-4 font-bold flex items-center justify-center gap-2 uppercase tracking-tight">
+            <span className="flex items-center gap-1">🔒 Acesso imediato</span>
+            <span className="opacity-30">•</span>
+            <span>7 dias de garantia</span>
+          </div>
         </div>
 
         <div className="sales-content w-full max-w-[600px] px-5">
