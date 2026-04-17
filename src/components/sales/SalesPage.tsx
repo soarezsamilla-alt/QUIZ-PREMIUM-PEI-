@@ -112,6 +112,43 @@ export function SalesPage() {
             </p>
           </div>
 
+          <div className="how-it-works-section mb-16 animate-slide-up">
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Settings className="text-lilac-deep w-7 h-7" />
+                <h2 className="font-headline text-[28px] font-bold text-foreground">Como Funciona (É Simples!)</h2>
+              </div>
+              <p className="text-muted-foreground text-[15px]">3 passos simples para ter seus PEIs prontos HOJE</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">1</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Clique no botão abaixo</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Escolha o plano ideal para você e finalize o pagamento 100% seguro</p>
+              </div>
+              
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">2</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Receba IMEDIATAMENTE</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera, sem burocracia</p>
+              </div>
+
+              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">3</div>
+                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Baixe e use HOJE</h3>
+                <p className="text-muted-foreground text-[13px] leading-relaxed">Edite em 15 minutos (não 6 horas!) e entregue com confiança</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="bg-sky-50 text-sky-600 px-6 py-2.5 rounded-xl flex items-center gap-2.5 font-bold shadow-sm border border-sky-100">
+                <Clock size={18} className="animate-pulse" />
+                <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
+              </div>
+            </div>
+          </div>
+
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
           </h2>
@@ -199,7 +236,7 @@ export function SalesPage() {
                             <span className="text-[11px] text-white font-bold leading-tight">{sample.description}</span>
                           </div>
                           <div className="sample-watermark absolute inset-0 flex items-center justify-center -rotate-12 pointer-events-none">
-                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90_114,0.4)] backdrop-blur-[1px]">
+                            <span className="text-[8px] font-black tracking-[0.15em] uppercase text-white bg-gradient-to-br from-rose to-rose-deep border-2 border-white/60 p-1 px-2 rounded-md shadow-[0_4px_15px_rgba(196,90,114,0.4)] backdrop-blur-[1px]">
                               AMOSTRA
                             </span>
                           </div>
@@ -209,43 +246,6 @@ export function SalesPage() {
                   ))}
                 </CarouselContent>
               </Carousel>
-            </div>
-          </div>
-
-          <div className="how-it-works-section my-16 animate-slide-up">
-            <div className="text-center mb-10">
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <Settings className="text-lilac-deep w-7 h-7" />
-                <h2 className="font-headline text-[28px] font-bold text-foreground">Como Funciona (É Simples!)</h2>
-              </div>
-              <p className="text-muted-foreground text-[15px]">3 passos simples para ter seus PEIs prontos HOJE</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">1</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Clique no botão abaixo</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Escolha o plano ideal para você e finalize o pagamento 100% seguro</p>
-              </div>
-              
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">2</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Receba IMEDIATAMENTE</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera, sem burocracia</p>
-              </div>
-
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">3</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Baixe e use HOJE</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Edite em 15 minutos (não 6 horas!) e entregue com confiança</p>
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="bg-sky-50 text-sky-600 px-6 py-2.5 rounded-xl flex items-center gap-2.5 font-bold shadow-sm border border-sky-100">
-                <Clock size={18} className="animate-pulse" />
-                <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
-              </div>
             </div>
           </div>
 
