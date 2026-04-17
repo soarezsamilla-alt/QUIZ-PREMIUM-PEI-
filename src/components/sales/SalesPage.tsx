@@ -79,7 +79,7 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[300px] mx-auto">
+          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect max-w-[280px] mx-auto">
             <a href="#plano-pro-image">
               <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5 shrink-0">
@@ -92,22 +92,22 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[24px] p-6 mb-10 text-center shadow-sm max-w-[420px] mx-auto animate-slide-up">
-            <h3 className="text-[#2E7D32] text-2xl sm:text-3xl font-black mb-1">
+          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
+            <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
               +1.847 professoras
             </h3>
-            <p className="text-[#2E7D32] text-[14px] sm:text-base font-bold mb-4">
+            <p className="text-[#2E7D32] text-[13px] sm:text-sm font-bold mb-3">
               já economizaram 80% do tempo com PEIs
             </p>
             <div className="flex items-center justify-center gap-1.5 mb-2">
               {[1, 2, 3, 4, 5].map((i) => (
-                <svg key={i} className="w-5 h-5 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
+                <svg key={i} className="w-4 h-4 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
                   <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                 </svg>
               ))}
-              <span className="text-[#D4A843] text-xl font-black ml-1.5 tabular-nums">4.9/5.0</span>
+              <span className="text-[#D4A843] text-lg font-black ml-1 tabular-nums">4.9/5.0</span>
             </div>
-            <p className="text-muted-foreground text-[10px] font-bold uppercase tracking-wider opacity-60">
+            <p className="text-muted-foreground text-[9px] font-bold uppercase tracking-wider opacity-60">
               (847 avaliações verificadas)
             </p>
           </div>
@@ -246,6 +246,68 @@ export function SalesPage() {
                   ))}
                 </CarouselContent>
               </Carousel>
+            </div>
+          </div>
+
+          {/* Seção Antes x Depois */}
+          <div className="before-after-section my-16 animate-slide-up">
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <span className="text-2xl">🔄</span>
+                <h2 className="font-headline text-[28px] font-bold text-foreground">Sua Vida ANTES x DEPOIS</h2>
+              </div>
+              <p className="text-muted-foreground text-[15px]">Veja a transformação que +1.800 professoras já viveram</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+              {/* Card Antes */}
+              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-6 shadow-sm">
+                <h3 className="text-[#EF4444] text-xl font-black mb-6 flex items-center gap-2 justify-center">
+                  <span>❌</span> ANTES (Sem nossos PEIs)
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    { icon: "⏰", text: "6+ horas pesquisando no Google" },
+                    { icon: "😨", text: "Insegurança se está correto" },
+                    { icon: "😫", text: "Estresse de última hora (22h da noite)" },
+                    { icon: "📄", text: "Começar do ZERO a cada PEI" },
+                    { icon: "💸", text: "Pagar R$ 150+ por PEI terceirizado" }
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 py-3 border-b border-red-100 last:border-0">
+                      <span className="text-lg shrink-0">{item.icon}</span>
+                      <span className="text-[14px] font-medium text-gray-700 leading-tight">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Card Depois */}
+              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-6 shadow-sm">
+                <h3 className="text-[#22C55E] text-xl font-black mb-6 flex items-center gap-2 justify-center">
+                  <span>✅</span> DEPOIS (Com nossos PEIs)
+                </h3>
+                <div className="space-y-4">
+                  {[
+                    { icon: "⚡", text: "15 minutos editando modelo pronto" },
+                    { icon: "😊", text: "Confiança em material validado" },
+                    { icon: "🏡", text: "Tranquilidade e tempo com família" },
+                    { icon: "📚", text: "200+ modelos sempre à disposição" },
+                    { icon: "💰", text: "Investimento único de R$ 9,90" }
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 py-3 border-b border-green-100 last:border-0">
+                      <span className="text-lg shrink-0">{item.icon}</span>
+                      <span className="text-[14px] font-medium text-gray-700 leading-tight">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-[#FFFBEB] border-2 border-[#F59E0B] rounded-[18px] p-5 text-center shadow-sm">
+              <p className="text-[#B45309] font-black text-lg sm:text-xl flex items-center justify-center gap-3">
+                <span className="animate-pulse">⚡</span>
+                O que levaria 6 horas, você faz em 15 minutos
+              </p>
             </div>
           </div>
 
