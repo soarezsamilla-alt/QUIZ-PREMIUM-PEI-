@@ -68,7 +68,7 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <h1 className="hero-title relative z-10 font-headline text-[25px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+          <h1 className="hero-title relative z-10 font-headline text-[26px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, pare de perder horas criando PEIs do zero.<br />
             <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
@@ -163,6 +163,38 @@ export function SalesPage() {
                 <Clock size={18} className="animate-pulse" />
                 <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
               </div>
+            </div>
+          </div>
+
+          {/* O que você vai receber hoje */}
+          <div className="receive-today-section my-16 animate-slide-up">
+            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+              O que você vai <em className="italic text-lilac-deep">receber hoje</em>
+            </h2>
+            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+              Suporte completo para otimizar seu tempo com materiais 100% editáveis
+            </p>
+
+            <div className="features-list flex flex-col gap-5 my-6">
+              {[
+                { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
+                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
+                { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
+                { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
+                { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
+                { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
+              ].map((f, i) => (
+                <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
+                  <div className={cn(
+                    "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
+                    f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
+                  )}>{f.icon}</div>
+                  <div className="flex-1 pt-1">
+                    <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
+                    <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -324,38 +356,6 @@ export function SalesPage() {
                 <span className="animate-pulse">⚡</span>
                 O que levaria 6 horas, você faz em 15 minutos
               </p>
-            </div>
-          </div>
-
-          {/* O que você vai receber hoje */}
-          <div className="receive-today-section my-16 animate-slide-up">
-            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-              O que você vai <em className="italic text-lilac-deep">receber hoje</em>
-            </h2>
-            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-              Suporte completo para otimizar seu tempo com materiais 100% editáveis
-            </p>
-
-            <div className="features-list flex flex-col gap-5 my-6">
-              {[
-                { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
-                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
-                { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
-                { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
-                { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
-                { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
-              ].map((f, i) => (
-                <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
-                  <div className={cn(
-                    "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
-                    f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
-                  )}>{f.icon}</div>
-                  <div className="flex-1 pt-1">
-                    <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
-                    <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
@@ -579,16 +579,16 @@ export function SalesPage() {
                 <div className="price-items text-left mb-4 flex flex-col gap-2">
                   {[
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
-                    { bold: "+350 atividades pedagógicas Infantis", text: "", highlight: true },
-                    { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
+                    { bold: "+350 atividades pedagógicas Infantis", text: "" },
+                    { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC" },
                     { text: "Combo Ed. Especial" },
                     { text: "Acesso aos modelos fundamentais" },
                     { bold: "Todos os 6 Bônus", text: "incluídos" },
                     { text: "PEI Autismo Ed. Infantil" },
                     { text: "Relatórios AEE completos" },
                     { bold: "Acesso a futuras atualizações", text: "" },
-                    { text: "Suporte prioritário via WhatsApp", highlight: true },
-                    { text: "WhatsApp Clube da Inclusão", highlight: true }
+                    { text: "Suporte prioritário via WhatsApp" },
+                    { text: "WhatsApp Clube da Inclusão" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-[13px] text-foreground/80 leading-relaxed">
                       <div className="w-[18px] h-[18px] rounded-full bg-gradient-to-br from-rose to-lilac-deep flex items-center justify-center shrink-0 mt-0.5">
@@ -596,7 +596,7 @@ export function SalesPage() {
                       </div>
                       <span>
                         {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
-                        <span className={item.highlight ? "text-lilac-deep font-semibold" : ""}>{item.text}</span>
+                        <span>{item.text}</span>
                       </span>
                     </div>
                   ))}
