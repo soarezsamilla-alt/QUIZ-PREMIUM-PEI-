@@ -358,14 +358,6 @@ export function SalesPage() {
             ))}
           </div>
 
-          <div className="bncc-wrap flex items-center gap-3.5 p-4.5 px-5 bg-gradient-to-br from-lilac-pale to-rose-pale border-1.5 border-lilac-light rounded-md my-6">
-            <div className="w-[52px] h-[52px] rounded-full bg-gradient-to-br from-lilac-deep to-rose-deep flex items-center justify-center text-white text-[10px] font-extrabold text-center tracking-wider leading-tight shrink-0">BNCC<br />COMP.</div>
-            <div>
-              <div className="text-[13px] font-bold text-foreground mb-0.5">Compatível com a BNCC</div>
-              <div className="text-[12px] text-muted-foreground leading-relaxed">Modelos já formatados e organizados, prontos para preencher e imprimir na hora.</div>
-            </div>
-          </div>
-
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
             <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
             <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
