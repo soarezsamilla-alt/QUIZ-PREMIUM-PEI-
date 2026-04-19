@@ -90,7 +90,7 @@ export function SalesPage() {
 
           <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect w-[90%] sm:max-w-[420px] mx-auto">
             <a href="#plano-pro-image">
-              <span>✅ QUERO ECONOMIZAR 6 HORAS AGORA</span>
+              <span>QUERO GARANTIR MEU ACESSO AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5 shrink-0">
                 <ArrowRight size={16} />
               </span>
@@ -327,7 +327,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* O que você vai receber hoje */}
+          {/* O que você vai receber hoje (Moved) */}
           <div className="receive-today-section my-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               O que você vai <em className="italic text-lilac-deep">receber hoje</em>
@@ -359,13 +359,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
-          </div>
-
-          {/* Testimonials */}
+          {/* Testimonials (Moved above Bonus) */}
           <div className="testimonials-section mb-16">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
@@ -523,7 +517,7 @@ export function SalesPage() {
                 <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
                   {[
                     { bold: "Apenas materiais", text: "básicos de planejamento" },
-                    { bold: "Combo Ed. Especial", text: "com materiais extras" },
+                    { bold: "Combo Ed. Especial", text: "" },
                     { bold: "PEI Autismo", text: "Ed. Infantil" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-start gap-2 text-[12px] text-foreground/80 leading-tight">
@@ -587,7 +581,7 @@ export function SalesPage() {
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "+350 atividades pedagógicas Infantis", text: "", highlight: true },
                     { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC", highlight: true },
-                    { text: "Combo Ed. Especial com materiais extras" },
+                    { text: "Combo Ed. Especial" },
                     { text: "Acesso aos modelos fundamentais" },
                     { bold: "Todos os 6 Bônus", text: "incluídos" },
                     { text: "PEI Autismo Ed. Infantil" },
@@ -666,7 +660,7 @@ export function SalesPage() {
           </div>
 
           <div className="mt-14 mb-10 text-center animate-slide-up">
-            <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-5">
+            <h2 className="section-title font-headline text-lg font-bold text-foreground leading-tight mb-5">
               Como vou <em className="italic text-lilac-deep">receber meu material?</em>
             </h2>
             <div className="bg-white border-2 border-dashed border-lilac-light rounded-2xl p-6 shadow-sm-custom max-w-[500px] mx-auto">
