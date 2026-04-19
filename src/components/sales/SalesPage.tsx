@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -68,8 +69,8 @@ export function SalesPage() {
           <div className="h-8" />
 
           <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
-            Professora, pare de perder noites criando PEIs do zero.<br />
-            <span className="text-gold-light">Receba hoje +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
+            Professora, pare de perder horas criando PEIs do zero.<br />
+            <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
 
           <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[600px] mx-auto mb-6">
@@ -328,33 +329,35 @@ export function SalesPage() {
           </div>
 
           {/* O que você vai receber hoje */}
-          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-            O que você vai <em className="italic text-lilac-deep">receber hoje</em>
-          </h2>
-          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-            Suporte completo para otimizar seu tempo com materiais 100% editáveis
-          </p>
+          <div className="receive-today-section my-16 animate-slide-up">
+            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+              O que você vai <em className="italic text-lilac-deep">receber hoje</em>
+            </h2>
+            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+              Suporte completo para otimizar seu tempo com materiais 100% editáveis
+            </p>
 
-          <div className="features-list flex flex-col gap-5 my-6">
-            {[
-              { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
-              { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
-              { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
-              { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
-              { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
-              { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
-            ].map((f, i) => (
-              <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
-                <div className={cn(
-                  "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
-                  f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
-                )}>{f.icon}</div>
-                <div className="flex-1 pt-1">
-                  <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
-                  <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
+            <div className="features-list flex flex-col gap-5 my-6">
+              {[
+                { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
+                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
+                { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
+                { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
+                { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
+                { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
+              ].map((f, i) => (
+                <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
+                  <div className={cn(
+                    "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
+                    f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
+                  )}>{f.icon}</div>
+                  <div className="flex-1 pt-1">
+                    <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
+                    <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
@@ -363,55 +366,51 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* Testimonials (Mover para antes dos bônus) */}
-          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-            Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
-          </h2>
-          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-            Veja o que professoras que já utilizam estão dizendo
-          </p>
+          {/* Testimonials */}
+          <div className="testimonials-section mb-16">
+            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+              Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
+            </h2>
+            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+              Veja o que professoras que já utilizam estão dizendo
+            </p>
 
-          <div className="testimonials-carousel-container relative px-4 mb-8">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: false,
-                  stopOnMouseEnter: false,
-                }),
-              ]}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-1.5">
-                {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
-                    <div className="testimonial-card-item p-1">
-                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
-                        <NextImage
-                          src={testimonial.imageUrl}
-                          alt={testimonial.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={testimonial.imageHint}
-                        />
+            <div className="testimonials-carousel-container relative px-4 mb-8">
+              <Carousel
+                opts={{
+                  align: "start",
+                  loop: true,
+                }}
+                plugins={[
+                  Autoplay({
+                    delay: 2000,
+                    stopOnInteraction: false,
+                    stopOnMouseEnter: false,
+                  }),
+                ]}
+                className="w-full"
+              >
+                <CarouselContent className="-ml-1.5">
+                  {TestimonialImages.map((testimonial, index) => (
+                    <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
+                      <div className="testimonial-card-item p-1">
+                        <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
+                          <NextImage
+                            src={testimonial.imageUrl}
+                            alt={testimonial.description}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={testimonial.imageHint}
+                          />
+                        </div>
                       </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
-              <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
-            </Carousel>
-          </div>
-
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+                <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+              </Carousel>
+            </div>
           </div>
 
           {/* Bonus */}
