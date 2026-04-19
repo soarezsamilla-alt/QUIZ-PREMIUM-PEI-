@@ -68,7 +68,7 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <h1 className="hero-title relative z-10 font-headline text-[23px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+          <h1 className="hero-title relative z-10 font-headline text-[24px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, pare de perder horas criando PEIs do zero.<br />
             <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
@@ -327,7 +327,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* O que você vai receber hoje (Moved) */}
+          {/* O que você vai receber hoje */}
           <div className="receive-today-section my-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               O que você vai <em className="italic text-lilac-deep">receber hoje</em>
@@ -359,7 +359,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Testimonials (Moved above Bonus) */}
+          {/* Testimonials */}
           <div className="testimonials-section mb-16">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
