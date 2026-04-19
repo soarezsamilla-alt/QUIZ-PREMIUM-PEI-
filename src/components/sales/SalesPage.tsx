@@ -107,6 +107,7 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
+          {/* Social Proof Badge */}
           <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
             <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
               +1.847 professoras
@@ -127,6 +128,7 @@ export function SalesPage() {
             </p>
           </div>
 
+          {/* How it works */}
           <div className="how-it-works-section mb-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -164,6 +166,7 @@ export function SalesPage() {
             </div>
           </div>
 
+          {/* Samples */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Veja algumas <em className="italic text-lilac-deep">amostras</em>
           </h2>
@@ -264,6 +267,7 @@ export function SalesPage() {
             </div>
           </div>
 
+          {/* Before After */}
           <div className="before-after-section my-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -329,6 +333,7 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
+          {/* O que você vai receber hoje (Moved after Before/After) */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             O que você vai <em className="italic text-lilac-deep">receber hoje</em>
           </h2>
@@ -363,6 +368,7 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
+          {/* Testimonials */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
           </h2>
@@ -413,6 +419,7 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
+          {/* Bonus */}
           <div className="bonus-section my-7">
             <div className="text-center mb-5">
               <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
@@ -635,6 +642,7 @@ export function SalesPage() {
             </div>
           </div>
 
+          {/* Teacher Section */}
           <div className="teacher-section my-10 animate-slide-up">
             <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-4 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
               <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
@@ -675,6 +683,7 @@ export function SalesPage() {
             </div>
           </div>
 
+          {/* Guarantee */}
           <div className="guarantee-section my-12 animate-slide-up">
             <div className="bg-white border-2 border-gold-light rounded-3xl p-8 shadow-lg-custom relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
@@ -711,6 +720,7 @@ export function SalesPage() {
           </h2>
           <FaqSection />
 
+          {/* Trust Seal */}
           <div className="security-box bg-gradient-to-br from-lilac-pale to-gold-pale border-1.5 border-lilac-light rounded-md p-5 my-6 text-center">
             <div className="text-[15px] font-bold text-foreground mb-2">🔐 Compra 100% segura</div>
             <p className="text-[13px] text-foreground/80 leading-relaxed mb-3.5">
