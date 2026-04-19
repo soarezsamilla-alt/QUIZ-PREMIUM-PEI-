@@ -67,9 +67,9 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[540px] mx-auto">
-            PARE de perder 6 horas criando PEIs do zero.<br />
-            <span className="text-gold-light">Tenha +200 modelos prontos HOJE.</span>
+          <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+            Professora, pare de perder noites criando PEIs do zero.<br />
+            <span className="text-gold-light">Receba hoje +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
 
           <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[540px] mx-auto mb-2">
