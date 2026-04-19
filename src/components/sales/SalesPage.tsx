@@ -78,7 +78,7 @@ export function SalesPage() {
             Adapte para qualquer faixa etária e formato exigido pela sua escola.
           </p>
 
-          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-2">
+          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4">
             <NextImage 
               src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
               alt="Visualização do Material PEI"
@@ -137,22 +137,22 @@ export function SalesPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">1</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Clique no botão abaixo</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Escolha o plano ideal para você e finalize o pagamento 100% seguro</p>
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">1</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Clique no botão abaixo</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o plano ideal e finalize o pagamento seguro</p>
               </div>
               
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">2</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Receba IMEDIATAMENTE</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera, sem burocracia</p>
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">2</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Receba IMEDIATAMENTE</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera.</p>
               </div>
 
-              <div className="bg-white p-7 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-11 h-11 rounded-full bg-rose text-white flex items-center justify-center font-bold text-lg mb-5 shadow-sm">3</div>
-                <h3 className="text-[17px] font-bold text-foreground mb-2 leading-tight">Baixe e use HOJE</h3>
-                <p className="text-muted-foreground text-[13px] leading-relaxed">Edite em 15 minutos (não 6 horas!) e entregue com confiança</p>
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">3</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Baixe e use HOJE</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Edite em 15 minutos e entregue com confiança</p>
               </div>
             </div>
 
@@ -273,12 +273,12 @@ export function SalesPage() {
               <p className="text-muted-foreground text-[15px]">Veja a transformação que +1.800 professoras já viveram</p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-6 shadow-sm">
-                <h3 className="text-[#EF4444] text-xl font-black mb-6 flex items-center gap-2 justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-5 shadow-sm">
+                <h3 className="text-[#EF4444] text-[18px] font-black mb-5 flex items-center gap-2 justify-center">
                   <span>❌</span> ANTES (Sem nossos PEIs)
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {[
                     { icon: "⏰", text: "6+ horas pesquisando no Google" },
                     { icon: "😨", text: "Insegurança se está correto" },
@@ -286,29 +286,29 @@ export function SalesPage() {
                     { icon: "📄", text: "Começar do ZERO a cada PEI" },
                     { icon: "💸", text: "Pagar R$ 150+ por PEI terceirizado" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 py-3 border-b border-red-100 last:border-0">
-                      <span className="text-lg shrink-0">{item.icon}</span>
-                      <span className="text-[14px] font-medium text-gray-700 leading-tight">{item.text}</span>
+                    <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-red-100 last:border-0">
+                      <span className="text-base shrink-0">{item.icon}</span>
+                      <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-6 shadow-sm">
-                <h3 className="text-[#22C55E] text-xl font-black mb-6 flex items-center gap-2 justify-center">
+              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-5 shadow-sm">
+                <h3 className="text-[#22C55E] text-[18px] font-black mb-5 flex items-center gap-2 justify-center">
                   <span>✅</span> DEPOIS (Com nossos PEIs)
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {[
                     { icon: "⚡", text: "15 minutos editando modelo pronto" },
                     { icon: "😊", text: "Confiança em material validado" },
                     { icon: "🏡", text: "Tranquilidade e tempo com família" },
-                    { icon: "📚", text: "200+ modelos sempre à disposição" },
+                    { icon: "📚", text: "Modelos de PEI sempre à disposição" },
                     { icon: "💰", text: "Investimento único de R$ 9,90" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 py-3 border-b border-green-100 last:border-0">
-                      <span className="text-lg shrink-0">{item.icon}</span>
-                      <span className="text-[14px] font-medium text-gray-700 leading-tight">{item.text}</span>
+                    <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-green-100 last:border-0">
+                      <span className="text-base shrink-0">{item.icon}</span>
+                      <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
                   ))}
                 </div>
@@ -316,7 +316,7 @@ export function SalesPage() {
             </div>
 
             <div className="bg-[#FFFBEB] border-2 border-[#F59E0B] rounded-[18px] p-5 text-center shadow-sm">
-              <p className="text-[#B45309] font-black text-base sm:text-lg flex items-center justify-center gap-3">
+              <p className="text-[#B45309] font-black text-base flex items-center justify-center gap-3">
                 <span className="animate-pulse">⚡</span>
                 O que levaria 6 horas, você faz em 15 minutos
               </p>
