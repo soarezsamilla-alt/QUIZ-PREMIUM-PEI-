@@ -68,7 +68,7 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <h1 className="hero-title relative z-10 font-headline text-[24px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+          <h1 className="hero-title relative z-10 font-headline text-[25px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, pare de perder horas criando PEIs do zero.<br />
             <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
@@ -689,7 +689,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você tem 7 dias para testar todo o material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente.
+                    Fique tranquila! Você tem 7 dias para testar todo the material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente.
                   </p>
                 </div>
               </div>
