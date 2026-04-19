@@ -68,14 +68,13 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          <h1 className="hero-title relative z-10 font-headline text-3xl font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+          <h1 className="hero-title relative z-10 font-headline text-[23px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, pare de perder horas criando PEIs do zero.<br />
             <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
 
           <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[600px] mx-auto mb-6">
-            Do 1º ao 9º ano • Educação infantil e AEE inclusos • 100% editáveis no Word<br />
-            Adapta para qualquer rede (pública ou privada) e qualquer formato exigido pela sua escola.<br />
+            Do 1º ao 9º ano • Educação infantil e AEE inclusos • 100% editáveis no Word • Adapta para qualquer rede (pública ou privada) e qualquer formato exigido pela sua escola.<br />
             <span className="font-bold text-rose-light">Baixe hoje, edite em 15 minutos, entregue hoje mesmo.</span>
           </p>
 
