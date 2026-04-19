@@ -363,6 +363,56 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
+          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+            Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
+          </h2>
+          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+            Veja o que professoras que já utilizam estão dizendo
+          </p>
+
+          <div className="testimonials-carousel-container relative px-4 mb-8">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              plugins={[
+                Autoplay({
+                  delay: 2000,
+                  stopOnInteraction: false,
+                  stopOnMouseEnter: false,
+                }),
+              ]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-1.5">
+                {TestimonialImages.map((testimonial, index) => (
+                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
+                    <div className="testimonial-card-item p-1">
+                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
+                        <NextImage
+                          src={testimonial.imageUrl}
+                          alt={testimonial.description}
+                          fill
+                          className="object-cover"
+                          data-ai-hint={testimonial.imageHint}
+                        />
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+              <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
+            </Carousel>
+          </div>
+
+          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
+          </div>
+
           <div className="bonus-section my-7">
             <div className="text-center mb-5">
               <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
@@ -411,56 +461,6 @@ export function SalesPage() {
                 </div>
               ))}
             </div>
-          </div>
-
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
-          </div>
-
-          <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-            Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
-          </h2>
-          <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-            Veja o que professoras que já utilizam estão dizendo
-          </p>
-
-          <div className="testimonials-carousel-container relative px-4 mb-8">
-            <Carousel
-              opts={{
-                align: "start",
-                loop: true,
-              }}
-              plugins={[
-                Autoplay({
-                  delay: 2000,
-                  stopOnInteraction: false,
-                  stopOnMouseEnter: false,
-                }),
-              ]}
-              className="w-full"
-            >
-              <CarouselContent className="-ml-1.5">
-                {TestimonialImages.map((testimonial, index) => (
-                  <CarouselItem key={index} className="pl-1.5 basis-[75%] sm:basis-1/2">
-                    <div className="testimonial-card-item p-1">
-                      <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-border shadow-md-custom hover:border-rose-light hover:shadow-lg-custom hover:scale-[1.02] transition-all">
-                        <NextImage
-                          src={testimonial.imageUrl}
-                          alt={testimonial.description}
-                          fill
-                          className="object-cover"
-                          data-ai-hint={testimonial.imageHint}
-                        />
-                      </div>
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
-              <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
-            </Carousel>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
