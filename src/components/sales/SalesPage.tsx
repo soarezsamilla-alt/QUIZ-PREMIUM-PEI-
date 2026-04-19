@@ -340,7 +340,6 @@ export function SalesPage() {
             {[
               { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
               { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
-              { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades dinâmicas alinhadas à BNCC para tornar o aprendizado mais inclusivo e divertido.", color: "gold" },
               { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
               { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
               { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
@@ -356,6 +355,62 @@ export function SalesPage() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
+            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
+          </div>
+
+          <div className="bonus-section my-7">
+            <div className="text-center mb-5">
+              <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
+                🎁 Bônus exclusivos
+              </div>
+              <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
+                Você merece <em className="italic text-lilac-deep">ainda mais</em>
+              </h2>
+              <p className="section-sub text-[15px] text-muted-foreground leading-relaxed">
+                6 bônus incríveis que transformarão sua forma de trabalhar
+              </p>
+            </div>
+            <div className="bonus-list flex flex-col gap-3">
+              {[
+                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
+                { n: 2, name: "Atividades Diagnósticas", desc: "Atividades para avaliar alunos, com exercícios de português e matemática.", img: BonusImages[1].imageUrl },
+                { n: 3, name: "Plano PEI 1º ao 9º Ano", desc: "Guia para Educação Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
+                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
+                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
+                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
+              ].map((b) => (
+                <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
+                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
+                  
+                  <div className="relative w-24 h-32 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
+                    <NextImage 
+                      src={b.img} 
+                      alt={b.name} 
+                      fill 
+                      className="object-cover"
+                      data-ai-hint="bonus material" 
+                    />
+                    <div className="absolute top-1.5 left-1.5 w-6 h-6 rounded-full bg-gold text-white text-[11px] font-black flex items-center justify-center shadow-md border border-white/20">
+                      {b.n}
+                    </div>
+                  </div>
+
+                  <div className="flex-1">
+                    <div className="text-base font-bold text-foreground leading-tight mb-1.5">{b.name}</div>
+                    <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
+                    <div className="mt-2.5 flex items-center gap-2">
+                      <div className="text-[16px] font-bold text-muted-foreground line-through decoration-rose-deep decoration-[2px]">R$ 37,90</div>
+                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
@@ -406,62 +461,6 @@ export function SalesPage() {
               <CarouselPrevious className="left-[-20px] sm:left-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
               <CarouselNext className="right-[-20px] sm:right-[-35px] h-10 w-10 border-2 border-rose-deep text-rose-deep bg-rose-pale hover:bg-rose-light shadow-[0_4px_12px_rgba(196,90,114,0.2)]" />
             </Carousel>
-          </div>
-
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
-          </div>
-
-          <div className="bonus-section my-7">
-            <div className="text-center mb-5">
-              <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
-                🎁 Bônus exclusivos
-              </div>
-              <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
-                Você merece <em className="italic text-lilac-deep">ainda mais</em>
-              </h2>
-              <p className="section-sub text-[15px] text-muted-foreground leading-relaxed">
-                6 bônus incríveis que transformarão sua forma de trabalhar
-              </p>
-            </div>
-            <div className="bonus-list flex flex-col gap-3">
-              {[
-                { n: 1, name: "Plano Educacional PEI", desc: "Guia completo com apoio individualizado e estratégias adaptadas.", img: BonusImages[0].imageUrl },
-                { n: 2, name: "Atividades Diagnósticas", desc: "Atividades para avaliar alunos, com exercícios de português e matemática.", img: BonusImages[1].imageUrl },
-                { n: 3, name: "Plano PEI 1º ao 9º Ano", desc: "Guia para Education Infantil com histórico e desenvolvimento.", img: BonusImages[2].imageUrl },
-                { n: 4, name: "Plano PDPI", desc: "Estratégias, acompanhamento e planejamento psicoeducacional.", img: BonusImages[3].imageUrl },
-                { n: 5, name: "Planejamento AEE 2026", desc: "Planejamento completo para Sala de Recurso Multifuncional.", img: BonusImages[4].imageUrl },
-                { n: 6, name: "Ficha Individual PEI", desc: "Ficha de acompanhamento para alunos com necessidades especiais.", img: BonusImages[5].imageUrl }
-              ].map((b) => (
-                <div key={b.n} className="bonus-card flex items-center gap-5 p-4 pr-5 bg-white rounded-md border-1.5 border-border shadow-sm-custom hover:border-gold-light hover:translate-x-1 transition-all relative overflow-hidden">
-                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-gold to-rose" />
-                  
-                  <div className="relative w-24 h-32 rounded-lg overflow-hidden border border-border shrink-0 bg-lilac-pale shadow-sm">
-                    <NextImage 
-                      src={b.img} 
-                      alt={b.name} 
-                      fill 
-                      className="object-cover"
-                      data-ai-hint="bonus material" 
-                    />
-                    <div className="absolute top-1.5 left-1.5 w-6 h-6 rounded-full bg-gold text-white text-[11px] font-black flex items-center justify-center shadow-md border border-white/20">
-                      {b.n}
-                    </div>
-                  </div>
-
-                  <div className="flex-1">
-                    <div className="text-base font-bold text-foreground leading-tight mb-1.5">{b.name}</div>
-                    <div className="text-[13px] text-muted-foreground leading-relaxed line-clamp-3">{b.desc}</div>
-                    <div className="mt-2.5 flex items-center gap-2">
-                      <div className="text-[16px] font-bold text-muted-foreground line-through decoration-rose-deep decoration-[2px]">R$ 37,90</div>
-                      <div className="text-[14px] font-black text-rose-deep bg-rose-pale px-2 py-0.5 rounded-full border border-rose-light/30">GRÁTIS</div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
           </div>
 
           <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
@@ -659,7 +658,7 @@ export function SalesPage() {
                 </p>
                 <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
                 <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiênca em education inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal.
+                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal.
                 </p>
               </div>
             </div>
