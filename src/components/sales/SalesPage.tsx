@@ -73,7 +73,7 @@ export function SalesPage() {
             <span className="text-gold-light">Receba +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
 
-          <p className="hero-sub relative z-10 text-[17px] text-white/75 leading-relaxed max-w-[600px] mx-auto mb-6">
+          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[600px] mx-auto mb-6">
             Do 1º ao 9º ano • Educação infantil e AEE inclusos • 100% editáveis no Word • Adapta para qualquer rede (pública ou privada) e qualquer formato exigido pela sua escola.<br />
             <span className="font-bold text-rose-light">Baixe hoje, edite em 15 minutos, entregue hoje mesmo.</span>
           </p>
