@@ -72,10 +72,10 @@ export function SalesPage() {
             <span className="text-gold-light">Receba hoje +200 modelos prontos, editáveis no Word e validados por especialistas em educação inclusiva.</span>
           </h1>
 
-          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[540px] mx-auto mb-2">
-            Planejados por especialistas em educação inclusiva<br />
-            Do 1º ao 9º ano • 100% editáveis no Word<br />
-            Adapte para qualquer faixa etária e formato exigido pela sua escola.
+          <p className="hero-sub relative z-10 text-[16px] text-white/75 leading-relaxed max-w-[600px] mx-auto mb-6">
+            Do 1º ao 9º ano • Educação infantil e AEE inclusos • 100% editáveis no Word<br />
+            Adapta para qualquer rede (pública ou privada) e qualquer formato exigido pela sua escola.<br />
+            <span className="font-bold text-rose-light">Baixe hoje, edite em 15 minutos, entregue amanhã.</span>
           </p>
 
           <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4">
@@ -327,13 +327,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          <div className="section-divider flex items-center gap-2.5 my-10 mb-7">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-            <span className="text-lg text-gold animate-pulse drop-shadow-[0_0_8px_rgba(212,168,67,0.5)] font-bold">✦</span>
-            <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
-          </div>
-
-          {/* O que você vai receber hoje (Moved after Before/After) */}
+          {/* O que você vai receber hoje */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             O que você vai <em className="italic text-lilac-deep">receber hoje</em>
           </h2>
@@ -369,7 +363,7 @@ export function SalesPage() {
             <div className="flex-1 h-px bg-gradient-to-r from-border via-border to-transparent" />
           </div>
 
-          {/* Testimonials */}
+          {/* Testimonials (Mover para antes dos bônus) */}
           <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
             Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
           </h2>
