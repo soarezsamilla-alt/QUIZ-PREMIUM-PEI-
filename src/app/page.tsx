@@ -1,13 +1,13 @@
 "use client";
 
-import { SalesPage } from "@/components/sales/SalesPage";
+import { QuizContainer } from "@/components/quiz/QuizContainer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative">
+    <main className="min-h-screen relative overflow-x-hidden">
       <div className="bg-texture" />
-      <div className="page relative z-10">
-        <SalesPage />
+      <div className="relative z-10">
+        <QuizContainer />
       </div>
     </main>
   );
