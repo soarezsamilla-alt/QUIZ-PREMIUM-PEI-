@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -9,17 +10,39 @@ import { LoadingScreen } from "./LoadingScreen";
 import { useRouter } from "next/navigation";
 
 export function QuizContainer() {
-  const [currentStep, setCurrentStep] = useState(0);
+  const [currentStep, setCurrentStep] = useState<number>(0);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [isFinishing, setIsFinishing] = useState(false);
+  const [isFinishing, setIsFinishing] = useState<boolean>(false);
+  const [isHydrated, setIsHydrated] = useState(false);
   const router = useRouter();
 
+  // Recupera o estado salvo ao montar o componente
   useEffect(() => {
+    const savedStep = sessionStorage.getItem('pei_quiz_step');
+    const savedFinishing = sessionStorage.getItem('pei_quiz_finishing');
+    
+    if (savedStep) {
+      setCurrentStep(parseInt(savedStep, 10));
+    }
+    if (savedFinishing === 'true') {
+      setIsFinishing(true);
+    }
+    
+    setIsHydrated(true);
+
     // Tracking inicial
     if (typeof window !== 'undefined' && window.fbq) {
       window.fbq('trackCustom', 'QuizStart');
     }
   }, []);
+
+  // Salva o estado sempre que mudar
+  useEffect(() => {
+    if (isHydrated) {
+      sessionStorage.setItem('pei_quiz_step', currentStep.toString());
+      sessionStorage.setItem('pei_quiz_finishing', isFinishing.toString());
+    }
+  }, [currentStep, isFinishing, isHydrated]);
 
   const handleOptionSelect = (index: number) => {
     setSelectedOption(index);
@@ -43,8 +66,20 @@ export function QuizContainer() {
     }, 400);
   };
 
+  const handleLoadingComplete = () => {
+    // Limpa o progresso ao concluir para que uma nova visita comece do zero
+    sessionStorage.removeItem('pei_quiz_step');
+    sessionStorage.removeItem('pei_quiz_finishing');
+    router.push("/ofertas");
+  };
+
+  // Evita disparidade de hidratação (SSR vs Client)
+  if (!isHydrated) {
+    return null;
+  }
+
   if (isFinishing) {
-    return <LoadingScreen onComplete={() => router.push("/ofertas")} />;
+    return <LoadingScreen onComplete={handleLoadingComplete} />;
   }
 
   const step = QUIZ_STEPS[currentStep];
