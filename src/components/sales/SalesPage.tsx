@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from "react";
 import { FaqSection } from "./FaqSection";
-import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award, Star, Settings, Clock } from "lucide-react";
+import { Check, ArrowRight, ShieldCheck, Lock, CheckCircle2, Award, Star, Settings, Clock, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import {
@@ -67,6 +67,12 @@ export function SalesPage() {
           </div>
 
           <div className="h-8" />
+
+          {/* New highlight element */}
+          <div className="relative z-10 inline-flex items-center gap-1.5 bg-gradient-to-r from-gold-deep via-gold to-gold-deep text-white text-[11px] font-black tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5 shadow-[0_4px_20px_rgba(212,168,67,0.3)] btn-mobile-effect border border-white/20">
+            <Sparkles size={12} className="text-white animate-pulse" />
+            <span>Material completo liberado</span>
+          </div>
 
           <h1 className="hero-title relative z-10 font-headline text-[26px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, com base nas suas respostas, separamos tudo que você precisa:<br />
@@ -557,7 +563,7 @@ export function SalesPage() {
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
                   <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
                 </div>
-                <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
+                <div className="font-headline text-[74px] font-bold text-[#2563EB] Math.abs(24.90) leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
                   24
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
