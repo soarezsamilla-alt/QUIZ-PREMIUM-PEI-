@@ -145,7 +145,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Samples - MOVED HERE */}
+          {/* Samples */}
           <div className="samples-section mb-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Veja algumas <em className="italic text-lilac-deep">amostras</em>
@@ -586,12 +586,12 @@ export function SalesPage() {
 
                 <div className="price-items text-left mb-4 flex flex-col gap-2">
                   {[
+                    { bold: "Todos os 6 Bônus", text: "incluídos" },
                     { bold: "+200 Modelos PEI", text: "prontos e editáveis" },
                     { bold: "+350 atividades pedagógicas Infantis", text: "" },
                     { bold: "+160 Atividades Lúdicas", text: "alinhadas à BNCC" },
                     { text: "Combo Ed. Especial" },
                     { text: "Acesso aos modelos fundamentais" },
-                    { bold: "Todos os 6 Bônus", text: "incluídos" },
                     { text: "PEI Autismo Ed. Infantil" },
                     { text: "Relatórios AEE completos" },
                     { bold: "Acesso a futuras atualizações", text: "" },
