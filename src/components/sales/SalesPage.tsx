@@ -86,7 +86,7 @@ export function SalesPage() {
 
           <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4">
             <NextImage 
-              src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
+              src="https://www.image2url.com/r2/default/images/1776983219615-c8446671-6396-41d4-9d62-8e0b64305c1e.png"
               alt="Visualização do Material PEI"
               fill
               className="object-contain"
@@ -576,7 +576,7 @@ export function SalesPage() {
 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
                   <NextImage 
-                    src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
+                    src="https://www.image2url.com/r2/default/images/1776983219615-c8446671-6396-41d4-9d62-8e0b64305c1e.png"
                     alt="Formas de pagamento"
                     fill
                     className="object-contain"
