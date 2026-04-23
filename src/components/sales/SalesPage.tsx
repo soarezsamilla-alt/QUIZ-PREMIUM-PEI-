@@ -74,7 +74,7 @@ export function SalesPage() {
             <span>Material completo liberado</span>
           </div>
 
-          <h1 className="hero-title relative z-10 font-headline text-[26px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
+          <h1 className="hero-title relative z-10 font-headline text-[24px] sm:text-[26px] font-bold text-white leading-tight mb-4 max-w-[620px] mx-auto">
             Professora, com base nas suas respostas, separamos tudo que você precisa:<br />
             <span className="text-gold-light">+200 modelos de PEI prontos, editáveis no Word e validados por especialistas em educação inclusiva prontos pra resolver exatamente o que você nos contou.</span>
           </h1>
@@ -495,7 +495,7 @@ export function SalesPage() {
             <div className="plans-wrapper flex flex-col gap-6 my-8">
               <div id="plano-basico" className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden scroll-mt-24">
                 <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
-                  Plano Básico
+                  Pacote Inicial
                 </div>
                 
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
@@ -515,7 +515,7 @@ export function SalesPage() {
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <NextImage 
                     src="https://www.image2url.com/r2/default/images/1776208264702-2a7910e1-8e41-4ce7-ad7a-e51537ba6247.png"
-                    alt="Oferta Plano Básico"
+                    alt="Oferta Pacote Inicial"
                     fill
                     className="object-contain"
                     data-ai-hint="basic plan"
@@ -544,7 +544,7 @@ export function SalesPage() {
                   onClick={() => setIsUpsellOpen(true)}
                   className="w-[85%] mx-auto h-auto py-4 bg-[#e3daf2] text-foreground font-bold text-base rounded-full shadow-sm hover:opacity-90 transition-all uppercase tracking-wide btn-mobile-effect border-none"
                 >
-                  LIBERAR PLANO BÁSICO
+                  LIBERAR PACOTE INICIAL
                 </Button>
                 <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed px-2">
                   Acesso imediato por E-mail ou WhatsApp.
@@ -557,7 +557,7 @@ export function SalesPage() {
                 </div>
 
                 <div className="inline-block bg-rose-pale text-rose-deep text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-2">
-                  Plano Pro
+                  Pacote Completo
                 </div>
                 
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
@@ -612,7 +612,7 @@ export function SalesPage() {
 
                 <Button asChild className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
                   <a href="https://pay.wiapy.com/w9nRplH8zg">
-                    🔓 LIBERAR PLANO PRO AGORA
+                    🔓 LIBERAR PACOTE COMPLETO AGORA
                   </a>
                 </Button>
                 <p className="text-[12px] text-rose-deep font-bold uppercase tracking-tight mt-3">

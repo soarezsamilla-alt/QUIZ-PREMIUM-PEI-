@@ -58,7 +58,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
             ESPERE, PROFESSORA! 🛑
           </h2>
           <p className="text-white/80 text-sm leading-relaxed mb-6">
-            Não leve apenas o básico. Por apenas mais <span className="text-gold font-bold">R$ 10,00</span>, você garante o <span className="text-rose-light font-bold">PLANO PRO</span> completo agora!
+            Não leve apenas o básico. Por apenas mais <span className="text-gold font-bold">R$ 10,00</span>, você garante o <span className="text-rose-light font-bold">PACOTE COMPLETO</span> agora!
           </p>
 
           <div className="flex flex-col items-center gap-2 mb-2">
@@ -103,7 +103,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
           <div className="flex flex-col gap-4">
             <Button asChild className="w-full h-auto py-4 bg-gradient-to-br from-rose to-rose-deep text-white font-black text-base rounded-full shadow-xl hover:scale-[1.02] transition-all btn-mobile-effect border-none">
               <a href="https://pay.wiapy.com/VBXdX_ymda" className="flex items-center justify-center">
-                QUERO O PLANO PRO COM DESCONTO
+                QUERO O PACOTE COMPLETO COM DESCONTO
                 <ArrowRight size={18} className="ml-2" />
               </a>
             </Button>
@@ -112,7 +112,7 @@ export function UpsellDialog({ isOpen, onOpenChange, basicUrl }: UpsellDialogPro
               href={basicUrl}
               className="text-center text-[11px] font-bold text-muted-foreground underline underline-offset-4 hover:text-foreground transition-colors"
             >
-              Não, quero continuar com o Plano Básico (R$ 9,90)
+              Não, quero continuar com o Pacote Inicial (R$ 9,90)
             </a>
           </div>
 
