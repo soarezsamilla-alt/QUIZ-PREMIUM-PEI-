@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -514,7 +513,7 @@ export function SalesPage() {
 
                 <div className="relative w-full h-[320px] -mt-2 -mb-2">
                   <NextImage 
-                    src="https://www.image2url.com/r2/default/images/1776208264702-2a7910e1-8e41-4ce7-ad7a-e51537ba6247.png"
+                    src="https://www.image2url.com/r2/default/images/1776983548530-3e143a63-ded9-4f32-a4d6-955700d42762.png"
                     alt="Oferta Pacote Inicial"
                     fill
                     className="object-contain"
