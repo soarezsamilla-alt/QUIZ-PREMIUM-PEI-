@@ -113,8 +113,8 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          {/* O que você vai receber hoje - MOVED UP */}
-          <div className="receive-today-section my-16 animate-slide-up">
+          {/* O que você vai receber hoje */}
+          <div className="receive-today-section mt-10 mb-12 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               O que você vai <em className="italic text-lilac-deep">receber hoje</em>
             </h2>
@@ -145,66 +145,7 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Social Proof Badge */}
-          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
-            <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
-              +1.847 professoras
-            </h3>
-            <p className="text-[#2E7D32] text-[13px] sm:text-sm font-bold mb-3">
-              já economizaram 80% do tempo com PEIs
-            </p>
-            <div className="flex items-center justify-center gap-1.5 mb-2">
-              {[1, 2, 3, 4, 5].map((i) => (
-                <svg key={i} className="w-4 h-4 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
-                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
-                </svg>
-              ))}
-              <span className="text-[#D4A843] text-lg font-black ml-1 tabular-nums">4.9/5.0</span>
-            </div>
-            <p className="text-muted-foreground text-[9px] font-bold uppercase tracking-wider opacity-60">
-              (847 avaliações verificadas)
-            </p>
-          </div>
-
-          {/* How it works */}
-          <div className="how-it-works-section mb-16 animate-slide-up">
-            <div className="text-center mb-10">
-              <div className="flex items-center justify-center gap-3 mb-2">
-                <Settings className="text-lilac-deep w-7 h-7" />
-                <h2 className="font-headline text-[28px] font-bold text-foreground">Como Funciona (É Simples!)</h2>
-              </div>
-              <p className="text-muted-foreground text-[15px]">3 passos simples para ter seus PEIs prontos HOJE</p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">1</div>
-                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Clique no botão abaixo</h3>
-                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o plano ideal e finalize o pagamento seguro</p>
-              </div>
-              
-              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">2</div>
-                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Receba IMEDIATAMENTE</h3>
-                <p className="text-muted-foreground text-[12px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera.</p>
-              </div>
-
-              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
-                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">3</div>
-                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Baixe e use HOJE</h3>
-                <p className="text-muted-foreground text-[12px] leading-relaxed">Edite em 15 minutos e entregue com confiança</p>
-              </div>
-            </div>
-
-            <div className="flex justify-center">
-              <div className="bg-sky-50 text-sky-600 px-6 py-2.5 rounded-xl flex items-center gap-2.5 font-bold shadow-sm border border-sky-100">
-                <Clock size={18} className="animate-pulse" />
-                <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Samples */}
+          {/* Samples - MOVED HERE */}
           <div className="samples-section mb-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Veja algumas <em className="italic text-lilac-deep">amostras</em>
@@ -303,6 +244,65 @@ export function SalesPage() {
                     ))}
                   </CarouselContent>
                 </Carousel>
+              </div>
+            </div>
+          </div>
+
+          {/* Social Proof Badge */}
+          <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
+            <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
+              +1.847 professoras
+            </h3>
+            <p className="text-[#2E7D32] text-[13px] sm:text-sm font-bold mb-3">
+              já economizaram 80% do tempo com PEIs
+            </p>
+            <div className="flex items-center justify-center gap-1.5 mb-2">
+              {[1, 2, 3, 4, 5].map((i) => (
+                <svg key={i} className="w-4 h-4 fill-[#D4A843] text-[#D4A843]" viewBox="0 0 24 24">
+                  <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                </svg>
+              ))}
+              <span className="text-[#D4A843] text-lg font-black ml-1 tabular-nums">4.9/5.0</span>
+            </div>
+            <p className="text-muted-foreground text-[9px] font-bold uppercase tracking-wider opacity-60">
+              (847 avaliações verificadas)
+            </p>
+          </div>
+
+          {/* How it works */}
+          <div className="how-it-works-section mb-16 animate-slide-up">
+            <div className="text-center mb-10">
+              <div className="flex items-center justify-center gap-3 mb-2">
+                <Settings className="text-lilac-deep w-7 h-7" />
+                <h2 className="font-headline text-[28px] font-bold text-foreground">Como Funciona (É Simples!)</h2>
+              </div>
+              <p className="text-muted-foreground text-[15px]">3 passos simples para ter seus PEIs prontos HOJE</p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">1</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Clique no botão abaixo</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o plano ideal e finalize o pagamento seguro</p>
+              </div>
+              
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">2</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Receba IMEDIATAMENTE</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Acesso instantâneo por email e WhatsApp. Sem espera.</p>
+              </div>
+
+              <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
+                <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">3</div>
+                <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Baixe e use HOJE</h3>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Edite em 15 minutos e entregue com confiança</p>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <div className="bg-sky-50 text-sky-600 px-6 py-2.5 rounded-xl flex items-center gap-2.5 font-bold shadow-sm border border-sky-100">
+                <Clock size={18} className="animate-pulse" />
+                <span className="text-sm tracking-tight">Tempo total: menos de 3 minutos</span>
               </div>
             </div>
           </div>
@@ -563,7 +563,7 @@ export function SalesPage() {
                 <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
                   <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 197,90</span>
                 </div>
-                <div className="font-headline text-[74px] font-bold text-[#2563EB] Math.abs(24.90) leading-none mb-0 flex justify-center items-start">
+                <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
                   24
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
