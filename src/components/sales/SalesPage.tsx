@@ -113,6 +113,38 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
+          {/* O que você vai receber hoje - MOVED UP */}
+          <div className="receive-today-section my-16 animate-slide-up">
+            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
+              O que você vai <em className="italic text-lilac-deep">receber hoje</em>
+            </h2>
+            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
+              Suporte completo para otimizar seu tempo com materiais 100% editáveis
+            </p>
+
+            <div className="features-list flex flex-col gap-5 my-6">
+              {[
+                { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
+                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
+                { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
+                { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
+                { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
+                { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
+              ].map((f, i) => (
+                <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
+                  <div className={cn(
+                    "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
+                    f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
+                  )}>{f.icon}</div>
+                  <div className="flex-1 pt-1">
+                    <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
+                    <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Social Proof Badge */}
           <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
             <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
@@ -272,38 +304,6 @@ export function SalesPage() {
                   </CarouselContent>
                 </Carousel>
               </div>
-            </div>
-          </div>
-
-          {/* O que você vai receber hoje */}
-          <div className="receive-today-section my-16 animate-slide-up">
-            <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-              O que você vai <em className="italic text-lilac-deep">receber hoje</em>
-            </h2>
-            <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-7">
-              Suporte completo para otimizar seu tempo com materiais 100% editáveis
-            </p>
-
-            <div className="features-list flex flex-col gap-5 my-6">
-              {[
-                { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
-                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
-                { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
-                { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
-                { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
-                { icon: "🖨️", title: "Prontos para imprimir", desc: "Modelos já formatados e organizados, prontos para preencher e imprimir na hora.", color: "gold" }
-              ].map((f, i) => (
-                <div key={i} className="feature-card flex items-start gap-5 p-7 bg-white border-1.5 border-border rounded-md shadow-sm-custom hover:border-lilac-light hover:shadow-md-custom hover:-translate-y-0.5 transition-all">
-                  <div className={cn(
-                    "w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shrink-0 border shadow-sm",
-                    f.color === "rose" ? "bg-rose-pale border-rose-light" : f.color === "lilac" ? "bg-lilac-pale border-lilac-light" : "bg-gold-pale border-gold-light"
-                  )}>{f.icon}</div>
-                  <div className="flex-1 pt-1">
-                    <div className="text-lg font-bold text-foreground mb-1 leading-tight">{f.title}</div>
-                    <div className="text-[15px] text-muted-foreground leading-normal">{f.desc}</div>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
 
