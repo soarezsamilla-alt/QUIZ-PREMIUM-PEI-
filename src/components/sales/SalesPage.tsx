@@ -84,7 +84,7 @@ export function SalesPage() {
             <span className="font-bold text-rose-light">Baixe hoje, edite em 15 minutos, entregue hoje mesmo.</span>
           </p>
 
-          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4">
+          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4 animate-pulse">
             <NextImage 
               src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
               alt="Visualização do Material PEI"
@@ -94,7 +94,7 @@ export function SalesPage() {
             />
           </div>
 
-          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect w-[90%] sm:max-w-[420px] mx-auto">
+          <Button asChild className="relative z-10 h-auto py-4 px-8 bg-gradient-to-br from-rose to-rose-deep text-white font-bold rounded-full shadow-[0_8px_32px_rgba(196,90,114,0.45)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(196,90,114,0.55)] transition-all btn-mobile-effect w-[90%] sm:max-w-[420px] mx-auto animate-pulse">
             <a href="#plano-pro-image">
               <span>QUERO GARANTIR MEU ACESSO AGORA</span>
               <span className="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center ml-2.5 shrink-0">
@@ -283,7 +283,7 @@ export function SalesPage() {
               <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
                 <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">1</div>
                 <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Clique no botão abaixo</h3>
-                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o plano ideal e finalize o pagamento seguro</p>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o pacote ideal e finalize o pagamento seguro</p>
               </div>
               
               <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
