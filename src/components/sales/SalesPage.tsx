@@ -84,7 +84,7 @@ export function SalesPage() {
             <span className="font-bold text-rose-light">Baixe hoje, edite em 15 minutos, entregue hoje mesmo.</span>
           </p>
 
-          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4 animate-pulse">
+          <div className="relative z-10 w-full max-w-[460px] h-[300px] mx-auto mb-2 -mt-4">
             <NextImage 
               src="https://image2url.com/r2/default/images/1774485545973-da3dd075-1976-45b7-aebd-8b931b88f882.png"
               alt="Visualização do Material PEI"
