@@ -18,13 +18,9 @@ import { SampleImages, SampleImagesRow2, TestimonialImages, BonusImages } from "
 import NextImage from "next/image";
 import { Timer } from "./Timer";
 import { PurchaseNotification } from "./PurchaseNotification";
-import { UpsellDialog } from "./UpsellDialog";
 
 export function SalesPage() {
   const [visitors, setVisitors] = useState(8);
-  const [isUpsellOpen, setIsUpsellOpen] = useState(false);
-
-  const BASIC_URL = "https://pay.wiapy.com/qCy3ZzlkT1";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -88,6 +84,8 @@ export function SalesPage() {
               src="https://www.image2url.com/r2/default/images/1776984250215-d7ff79b6-d68a-4fa3-a383-417ce868746e.png"
               alt="Visualização do Material PEI"
               fill
+              priority
+              sizes="(max-width: 768px) 100vw, 460px"
               className="object-contain"
               data-ai-hint="product preview"
             />
@@ -180,6 +178,7 @@ export function SalesPage() {
                               src={sample.imageUrl}
                               alt={sample.description}
                               fill
+                              sizes="(max-width: 768px) 60vw, 200px"
                               className="object-cover"
                               data-ai-hint={sample.imageHint}
                             />
@@ -226,6 +225,7 @@ export function SalesPage() {
                               src={sample.imageUrl}
                               alt={sample.description}
                               fill
+                              sizes="(max-width: 768px) 60vw, 200px"
                               className="object-cover"
                               data-ai-hint={sample.imageHint}
                             />
@@ -399,6 +399,7 @@ export function SalesPage() {
                             src={testimonial.imageUrl}
                             alt={testimonial.description}
                             fill
+                            sizes="(max-width: 768px) 75vw, 300px"
                             className="object-cover"
                             data-ai-hint={testimonial.imageHint}
                           />
@@ -443,6 +444,7 @@ export function SalesPage() {
                       src={b.img} 
                       alt={b.name} 
                       fill 
+                      sizes="100px"
                       className="object-cover"
                       data-ai-hint="bonus material" 
                     />
@@ -492,64 +494,6 @@ export function SalesPage() {
             </div>
 
             <div className="plans-wrapper flex flex-col gap-6 my-8">
-              <div id="plano-basico" className="price-box bg-white rounded-xl border-2 border-border p-2 text-center shadow-sm-custom overflow-hidden scroll-mt-24">
-                <div className="inline-block bg-muted text-muted-foreground text-[10px] font-black tracking-widest uppercase p-1 px-3 rounded-full mb-0.5">
-                  Pacote Inicial
-                </div>
-                
-                <div className="flex items-center justify-center gap-1.5 mb-0 text-muted-foreground">
-                  <span className="text-[16px] font-bold line-through decoration-rose-deep decoration-[2px]">De R$ 97,90</span>
-                </div>
-                <div className="font-headline text-[74px] font-bold text-foreground leading-none -mt-1 flex justify-center items-start">
-                  <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  9
-                  <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
-                </div>
-                <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
-                
-                <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-2 border border-green-100">
-                  💰 Você economiza: R$ 88,00 (90% OFF)
-                </div>
-
-                <div className="relative w-full h-[320px] -mt-2 -mb-2">
-                  <NextImage 
-                    src="https://www.image2url.com/r2/default/images/1776983548530-3e143a63-ded9-4f32-a4d6-955700d42762.png"
-                    alt="Oferta Pacote Inicial"
-                    fill
-                    className="object-contain"
-                    data-ai-hint="basic plan"
-                  />
-                </div>
-                
-                <div className="price-items text-left mb-2 flex flex-col gap-0.5 px-2">
-                  {[
-                    { bold: "Apenas materiais", text: "básicos de planejamento" },
-                    { bold: "Combo Ed. Especial", text: "" },
-                    { bold: "PEI Autismo", text: "Ed. Infantil" }
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-start gap-2 text-[12px] text-foreground/80 leading-tight">
-                      <div className="w-[14px] h-[14px] rounded-full bg-border flex items-center justify-center shrink-0 mt-0.5">
-                        <Check size={8} className="text-muted-foreground" strokeWidth={4} />
-                      </div>
-                      <span>
-                        {item.bold && <strong className="font-semibold text-foreground">{item.bold} </strong>}
-                        <span>{item.text}</span>
-                      </span>
-                    </div>
-                  ))}
-                </div>
-
-                <Button 
-                  onClick={() => setIsUpsellOpen(true)}
-                  className="w-[85%] mx-auto h-auto py-4 bg-[#e3daf2] text-foreground font-bold text-base rounded-full shadow-sm hover:opacity-90 transition-all uppercase tracking-wide btn-mobile-effect border-none"
-                >
-                  LIBERAR PACOTE INICIAL
-                </Button>
-                <p className="text-[11px] text-muted-foreground mt-3 leading-relaxed px-2">
-                  Acesso imediato por E-mail ou WhatsApp.
-                </p>
-              </div>
-
               <div className="price-box bg-white rounded-xl border-2 border-rose-light p-4 px-3 text-center shadow-lg-custom overflow-visible relative">
                 <div className="relative">
                   <Timer />
@@ -578,6 +522,7 @@ export function SalesPage() {
                     src="https://www.image2url.com/r2/default/images/1776984250215-d7ff79b6-d68a-4fa3-a383-417ce868746e.png"
                     alt="Formas de pagamento"
                     fill
+                    sizes="(max-width: 768px) 100vw, 400px"
                     className="object-contain"
                     data-ai-hint="payment methods"
                   />
@@ -648,6 +593,7 @@ export function SalesPage() {
                       src="https://image2url.com/r2/default/images/1774892605952-79b85bcc-4826-4190-8f9e-c98e29387430.png"
                       alt="Professora Luciana"
                       fill
+                      sizes="64px"
                       className="object-cover"
                     />
                   </div>
@@ -741,11 +687,6 @@ export function SalesPage() {
       </section>
       
       <PurchaseNotification />
-      <UpsellDialog 
-        isOpen={isUpsellOpen} 
-        onOpenChange={setIsUpsellOpen} 
-        basicUrl={BASIC_URL}
-      />
     </>
   );
 }
