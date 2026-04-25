@@ -63,7 +63,6 @@ export function SalesPage() {
 
           <div className="h-8" />
 
-          {/* New highlight element */}
           <div className="relative z-10 inline-flex items-center gap-1.5 bg-gradient-to-r from-gold-deep via-gold to-gold-deep text-white text-[11px] font-black tracking-[0.15em] uppercase px-4 py-1.5 rounded-full mb-5 shadow-[0_4px_20px_rgba(212,168,67,0.3)] btn-mobile-effect border border-white/20">
             <Sparkles size={12} className="text-white animate-pulse" />
             <span>Material completo liberado</span>
@@ -110,7 +109,6 @@ export function SalesPage() {
         <div className="sales-content w-full max-w-[600px] px-5">
           <div className="h-10" />
 
-          {/* O que você vai receber hoje */}
           <div className="receive-today-section mt-10 mb-12 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               O que você vai <em className="italic text-lilac-deep">receber hoje</em>
@@ -142,7 +140,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Samples */}
           <div className="samples-section mb-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Veja algumas <em className="italic text-lilac-deep">amostras</em>
@@ -247,7 +244,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Social Proof Badge */}
           <div className="bg-[#E8F5E9] border-2 border-[#2E7D32] rounded-[20px] p-5 mb-10 text-center shadow-sm max-w-[380px] mx-auto animate-slide-up">
             <h3 className="text-[#2E7D32] text-xl sm:text-2xl font-black mb-1">
               +1.847 professoras
@@ -268,7 +264,6 @@ export function SalesPage() {
             </p>
           </div>
 
-          {/* How it works */}
           <div className="how-it-works-section mb-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -306,7 +301,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Before After */}
           <div className="before-after-section my-16 animate-slide-up">
             <div className="text-center mb-10">
               <div className="flex items-center justify-center gap-3 mb-2">
@@ -347,7 +341,7 @@ export function SalesPage() {
                     { icon: "😊", text: "Confiança em material validado" },
                     { icon: "🏡", text: "Tranquilidade e tempo com família" },
                     { icon: "📚", text: "Modelos de PEI sempre à disposição" },
-                    { icon: "💰", text: "Investimento único de R$ 9,90" }
+                    { icon: "💰", text: "Investimento único de R$ 19,90" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-green-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
@@ -366,7 +360,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Testimonials */}
           <div className="testimonials-section mb-16">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
               Quem comprou, <em className="italic text-lilac-deep">recomenda!</em>
@@ -414,7 +407,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Bonus */}
           <div className="bonus-section my-7">
             <div className="text-center mb-5">
               <div className="inline-block bg-gradient-to-br from-gold to-gold-deep text-white text-[10px] font-extrabold tracking-[0.12em] uppercase p-1.5 px-3.5 rounded-full mb-2.5 shadow-[0_3px_12px_rgba(168,124,37,0.35)] btn-mobile-effect relative overflow-hidden">
@@ -508,19 +500,19 @@ export function SalesPage() {
                 </div>
                 <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  24
+                  19
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
                 <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 172,10 (87% OFF)
+                  💰 Você economiza: R$ 178,00 (90% OFF)
                 </div>
 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
                   <NextImage 
                     src="https://www.image2url.com/r2/default/images/1776984250215-d7ff79b6-d68a-4fa3-a383-417ce868746e.png"
-                    alt="Formas de pagamento"
+                    alt="Visualização do Material PEI"
                     fill
                     sizes="(max-width: 768px) 100vw, 400px"
                     className="object-contain"
@@ -581,7 +573,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Teacher Section */}
           <div className="teacher-section my-10 animate-slide-up">
             <div className="bg-white border-2 border-rose-light/50 rounded-3xl p-4 shadow-lg-custom relative overflow-hidden max-w-[500px] mx-auto">
               <div className="absolute top-0 right-0 w-24 h-24 bg-rose/5 rounded-full -mr-12 -mt-12 pointer-events-none" />
@@ -623,7 +614,6 @@ export function SalesPage() {
             </div>
           </div>
 
-          {/* Guarantee */}
           <div className="guarantee-section my-12 animate-slide-up">
             <div className="bg-white border-2 border-gold-light rounded-3xl p-8 shadow-lg-custom relative overflow-hidden">
               <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
@@ -660,7 +650,6 @@ export function SalesPage() {
           </h2>
           <FaqSection />
 
-          {/* Trust Seal */}
           <div className="security-box bg-gradient-to-br from-lilac-pale to-gold-pale border-1.5 border-lilac-light rounded-md p-5 my-6 text-center">
             <div className="text-[15px] font-bold text-foreground mb-2">🔐 Compra 100% segura</div>
             <p className="text-[13px] text-foreground/80 leading-relaxed mb-3.5">
