@@ -311,11 +311,11 @@ export function SalesPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-5 shadow-sm">
-                <h3 className="text-[#EF4444] text-[18px] font-black mb-5 flex items-center gap-2 justify-center">
+              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-4 shadow-sm">
+                <h3 className="text-[#EF4444] text-[18px] font-black mb-3 flex items-center gap-2 justify-center">
                   <span>❌</span> ANTES (Sem nossos PEIs)
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-1">
                   {[
                     { icon: "⏰", text: "6+ horas pesquisando no Google" },
                     { icon: "😨", text: "Insegurança se está correto" },
@@ -323,7 +323,7 @@ export function SalesPage() {
                     { icon: "📄", text: "Começar do ZERO a cada PEI" },
                     { icon: "💸", text: "Pagar R$ 150+ por PEI terceirizado" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-red-100 last:border-0">
+                    <div key={i} className="flex items-center gap-2.5 py-1.5 border-b border-red-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
                       <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
@@ -331,11 +331,11 @@ export function SalesPage() {
                 </div>
               </div>
 
-              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-5 shadow-sm">
-                <h3 className="text-[#22C55E] text-[18px] font-black mb-5 flex items-center gap-2 justify-center">
+              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-4 shadow-sm">
+                <h3 className="text-[#22C55E] text-[18px] font-black mb-3 flex items-center gap-2 justify-center">
                   <span>✅</span> DEPOIS (Com nossos PEIs)
                 </h3>
-                <div className="space-y-3">
+                <div className="space-y-1">
                   {[
                     { icon: "⚡", text: "15 minutos editando modelo pronto" },
                     { icon: "😊", text: "Confiança em material validado" },
@@ -343,7 +343,7 @@ export function SalesPage() {
                     { icon: "📚", text: "Modelos de PEI sempre à disposição" },
                     { icon: "💰", text: "Investimento único de R$ 19,90" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2.5 py-2.5 border-b border-green-100 last:border-0">
+                    <div key={i} className="flex items-center gap-2.5 py-1.5 border-b border-green-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
                       <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
@@ -548,7 +548,7 @@ export function SalesPage() {
 
                 <Button asChild className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-base rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
                   <a href="https://pay.wiapy.com/VBXdX_ymda">
-                    🔓 LIBERAR PACOTE COMPLETO AGORA
+                    LIBERAR MATERIAL COMPLETO AGORA
                   </a>
                 </Button>
                 <p className="text-[12px] text-rose-deep font-bold uppercase tracking-tight mt-3">
@@ -597,7 +597,7 @@ export function SalesPage() {
                 </p>
                 <div className="w-8 h-0.5 bg-gradient-to-r from-rose to-lilac-deep rounded-full mb-3" />
                 <p className="text-[12px] text-muted-foreground leading-tight text-center max-w-[440px]">
-                  Com mais de 10 anos de experiência em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal.
+                  Com mais de 10 anos de experiêncie em educação inclusiva, a Professora Luciana sentiu na pele a dificuldade de criar planos individualizados eficientes sem sacrificar seu tempo pessoal.
                 </p>
               </div>
             </div>
