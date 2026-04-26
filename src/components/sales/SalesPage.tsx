@@ -277,7 +277,7 @@ export function SalesPage() {
               <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
                 <div className="w-9 h-9 rounded-full bg-rose text-white flex items-center justify-center font-bold text-base mb-4 shadow-sm">1</div>
                 <h3 className="text-[16px] font-bold text-foreground mb-1 leading-tight">Clique no botão abaixo</h3>
-                <p className="text-muted-foreground text-[12px] leading-relaxed">Escolha o pacote ideal e finalize o pagamento seguro</p>
+                <p className="text-muted-foreground text-[12px] leading-relaxed">Garanta o material completo e finalize o pagamento seguro</p>
               </div>
               
               <div className="bg-white p-5 rounded-3xl shadow-sm border border-border/40 text-center flex flex-col items-center">
