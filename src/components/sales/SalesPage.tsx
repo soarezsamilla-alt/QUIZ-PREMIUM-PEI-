@@ -311,11 +311,11 @@ export function SalesPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-4 shadow-sm">
-                <h3 className="text-[#EF4444] text-[18px] font-black mb-3 flex items-center gap-2 justify-center">
+              <div className="bg-[#FEF2F2] border-2 border-[#EF4444] rounded-[24px] p-4 py-3 shadow-sm">
+                <h3 className="text-[#EF4444] text-[16px] font-black mb-2 flex items-center gap-2 justify-center">
                   <span>❌</span> ANTES (Sem nossos PEIs)
                 </h3>
-                <div className="space-y-1">
+                <div className="space-y-0.5">
                   {[
                     { icon: "⏰", text: "6+ horas pesquisando no Google" },
                     { icon: "😨", text: "Insegurança se está correto" },
@@ -323,7 +323,7 @@ export function SalesPage() {
                     { icon: "📄", text: "Começar do ZERO a cada PEI" },
                     { icon: "💸", text: "Pagar R$ 150+ por PEI terceirizado" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2.5 py-1.5 border-b border-red-100 last:border-0">
+                    <div key={i} className="flex items-center gap-2.5 py-1 border-b border-red-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
                       <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
@@ -331,19 +331,19 @@ export function SalesPage() {
                 </div>
               </div>
 
-              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-4 shadow-sm">
-                <h3 className="text-[#22C55E] text-[18px] font-black mb-3 flex items-center gap-2 justify-center">
+              <div className="bg-[#F0FDF4] border-2 border-[#22C55E] rounded-[24px] p-4 py-3 shadow-sm">
+                <h3 className="text-[#22C55E] text-[16px] font-black mb-2 flex items-center gap-2 justify-center">
                   <span>✅</span> DEPOIS (Com nossos PEIs)
                 </h3>
-                <div className="space-y-1">
+                <div className="space-y-0.5">
                   {[
                     { icon: "⚡", text: "15 minutos editando modelo pronto" },
                     { icon: "😊", text: "Confiança em material validado" },
                     { icon: "🏡", text: "Tranquilidade e tempo com família" },
                     { icon: "📚", text: "Modelos de PEI sempre à disposição" },
-                    { icon: "💰", text: "Investimento único de R$ 19,90" }
+                    { icon: "💰", text: "Investimento único de R$ 24,90" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-2.5 py-1.5 border-b border-green-100 last:border-0">
+                    <div key={i} className="flex items-center gap-2.5 py-1 border-b border-green-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
                       <span className="text-[13px] font-medium text-gray-700 leading-tight">{item.text}</span>
                     </div>
@@ -500,13 +500,13 @@ export function SalesPage() {
                 </div>
                 <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  19
+                  24
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
                 <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 178,00 (90% OFF)
+                  💰 Você economiza: R$ 173,00 (87% OFF)
                 </div>
 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
