@@ -547,7 +547,7 @@ export function SalesPage() {
                 </div>
 
                 <Button asChild className="w-[85%] mx-auto h-auto py-4 bg-gradient-to-br from-rose-deep to-lilac-deep text-white font-bold text-sm rounded-full shadow-[0_8px_32px_rgba(139,106,175,0.40)] hover:translate-y-[-3px] hover:shadow-[0_14px_40px_rgba(139,106,175,0.50)] transition-all uppercase tracking-wide btn-mobile-effect">
-                  <a href="https://pay.wiapy.com/VBXdX_ymda">
+                  <a href="https://pay.wiapy.com/w9nRplH8zg">
                     🔓LIBERAR MATERIAL COMPLETO AGORA!
                   </a>
                 </Button>
