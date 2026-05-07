@@ -633,7 +633,7 @@ export function SalesPage() {
                     Garantia de 7 dias <Award className="text-gold" size={24} />
                   </h3>
                   <p className="text-[14px] sm:text-[15px] text-muted-foreground leading-relaxed">
-                    Fique tranquila! Você have 7 dias para testar todo material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente.
+                    Fique tranquila! Você tem 7 dias para testar todo material. Se por qualquer motivo você não ficar 100% satisfeita, devolvemos seu investimento integralmente.
                   </p>
                 </div>
               </div>
