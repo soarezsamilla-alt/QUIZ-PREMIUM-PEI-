@@ -142,7 +142,7 @@ export function SalesPage() {
 
           <div className="samples-section mb-16 animate-slide-up">
             <h2 className="section-title font-headline text-[22px] font-bold text-foreground text-center leading-tight mb-2">
-              Veja algumas <em className="italic text-lilac-deep">amostras</em>
+              Um Pouco do Material Que Você Vai Receber
             </h2>
             <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-10">
               Modelos pensados para tornar lecionar mais divertido e inclusivo
