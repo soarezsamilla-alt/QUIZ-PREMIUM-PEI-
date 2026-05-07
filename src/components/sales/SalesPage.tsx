@@ -414,7 +414,7 @@ export function SalesPage() {
                 🎁 Bônus exclusivos
               </div>
               <h2 className="section-title font-headline text-[22px] font-bold text-foreground leading-tight mb-2">
-                Você merece <em className="italic text-lilac-deep">ainda mais</em>
+                Você professora merece <em className="italic text-lilac-deep">ainda mais</em>
               </h2>
               <p className="section-sub text-[15px] text-muted-foreground leading-relaxed">
                 6 bônus incríveis que transformarão sua forma de trabalhar
