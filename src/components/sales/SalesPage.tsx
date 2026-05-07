@@ -1,3 +1,4 @@
+
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -120,7 +121,7 @@ export function SalesPage() {
             <div className="features-list flex flex-col gap-5 my-6">
               {[
                 { icon: "📄", title: "+200 Modelos de PEI prontos e editáveis", desc: "Material completo, planejado por especialistas e 100% editável no Word. Do 1º ao 9º ano.", color: "rose" },
-                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o desenvolvimento.", color: "lilac" },
+                { icon: "🎨", title: "+350 atividades pedagógicas Infantis", desc: "Material completo para alfabetização, coordenação motora e muito mais para impulsionar o development.", color: "lilac" },
                 { icon: "🧩", title: "+160 Atividades Lúdicas", desc: "Atividades pedagógicas lúdicas alinhadas à BNCC para facilitar o aprendizado.", color: "gold" },
                 { icon: "💬", title: "Suporte individual via WhatsApp", desc: "Tire suas dúvidas e receba auxílio pedagógico diretamente no seu celular sempre que precisar.", color: "rose" },
                 { icon: "⚡", title: "Acesso digital imediato", desc: "Receba o material instantaneamente por E-mail ou WhatsApp logo após a compra.", color: "lilac" },
@@ -145,7 +146,7 @@ export function SalesPage() {
               Um Pouco do Material Que <span style={{ color: '#aa92c3' }}>Você Vai Receber</span>
             </h2>
             <p className="section-sub text-[15px] text-muted-foreground text-center leading-relaxed mb-10">
-              Modelos pensados para tornar lecionar mais divertido e inclusivo
+              Modelos pensados para tornar os dias dos seus alunos mais divertido e intuitivo
             </p>
 
             <div className="samples-carousels-wrapper flex flex-col gap-4 mb-8 px-4">
