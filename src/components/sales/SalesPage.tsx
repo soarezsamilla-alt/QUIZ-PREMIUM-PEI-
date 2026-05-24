@@ -342,7 +342,7 @@ export function SalesPage() {
                     { icon: "😊", text: "Confiança em material validado" },
                     { icon: "🏡", text: "Tranquilidade e tempo com família" },
                     { icon: "📚", text: "Modelos de PEI sempre à disposição" },
-                    { icon: "💰", text: "Investimento único de R$ 24,90" }
+                    { icon: "💰", text: "Investimento único de R$ 27,90" }
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-2.5 py-1 border-b border-green-100 last:border-0">
                       <span className="text-base shrink-0">{item.icon}</span>
@@ -501,13 +501,13 @@ export function SalesPage() {
                 </div>
                 <div className="font-headline text-[74px] font-bold text-[#2563EB] leading-none mb-0 flex justify-center items-start">
                   <span className="text-3xl font-semibold mt-3 mr-1">R$</span>
-                  24
+                  27
                   <span className="text-4xl font-semibold mt-4 ml-1">,90</span>
                 </div>
                 <div className="text-[10px] font-bold tracking-[0.1em] uppercase text-muted-foreground mt-2 mb-2">Pagamento único</div>
                 
                 <div className="text-[11px] font-bold text-green-600 bg-green-50 py-1 px-3 rounded-full inline-block mb-4 border border-green-100">
-                  💰 Você economiza: R$ 173,00 (87% OFF)
+                  💰 Você economiza: R$ 170,00 (86% OFF)
                 </div>
 
                 <div id="plano-pro-image" className="relative w-full h-[300px] mb-4 scroll-mt-24">
